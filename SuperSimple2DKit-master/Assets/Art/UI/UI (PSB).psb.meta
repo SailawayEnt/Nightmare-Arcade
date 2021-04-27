@@ -1,0 +1,772 @@
+fileFormatVersion: 2
+guid: 6601089fcdc67504eb56b99aa1179c23
+ScriptedImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6253301633089597446
+    second: UI (PSB)_0
+  - first:
+      213: 7459951692087713241
+    second: UI (PSB)_1
+  - first:
+      213: 4373151612415194564
+    second: UI (PSB)_2
+  - first:
+      213: 3104382749151319164
+    second: UI (PSB)_3
+  - first:
+      213: -4183957698942534864
+    second: UI (PSB)_4
+  - first:
+      213: -5881792469163476186
+    second: UI (PSB)_5
+  - first:
+      213: -6646942592255541715
+    second: UI (PSB)_6
+  - first:
+      213: 459267994583953973
+    second: UI (PSB)_7
+  - first:
+      213: 775932282455908028
+    second: UI (PSB)_8
+  - first:
+      213: -2904881301683478148
+    second: UI (PSB)_9
+  - first:
+      213: 2767084422593201916
+    second: UI (PSB)_10
+  - first:
+      213: 5650479464997775866
+    second: UI (PSB)_11
+  - first:
+      213: 2716740631819225205
+    second: UI (PSB)_12
+  - first:
+      213: 3097304895277323496
+    second: UI (PSB)_13
+  - first:
+      213: -7710339602235327707
+    second: UI (PSB)_14
+  - first:
+      213: -3389026521718245895
+    second: UI (PSB)_15
+  - first:
+      213: -213849048409614057
+    second: UI (PSB)_16
+  - first:
+      213: -9219385281827106110
+    second: UI (PSB)_17
+  - first:
+      213: -3189607930111532096
+    second: UI (PSB)_18
+  - first:
+      213: 8105055242500195397
+    second: UI (PSB)_19
+  - first:
+      213: -7019216750411545273
+    second: UI (PSB)_20
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 0
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: Controls
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 933
+      height: 286
+    spriteID: 4c8a7abcc2bd8f14e9420984cb3a89db
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -204, y: -170}
+  - name: RoundedRectangle
+    originalName: 
+    pivot: {x: 0.49999997, y: 0.52798843}
+    alignment: 9
+    border: {x: 14, y: 9, z: 21, w: 10}
+    rect:
+      serializedVersion: 2
+      x: 268
+      y: 679
+      width: 711
+      height: 24
+    spriteID: b0f28837c6972294e8d3d556fb04d24c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -50, y: -1254}
+  - name: PauseButton
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 913
+      y: 428
+      width: 103
+      height: 103
+    spriteID: b755f12f06241b847a2fd76d32bb97ec
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -2644, y: 263}
+  - name: PauseOverlay
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 724
+      y: 577
+      width: 166
+      height: 93
+    spriteID: 282014a5147738449b2914aa61fd4a70
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 724, y: 577}
+  - name: Triangle
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 740
+      y: 711
+      width: 146
+      height: 84
+    spriteID: 2ea4b1e871600894d87c3afed4f1fcca
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1107, y: -123}
+  - name: Fader
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 126, y: 0, z: 124, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 300
+      width: 637
+      height: 269
+    spriteID: a6147fa1530a77348961e4dc29181ade
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -463, y: -240}
+  - name: IconE
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 913
+      y: 300
+      width: 106
+      height: 120
+    spriteID: 5833f16e9540d4cedaa4b5720fb92288
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -954, y: -668}
+  - name: IconBlank
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 577
+      width: 256
+      height: 256
+    spriteID: b223f45f7470b4a3eb613642aac71050
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -3281, y: -1240}
+  - name: IconKey
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 649
+      y: 300
+      width: 256
+      height: 256
+    spriteID: 8055070a072434b87825d47fbc10fe31
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -2864, y: -1549}
+  - name: IconHeart
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 894
+      y: 711
+      width: 115
+      height: 105
+    spriteID: 08ebeb13cda8d44c7a3fd2e44915d475
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 709, y: -1182}
+  - name: IconCoin
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 841
+      width: 108
+      height: 108
+    spriteID: 28424fccc53fe48da84459d15b138870
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -181, y: -934}
+  - name: button_pressed
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 268
+      y: 577
+      width: 448
+      height: 94
+    spriteID: 185a69aad341742ccaf65aea56edea7f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -238, y: 412}
+  - name: ui-controls-w-icon
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 898
+      y: 577
+      width: 52
+      height: 68
+    spriteID: 2759c75e013fe429199c26df2b302bc3
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 583, y: 275}
+  - name: ui-controls-d-icon
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 958
+      y: 577
+      width: 38
+      height: 72
+    spriteID: 494f6d4b6eaff4a44be71d723191bb01
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 526, y: 391}
+  - name: button_pressed copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 268
+      y: 711
+      width: 110
+      height: 114
+    spriteID: 9861d120b18da497183cd4cd140cd444
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -128, y: 557}
+  - name: ui-controls-s-icon
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 944
+      y: 77
+      width: 28
+      height: 70
+    spriteID: 7bbfba77beb0c40a5b4a0ea198d255c1
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 617, y: -111}
+  - name: ui-controls-a-icon
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 944
+      y: 4
+      width: 40
+      height: 65
+    spriteID: 48ddbccb9d6784d859bc7e4761d6f0d2
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 736, y: -189}
+  - name: button_pressed copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 386
+      y: 711
+      width: 110
+      height: 114
+    spriteID: d03a2c32cc3604462a32e16a576f5e33
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 100, y: 443}
+  - name: button_pressed copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 504
+      y: 711
+      width: 110
+      height: 114
+    spriteID: afb7a7a65d20b4ce9a3a6d5aa4cf3e5f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 218, y: 557}
+  - name: button_pressed_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 622
+      y: 711
+      width: 110
+      height: 114
+    spriteID: 31825fb88cb794b598a96c52cf7f367d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 446, y: 557}
+  platformSettings:
+  - name: Default
+    overridden: 1
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 1024
+  importedTextureHeight: 1024
+  documentSize: {x: 3840, y: 2160}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 1024
+  textureActualHeight: 1024
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: PauseButton
+    spriteName: PauseButton
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b755f12f06241b847a2fd76d32bb97ec
+    layerID: 211
+    mosaicPosition: {x: 913, y: 428}
+  - name: IconHeart
+    spriteName: IconHeart
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 08ebeb13cda8d44c7a3fd2e44915d475
+    layerID: 244
+    mosaicPosition: {x: 894, y: 711}
+  - name: RoundedRectangle
+    spriteName: RoundedRectangle
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b0f28837c6972294e8d3d556fb04d24c
+    layerID: 195
+    mosaicPosition: {x: 268, y: 679}
+  - name: IconCoin
+    spriteName: IconCoin
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 28424fccc53fe48da84459d15b138870
+    layerID: 246
+    mosaicPosition: {x: 4, y: 841}
+  - name: IconKey
+    spriteName: IconKey
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8055070a072434b87825d47fbc10fe31
+    layerID: 238
+    mosaicPosition: {x: 649, y: 300}
+  - name: Triangle
+    spriteName: Triangle
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2ea4b1e871600894d87c3afed4f1fcca
+    layerID: 221
+    mosaicPosition: {x: 740, y: 711}
+  - name: Fader
+    spriteName: Fader
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a6147fa1530a77348961e4dc29181ade
+    layerID: 223
+    mosaicPosition: {x: 4, y: 300}
+  - name: IconE
+    spriteName: IconE
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5833f16e9540d4cedaa4b5720fb92288
+    layerID: 231
+    mosaicPosition: {x: 913, y: 300}
+  - name: IconBlank
+    spriteName: IconBlank
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b223f45f7470b4a3eb613642aac71050
+    layerID: 234
+    mosaicPosition: {x: 4, y: 577}
+  - name: button_pressed
+    spriteName: button_pressed
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 185a69aad341742ccaf65aea56edea7f
+    layerID: 256
+    mosaicPosition: {x: 268, y: 577}
+  - name: ui-controls-w-icon
+    spriteName: ui-controls-w-icon
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2759c75e013fe429199c26df2b302bc3
+    layerID: 255
+    mosaicPosition: {x: 898, y: 577}
+  - name: ui-controls-d-icon
+    spriteName: ui-controls-d-icon
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 494f6d4b6eaff4a44be71d723191bb01
+    layerID: 254
+    mosaicPosition: {x: 958, y: 577}
+  - name: button_pressed copy 2
+    spriteName: button_pressed copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9861d120b18da497183cd4cd140cd444
+    layerID: 250
+    mosaicPosition: {x: 268, y: 711}
+  - name: ui-controls-s-icon
+    spriteName: ui-controls-s-icon
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7bbfba77beb0c40a5b4a0ea198d255c1
+    layerID: 253
+    mosaicPosition: {x: 944, y: 77}
+  - name: ui-controls-a-icon
+    spriteName: ui-controls-a-icon
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 48ddbccb9d6784d859bc7e4761d6f0d2
+    layerID: 252
+    mosaicPosition: {x: 944, y: 4}
+  - name: button_pressed copy 3
+    spriteName: button_pressed copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d03a2c32cc3604462a32e16a576f5e33
+    layerID: 251
+    mosaicPosition: {x: 386, y: 711}
+  - name: button_pressed copy
+    spriteName: button_pressed copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: afb7a7a65d20b4ce9a3a6d5aa4cf3e5f
+    layerID: 249
+    mosaicPosition: {x: 504, y: 711}
+  - name: button_pressed
+    spriteName: button_pressed_1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 31825fb88cb794b598a96c52cf7f367d
+    layerID: 248
+    mosaicPosition: {x: 622, y: 711}
+  - name: Controls
+    spriteName: Controls
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4c8a7abcc2bd8f14e9420984cb3a89db
+    layerID: 141
+    mosaicPosition: {x: 4, y: 4}
+  - name: PauseOverlay
+    spriteName: PauseOverlay
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 282014a5147738449b2914aa61fd4a70
+    layerID: 167
+    mosaicPosition: {x: 724, y: 577}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+  generateGOHierarchy: 0
+  textureAssetName: UI Texture
+  prefabAssetName: UI Prefab
+  spriteLibAssetName: UI Sprite Lib
+  secondarySpriteTextures: []
