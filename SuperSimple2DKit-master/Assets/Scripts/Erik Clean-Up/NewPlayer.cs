@@ -1,7 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Random = UnityEngine.Random;
 
 /*Adds player functionality to a physics object*/
 
@@ -13,7 +15,7 @@ public class NewPlayer : PhysicsObject
     public AudioSource audioSource;
     [SerializeField] private Animator animator;
     private AnimatorFunctions animatorFunctions;
-    public GameObject attackHit;
+    // public GameObject attackHit;
     private CapsuleCollider2D capsuleCollider;
     public CameraEffects cameraEffects;
     [SerializeField] private ParticleSystem deathParticles;
@@ -338,6 +340,7 @@ public class NewPlayer : PhysicsObject
     {
         if (jumping)
         {
+            Debug.Log("land");
             jumpParticles.Emit(1);
             audioSource.pitch = (Random.Range(0.6f, 1f));
             audioSource.PlayOneShot(landSound);
