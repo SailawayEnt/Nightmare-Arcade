@@ -340,7 +340,6 @@ public class NewPlayer : PhysicsObject
     {
         if (jumping)
         {
-            Debug.Log("land");
             jumpParticles.Emit(1);
             audioSource.pitch = (Random.Range(0.6f, 1f));
             audioSource.PlayOneShot(landSound);
@@ -351,7 +350,7 @@ public class NewPlayer : PhysicsObject
     public void PunchEffect()
     {
         GameManager.Instance.audioSource.PlayOneShot(punchSound);
-        cameraEffects.Shake(100, 1f);
+        // cameraEffects.Shake(100, 1f);
     }
 
     public void ActivatePound()
