@@ -1,7 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Random = UnityEngine.Random;
 
 /*Adds player functionality to a physics object*/
 
@@ -13,7 +15,7 @@ public class NewPlayer : PhysicsObject
     public AudioSource audioSource;
     [SerializeField] private Animator animator;
     private AnimatorFunctions animatorFunctions;
-    public GameObject attackHit;
+    // public GameObject attackHit;
     private CapsuleCollider2D capsuleCollider;
     public CameraEffects cameraEffects;
     [SerializeField] private ParticleSystem deathParticles;
@@ -348,7 +350,7 @@ public class NewPlayer : PhysicsObject
     public void PunchEffect()
     {
         GameManager.Instance.audioSource.PlayOneShot(punchSound);
-        cameraEffects.Shake(100, 1f);
+        // cameraEffects.Shake(100, 1f);
     }
 
     public void ActivatePound()
