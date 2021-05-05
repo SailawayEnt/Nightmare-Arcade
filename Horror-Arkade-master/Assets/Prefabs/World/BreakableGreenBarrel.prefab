@@ -4787,7 +4787,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1524664889
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 1
   m_RenderMode: 0
   m_SortMode: 0
@@ -4825,7 +4825,7 @@ GameObject:
   - component: {fileID: 114498756616619576}
   - component: {fileID: 82451538465990686}
   m_Layer: 0
-  m_Name: BreakableBox
+  m_Name: BreakableGreenBarrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19675,7 +19675,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1524664889
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 1
   m_RenderMode: 0
   m_SortMode: 0
