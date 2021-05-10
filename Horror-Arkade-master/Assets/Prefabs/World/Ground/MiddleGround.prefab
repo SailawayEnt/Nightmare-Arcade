@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1086799180555378237}
   - component: {fileID: 7803863157194004227}
   - component: {fileID: 5357101276984748966}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MiddleGround
   m_TagString: Untagged
   m_Icon: {fileID: 0}
