@@ -6,10 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Prefabs/Scenes/OfficialDemoLevel.unity
+    path: Assets/Scenes/OfficialDemoLevel.unity
     guid: e5fe9c48f0aef5b418fc392c01f92e05
   - enabled: 1
-    path: Assets/Prefabs/Scenes/ArkadeScene.unity
+    path: Assets/Scenes/ArkadeScene.unity
     guid: cd989880ea0750840b5f9307d0ab4c24
   - enabled: 1
     path: Assets/Scenes/LogoIntro.unity
