@@ -5,5 +5,5 @@ public class Level : GameScene
 {
     //Settings specific to level only
     [Header("Level specific")]
-    public int enemiesCount;
+    public int testSpecifics;
 }
