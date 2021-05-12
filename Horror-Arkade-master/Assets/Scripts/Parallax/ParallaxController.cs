@@ -13,6 +13,7 @@ public class ParallaxController : MonoBehaviour
 
     Camera cam;
 
+
     void Start()
     {
         cam = Camera.main;
@@ -24,6 +25,9 @@ public class ParallaxController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (!cam)
+            return;
+        
         if (cam.transform.position.x != oldCameraPosition.x || (cam.transform.position.y) != oldCameraPosition.y)
         {
             if (onCameraMove != null)

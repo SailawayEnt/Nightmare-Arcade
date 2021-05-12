@@ -16,6 +16,9 @@ public class DialogueTrigger : MonoBehaviour
     public bool completed;
     [SerializeField] private bool repeat; //Set to true if the player should be able to talk again and again to the NPC. 
     [SerializeField] private bool sleeping;
+    
+    [Header("Target")]
+    [SerializeField] private Transform targetDestination;
 
     [Header ("Dialogue")]
     [SerializeField] private string characterName; //The character's name shown in the dialogue UI
@@ -51,8 +54,14 @@ public class DialogueTrigger : MonoBehaviour
             iconAnimator.SetBool("active", true);
             if (autoHit || (Input.GetAxis("Submit") > 0))
             {
-                iconAnimator.SetBool("active", false);
-                if (requiredItem == "" && requiredCoins == 0 || !GameManager.Instance.inventory.ContainsKey(requiredItem) && requiredCoins == 0 || (requiredCoins != 0 && NewPlayer.Instance.coins < requiredCoins))
+              iconAnimator.SetBool("active", false);
+              
+              if (characterName == "Enter Door")
+              {
+                  // col.transform.position = new Vector2(targetDestination.position.x, targetDestination.position.y);
+                  col.transform.position = targetDestination.transform.position;
+              }
+              else if (requiredItem == "" && requiredCoins == 0 || !GameManager.Instance.inventory.ContainsKey(requiredItem) && requiredCoins == 0 || (requiredCoins != 0 && NewPlayer.Instance.coins < requiredCoins))
                 {
                     GameManager.Instance.dialogueBoxController.Appear(dialogueStringA, characterName, this, false, audioLinesA, audioChoices, finishTalkingAnimatorBool, finishTalkingActivateObject, finishTalkingActivateObjectString, repeat);
                 }

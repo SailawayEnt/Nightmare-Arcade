@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6899fe3b836e29b459e63076cef4d9c2, type: 3}
   m_Name: MainMenu
   m_EditorClassIdentifier: 
-  sceneName: MainMenu
+  sceneName: Menu
   shortDescription: The main menu of the game
   music: {fileID: 0}
   musicVolume: 0
