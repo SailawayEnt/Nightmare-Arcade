@@ -31,7 +31,7 @@ public class DialogueBoxController : MonoBehaviour
     [Header("Other")]
     private bool ableToAdvance;
     private bool activated;
-    [SerializeField] private float typeSpeed = 1f;
+    // [SerializeField] private float typeSpeed = 1f;
     private int choiceLocation;
     private int cPos = 0;
     private string[] characterDiologue;

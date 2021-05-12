@@ -10,10 +10,10 @@ public class TriggerDoorController : MonoBehaviour
     [SerializeField] bool openTrigger = false;
     [SerializeField] bool closeTrigger = false;
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D col)
     {
         
-        if (other.CompareTag("Player"))
+        if (col.gameObject == NewPlayer.Instance.gameObject)
         {
             if (openTrigger)
             {
@@ -22,11 +22,11 @@ public class TriggerDoorController : MonoBehaviour
             }
         }
     }
-    void OnTriggerExit2D(Collider2D other)
+    void OnTriggerExit2D(Collider2D col)
     {
         
         
-        if (other.CompareTag("Player"))
+        if (col.gameObject == NewPlayer.Instance.gameObject)
         {
             if (closeTrigger)
             {

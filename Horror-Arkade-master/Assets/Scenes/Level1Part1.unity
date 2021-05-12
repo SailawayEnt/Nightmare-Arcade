@@ -2245,10 +2245,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: DemoSceneLayers
       objectReference: {fileID: 0}
+    - target: {fileID: 520325899645824400, guid: b922eb766c4ce644c8d045b3f23ec055,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 520572039692518606, guid: b922eb766c4ce644c8d045b3f23ec055,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 521076654926748794, guid: b922eb766c4ce644c8d045b3f23ec055,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 521264023287996430, guid: b922eb766c4ce644c8d045b3f23ec055,
         type: 3}
       propertyPath: m_Name
       value: Backgrounds
+      objectReference: {fileID: 0}
+    - target: {fileID: 521264023287996430, guid: b922eb766c4ce644c8d045b3f23ec055,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 522032767901948916, guid: b922eb766c4ce644c8d045b3f23ec055,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 976129540260522420, guid: b922eb766c4ce644c8d045b3f23ec055,
         type: 3}
@@ -2258,7 +2283,7 @@ PrefabInstance:
     - target: {fileID: 2135164040344606887, guid: b922eb766c4ce644c8d045b3f23ec055,
         type: 3}
       propertyPath: parallaxAmount
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2906521772104054097, guid: b922eb766c4ce644c8d045b3f23ec055,
         type: 3}
@@ -2313,6 +2338,11 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 480616165428083212, guid: b922eb766c4ce644c8d045b3f23ec055, type: 3}
     - {fileID: 976129540260522420, guid: b922eb766c4ce644c8d045b3f23ec055, type: 3}
+    - {fileID: 2135164040344606887, guid: b922eb766c4ce644c8d045b3f23ec055, type: 3}
+    - {fileID: 6837199503676601289, guid: b922eb766c4ce644c8d045b3f23ec055, type: 3}
+    - {fileID: 7801762479666477418, guid: b922eb766c4ce644c8d045b3f23ec055, type: 3}
+    - {fileID: 2906521772104054097, guid: b922eb766c4ce644c8d045b3f23ec055, type: 3}
+    - {fileID: 8967134684587555185, guid: b922eb766c4ce644c8d045b3f23ec055, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b922eb766c4ce644c8d045b3f23ec055, type: 3}
 --- !u!1001 &585594465
 PrefabInstance:
@@ -8485,11 +8515,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4569125025086690, guid: 927e473a2ba484d75b382fc1faaf0eeb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -56.009243
+      value: -56.00924
       objectReference: {fileID: 0}
     - target: {fileID: 4569125025086690, guid: 927e473a2ba484d75b382fc1faaf0eeb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14.132189
+      value: 14.132162
       objectReference: {fileID: 0}
     - target: {fileID: 4569125025086690, guid: 927e473a2ba484d75b382fc1faaf0eeb, type: 3}
       propertyPath: m_LocalPosition.z

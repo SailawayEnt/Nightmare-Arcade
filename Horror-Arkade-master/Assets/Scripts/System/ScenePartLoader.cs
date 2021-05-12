@@ -16,6 +16,8 @@ public class ScenePartLoader : MonoBehaviour
     //Scene state
     private bool isLoaded;
     private bool shouldLoad;
+    
+    
     void Start()
     {
         //verify if the scene is already open to avoid opening a scene twice

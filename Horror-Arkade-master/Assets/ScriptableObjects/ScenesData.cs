@@ -21,10 +21,14 @@ public class ScenesData : ScriptableObject
             //Load Gameplay scene for the level
             SceneManager.LoadSceneAsync("Gameplay" + index.ToString());
             //Load first part of the level in additive mode
-            SceneManager.LoadSceneAsync("Level" + index.ToString() + "Part1", LoadSceneMode.Additive);
+            // SceneManager.LoadSceneAsync("Level" + index.ToString() + "Part1", LoadSceneMode.Additive);
         }
+
         //reset the index if we have no more levels
-        else CurrentLevelIndex =1;
+        else
+        {
+            CurrentLevelIndex =1;
+        }
     }
     //Start next level
     public void NextLevel()

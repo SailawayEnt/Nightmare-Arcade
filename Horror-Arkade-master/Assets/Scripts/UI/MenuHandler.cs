@@ -18,9 +18,9 @@ public class MenuHandler : MonoBehaviour {
         HideMenu();
         // ShowLoadingScreen();
         //Load the Scene asynchronously in the background
-        scenesToLoad.Add(SceneManager.LoadSceneAsync("Gameplay"));
+        // scenesToLoad.Add(SceneManager.LoadSceneAsync("Gameplay"));
         //Additive mode adds the Scene to the current loaded Scenes, in this case Gameplay scene
-        scenesToLoad.Add(SceneManager.LoadSceneAsync("Level01Part01", LoadSceneMode.Additive));
+        // scenesToLoad.Add(SceneManager.LoadSceneAsync("Level01Part01", LoadSceneMode.Additive));
         // StartCoroutine(LoadingScreen());
     }
 

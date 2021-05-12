@@ -19,7 +19,7 @@ public class Walker : PhysicsObject
     private Vector2 distanceFromPlayer; //How far is this enemy from the player?
     [System.NonSerialized] public float directionSmooth = 1; //The float value that lerps to the direction integer.
     [SerializeField] private bool followPlayer;
-    [SerializeField] private bool flipWhenTurning = false; //Should the graphic flip along localScale.x?
+    // [SerializeField] private bool flipWhenTurning = false; //Should the graphic flip along localScale.x?
     private RaycastHit2D ground;
     public float hurtLaunchPower = 10; //How much force should be applied to the player when getting hurt?
     [SerializeField] private bool jumping;
