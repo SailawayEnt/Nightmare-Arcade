@@ -3,13 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8ee225da-5995-44de-bfa6-5a9a2a492a40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1Part1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1Part1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/ScenesData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/ScenesData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueBoxController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueBoxController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Walker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Walker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Other/TriggerDoorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Other/TriggerDoorController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/ScenePartLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/System/ScenePartLoader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/MenuHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MenuHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/World/ArcadeInteriorBuilding.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/World/ArcadeInteriorBuilding.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1Part2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1Part2.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +43,7 @@
       <option value="$PROJECT_DIR$/Assets/ScriptableObjects/ScenesData.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/System/ScenePartLoader.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Other/TriggerDoorController.cs" />
+      <option value="$PROJECT_DIR$/Assets/LocationPortal.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1s7mNslhf74Iq31JhmXduBQcJs4" />
@@ -104,6 +101,7 @@
       <workItem from="1620757194640" duration="14000" />
       <workItem from="1620757579363" duration="15538000" />
       <workItem from="1620834864545" duration="4781000" />
+      <workItem from="1620936189081" duration="1347000" />
     </task>
     <servers />
   </component>
