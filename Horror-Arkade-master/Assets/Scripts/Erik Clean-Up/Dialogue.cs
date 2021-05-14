@@ -21,6 +21,17 @@ public class Dialogue : MonoBehaviour
         dialogue.Add("LockedDoorB", new string[] {
             "Key used!"
         });
+        
+        // Game Cabinet
+        dialogue.Add("GameCabinetA", new string[] {
+            "This looks like a fun game...",
+            "Looks like it takes 1 credit!"
+        });
+        
+        dialogue.Add("GameCabinetAb", new string[] {
+            "Inserts coin...",
+            "Loading game..."
+        });
 
         //NPC
         dialogue.Add("CharacterA", new string[] {

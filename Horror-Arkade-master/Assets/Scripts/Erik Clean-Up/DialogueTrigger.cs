@@ -41,6 +41,7 @@ public class DialogueTrigger : MonoBehaviour
     [SerializeField] private int requiredCoins; //Or the required coins (cannot require both an item and coins)
     public Animator useItemAnimator; //If the player uses an item, like a key, an animator can be fired (ie to open a door)
     [SerializeField] private string useItemAnimatorBool; //An animator bool can be set to true once an item is used, like ae key.
+    private static readonly int Active = Animator.StringToHash("active");
 
     void OnTriggerStay2D(Collider2D col)
     {
@@ -51,7 +52,7 @@ public class DialogueTrigger : MonoBehaviour
 
         if (col.gameObject == NewPlayer.Instance.gameObject && !sleeping && !completed && NewPlayer.Instance.grounded)
         {
-            iconAnimator.SetBool("active", true);
+            iconAnimator.SetBool(Active, true);
             if (autoHit || (Input.GetAxis("Submit") > 0))
             {
               iconAnimator.SetBool("active", false);
