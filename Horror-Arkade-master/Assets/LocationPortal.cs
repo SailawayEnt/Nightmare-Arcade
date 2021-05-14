@@ -11,10 +11,10 @@ public class LocationPortal : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject == NewPlayer.Instance.gameObject && NewPlayer.Instance.grounded)
+        if (col.gameObject == NewPlayer.Instance.gameObject)
         {
-            // col.transform.position = targetDestination.transform.position;
-            col.transform.position = new Vector2(targetDestination.position.x, targetDestination.position.y);
+            var position = targetDestination.position;
+            col.transform.position = new Vector2(position.x, position.y);
         }
     }
 }

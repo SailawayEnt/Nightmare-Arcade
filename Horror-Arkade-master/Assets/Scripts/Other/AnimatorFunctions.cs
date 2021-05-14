@@ -9,7 +9,8 @@ animation events in the animation window.*/
 public class AnimatorFunctions : MonoBehaviour
 {
     [SerializeField] private AudioSource audioSource;
-    [SerializeField] private ParticleSystem particleSystem;
+    // Gordon Added the new keyword to particle system. Might need to be deleted
+    [SerializeField] private new ParticleSystem particleSystem;
     [SerializeField] private Animator setBoolInAnimator;
 
     // If we don't specify what audio source to play sounds through, just use the one on player.

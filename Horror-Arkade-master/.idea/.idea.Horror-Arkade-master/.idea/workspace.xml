@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="8ee225da-5995-44de-bfa6-5a9a2a492a40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/World/ArcadeInteriorBuilding.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/World/ArcadeInteriorBuilding.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1Part2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1Part2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LocationPortal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LocationPortal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/StartUp/Cameras.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/StartUp/Cameras.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Flyer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Flyer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Other/AnimatorFunctions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Other/AnimatorFunctions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Parallax/ParallaxLayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parallax/ParallaxLayer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +26,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Runtime/TMP_FontAsset.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Menu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/ScenesData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Levels.cs" root0="FORCE_HIGHLIGHTING" />
@@ -43,6 +46,9 @@
       <option value="$PROJECT_DIR$/Assets/ScriptableObjects/ScenesData.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/System/ScenePartLoader.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Other/TriggerDoorController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Flyer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Other/AnimatorFunctions.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Parallax/ParallaxLayer.cs" />
       <option value="$PROJECT_DIR$/Assets/LocationPortal.cs" />
     </changedPaths>
   </component>
@@ -102,6 +108,7 @@
       <workItem from="1620757579363" duration="15538000" />
       <workItem from="1620834864545" duration="4781000" />
       <workItem from="1620936189081" duration="1347000" />
+      <workItem from="1621012733877" duration="820000" />
     </task>
     <servers />
   </component>

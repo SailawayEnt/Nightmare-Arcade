@@ -9,14 +9,15 @@ public class ParallaxLayer : MonoBehaviour
     [Range(-1f, 1f)]
     public float parallaxAmount; //The amount of parallax! 1 simulates being close to the camera, -1 simulates being very far from the camera!
     [System.NonSerialized] public Vector3 newPosition;
-    private bool adjusted = false;
+    // Gordon Commented out. Doesn't appeared to be used
+    // private bool adjusted = false;
 
     public void MoveLayer(float positionChangeX, float positionChangeY)
     {
-        newPosition = transform.localPosition;
+        var layerTransform = transform;
+        newPosition = layerTransform.localPosition;
         newPosition.x -= positionChangeX * (-parallaxAmount * 40) * (Time.deltaTime);
         newPosition.y -= positionChangeY * (-parallaxAmount * 40) * (Time.deltaTime);
-        transform.localPosition = newPosition;
+        layerTransform.localPosition = newPosition;
     }
-
 }
