@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 [CreateAssetMenu(fileName = "sceneDB", menuName = "Scene Data/Database")]
 public class ScenesData : ScriptableObject
 {
-    public List<Level> levels = new List<Level>();
+    public List<Levels> levels = new List<Levels>();
     public List<Menu> menus = new List<Menu>();
     public int CurrentLevelIndex=1;
 

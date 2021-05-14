@@ -16,7 +16,7 @@ public class Startup : MonoBehaviour
         {
             DontDestroyOnLoad(gameObject);
         }
-        if (GameObject.Find("Startup") != null && GameObject.Find("Startup").tag == "Startup")
+        if (GameObject.Find("Startup") != null && GameObject.Find("Startup").CompareTag("Startup"))
         {
             Destroy(gameObject);
         }

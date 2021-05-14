@@ -103,7 +103,9 @@ public class NewPlayer : PhysicsObject
     {
         //Player movement & attack
         Vector2 move = Vector2.zero;
-        ground = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y), -Vector2.up);
+        var playerTransform = transform;
+        var position = playerTransform.position;
+        ground = Physics2D.Raycast(new Vector2(position.x, position.y), -Vector2.up);
 
         //Lerp launch back to zero at all times
         launch += (0 - launch) * Time.deltaTime * launchRecovery;

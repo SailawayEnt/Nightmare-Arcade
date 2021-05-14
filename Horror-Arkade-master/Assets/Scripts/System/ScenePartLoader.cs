@@ -81,19 +81,37 @@ public class ScenePartLoader : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D col)
     {
-        if (other.CompareTag("Player"))
+        if (NewPlayer.Instance)
         {
-            shouldLoad = true;
+            if (col.gameObject == NewPlayer.Instance.gameObject)
+            {
+                shouldLoad = true;
+            }
+        }else if (CabinetPlayer.Instance)
+        {
+            if (col.gameObject == CabinetPlayer.Instance.gameObject)
+            {
+                shouldLoad = true;
+            }
         }
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    private void OnTriggerExit2D(Collider2D col)
     {
-        if (other.CompareTag("Player"))
+        if (NewPlayer.Instance)
         {
-            shouldLoad = false;
+            if (col.gameObject == NewPlayer.Instance.gameObject)
+            {
+                shouldLoad = false;
+            }
+        }else if (CabinetPlayer.Instance)
+        {
+            if (col.gameObject == CabinetPlayer.Instance.gameObject)
+            {
+                shouldLoad = false;
+            }
         }
     }
 

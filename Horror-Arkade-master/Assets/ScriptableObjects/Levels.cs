@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 
 [CreateAssetMenu(fileName = "NewLevel", menuName = "Scene Data/Level")]
-public class Level : GameScene
+public class Levels : GameScene
 {
     //Settings specific to level only
     [Header("Level specific")]
-    public int testSpecifics;
+    public string levelNickname;
 }

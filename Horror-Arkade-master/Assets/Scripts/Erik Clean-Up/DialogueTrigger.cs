@@ -58,25 +58,25 @@ public class DialogueTrigger : MonoBehaviour
               
               if (characterName == "Enter Door")
               {
-                  // col.transform.position = new Vector2(targetDestination.position.x, targetDestination.position.y);
-                  col.transform.position = targetDestination.transform.position;
+                  var position = targetDestination.position;
+                  col.transform.position = new Vector2(position.x, position.y);
               }
               else if (requiredItem == "" && requiredCoins == 0 || !GameManager.Instance.inventory.ContainsKey(requiredItem) && requiredCoins == 0 || (requiredCoins != 0 && NewPlayer.Instance.coins < requiredCoins))
-                {
-                    GameManager.Instance.dialogueBoxController.Appear(dialogueStringA, characterName, this, false, audioLinesA, audioChoices, finishTalkingAnimatorBool, finishTalkingActivateObject, finishTalkingActivateObjectString, repeat);
-                }
-                else if (requiredCoins == 0 && GameManager.Instance.inventory.ContainsKey(requiredItem) || (requiredCoins != 0 && NewPlayer.Instance.coins >= requiredCoins))
-                {
-                    if (dialogueStringB != "")
-                    {
-                        GameManager.Instance.dialogueBoxController.Appear(dialogueStringB, characterName, this, true, audioLinesB, audioChoices, "", null, "", repeat);
-                    }
-                    else
-                    {
-                        UseItem();
-                    }
-                }
-                sleeping = true;
+              {
+                  GameManager.Instance.dialogueBoxController.Appear(dialogueStringA, characterName, this, false, audioLinesA, audioChoices, finishTalkingAnimatorBool, finishTalkingActivateObject, finishTalkingActivateObjectString, repeat);
+              }
+              else if (requiredCoins == 0 && GameManager.Instance.inventory.ContainsKey(requiredItem) || (requiredCoins != 0 && NewPlayer.Instance.coins >= requiredCoins))
+              {
+                  if (dialogueStringB != "")
+                  {
+                      GameManager.Instance.dialogueBoxController.Appear(dialogueStringB, characterName, this, true, audioLinesB, audioChoices, "", null, "", repeat);
+                  }
+                  else
+                  {
+                      UseItem();
+                  }
+              }
+              sleeping = true;
             }
         }
         else
