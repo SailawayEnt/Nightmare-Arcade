@@ -20,4 +20,22 @@ public static class CheatMenu
     {
         NewPlayer.Instance.gameObject.transform.position = new Vector2(70f, -2.21f);
     }
+
+    [MenuItem("Cheats/Collect 100 Credits")]
+    public static void Collect100Credits()
+    {
+        NewPlayer.Instance.coins += 100;
+    }
+    
+    [MenuItem("Cheats/Collect 1,000 Credits")]
+    public static void Collect1000Credits()
+    {
+        NewPlayer.Instance.coins += 1000;
+    }
+    
+    [MenuItem("Cheats/Collect 10,000 Credits")]
+    public static void Collect10000Credits()
+    {
+        NewPlayer.Instance.coins += 10000;
+    }
 }

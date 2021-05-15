@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ee225da-5995-44de-bfa6-5a9a2a492a40" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Editor/CheatMenu.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Editor/CheatMenu.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay2.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay2.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/CheatMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/CheatMenu.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +114,7 @@
       <workItem from="1620834864545" duration="4781000" />
       <workItem from="1620936189081" duration="1347000" />
       <workItem from="1621012733877" duration="9817000" />
-      <workItem from="1621040204205" duration="662000" />
+      <workItem from="1621040204205" duration="1350000" />
     </task>
     <servers />
   </component>
