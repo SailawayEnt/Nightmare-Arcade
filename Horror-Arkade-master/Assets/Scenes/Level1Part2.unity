@@ -1116,6 +1116,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114803962774154224, guid: 0d2ce79f41aef454d804e654a4a633f6,
         type: 3}
+      propertyPath: travelToScene
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114803962774154224, guid: 0d2ce79f41aef454d804e654a4a633f6,
+        type: 3}
       propertyPath: dialogueStringA
       value: GameCabinetA
       objectReference: {fileID: 0}
@@ -1123,6 +1128,11 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogueStringB
       value: GameCabinetAb
+      objectReference: {fileID: 0}
+    - target: {fileID: 114803962774154224, guid: 0d2ce79f41aef454d804e654a4a633f6,
+        type: 3}
+      propertyPath: travelToScene.m_Handle
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d2ce79f41aef454d804e654a4a633f6, type: 3}
@@ -1201,11 +1211,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4569125025086690, guid: 927e473a2ba484d75b382fc1faaf0eeb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -61.692627
+      value: -61.704834
       objectReference: {fileID: 0}
     - target: {fileID: 4569125025086690, guid: 927e473a2ba484d75b382fc1faaf0eeb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.6981926
+      value: -1.6982174
       objectReference: {fileID: 0}
     - target: {fileID: 4569125025086690, guid: 927e473a2ba484d75b382fc1faaf0eeb, type: 3}
       propertyPath: m_LocalPosition.z

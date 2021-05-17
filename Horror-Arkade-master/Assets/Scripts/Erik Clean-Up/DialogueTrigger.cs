@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /*Triggers a dialogue conversation, passing unique commands and information to the dialogue box and inventory system for fetch quests, etc.*/
 
@@ -37,6 +38,7 @@ public class DialogueTrigger : MonoBehaviour
     [SerializeField] private Sprite getItemSprite; //The sprite of the inventory item given, shown in HUD
     [SerializeField] private AudioClip getSound; //When the player is given an object, this sound will play
     [SerializeField] private bool instantGet; //Player can be immediately given an item the moment the conversation begins
+    [SerializeField] private bool travelToScene; // Will travel to appropriate scene
     [SerializeField] private string requiredItem; //The required fetch quest item
     [SerializeField] private int requiredCoins; //Or the required coins (cannot require both an item and coins)
     public Animator useItemAnimator; //If the player uses an item, like a key, an animator can be fired (ie to open a door)
@@ -99,28 +101,39 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (!completed)
         {
-            if (useItemAnimatorBool != "")
+            if (travelToScene)
             {
-                useItemAnimator.SetBool(useItemAnimatorBool, true);
-            }
-
-            if (deleteGameObject)
-            {
-                Destroy(deleteGameObject);
-            }
-
-            Collect();
-
-            if (GameManager.Instance.inventory.ContainsKey(requiredItem))
-            {
-                GameManager.Instance.RemoveInventoryItem(requiredItem);
+                if (characterName == "Mega Star")
+                {
+                    SceneManager.LoadSceneAsync(4);
+                }
             }
             else
             {
-                NewPlayer.Instance.coins -= requiredCoins;
+                if (useItemAnimatorBool != "")
+                {
+                    useItemAnimator.SetBool(useItemAnimatorBool, true);
+                }
+
+                if (deleteGameObject)
+                {
+                    Destroy(deleteGameObject);
+                }
+
+                Collect();
+
+                if (GameManager.Instance.inventory.ContainsKey(requiredItem))
+                {
+                    GameManager.Instance.RemoveInventoryItem(requiredItem);
+                }
+                else
+                {
+                    NewPlayer.Instance.coins -= requiredCoins;
+                }
+
+                repeat = false;
             }
 
-            repeat = false;
         }
     }
 

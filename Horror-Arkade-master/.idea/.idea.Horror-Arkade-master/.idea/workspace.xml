@@ -3,21 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="8ee225da-5995-44de-bfa6-5a9a2a492a40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/2Credits.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/2Credits.ttf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/OpenSans-Bold SDF.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/OpenSans-Bold SDF.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/OpenSans-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/OpenSans-Bold.ttf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/OpenSans-Light SDF.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/OpenSans-Light SDF.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/OpenSans-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/OpenSans-Light.ttf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/OpenSans-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/OpenSans-Regular.ttf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Scenes/Level2.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Scenes/Level2.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Scenes/ScenesData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Scenes/ScenesData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Interactables/InteractableDoor.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Interactables/InteractableDoor.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Interactables/LockedDoor.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Interactables/LockedDoor.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DemoLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DemoLevel.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1Part2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1Part2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueTrigger.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +45,6 @@
       <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Menu.cs" />
       <option value="$PROJECT_DIR$/Assets/ScriptableObjects/GameScene.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Parallax/ParallaxController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueBoxController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Walker.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/MenuHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Other/TriggerDoorController.cs" />
@@ -70,6 +64,7 @@
       <option value="$PROJECT_DIR$/Assets/Editor/CheatMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/ScriptableObjects/GameEvent.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameEventListener.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueBoxController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueTrigger.cs" />
     </changedPaths>
   </component>
@@ -133,6 +128,7 @@
       <workItem from="1621012733877" duration="9817000" />
       <workItem from="1621040204205" duration="1467000" />
       <workItem from="1621043215678" duration="1692000" />
+      <workItem from="1621269290797" duration="5013000" />
     </task>
     <servers />
   </component>
