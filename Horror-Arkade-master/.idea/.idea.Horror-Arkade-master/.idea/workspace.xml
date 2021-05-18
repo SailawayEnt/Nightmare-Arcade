@@ -3,9 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="8ee225da-5995-44de-bfa6-5a9a2a492a40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/StartUp/Startup.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/StartUp/Startup.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Scenes/ScenesData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Scenes/ScenesData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scene Part Loaders/level1Part3.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scene Part Loaders/level1Part3.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Fonts/Fonts/2Credits SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Fonts/Fonts/2Credits SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1Part2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1Part2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1Part3.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1Part3.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/ScenesData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/ScenesData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +59,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" />
       <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Levels.cs" />
       <option value="$PROJECT_DIR$/Assets/ScriptableObjects/LevelTest.cs" />
-      <option value="$PROJECT_DIR$/Assets/ScriptableObjects/ScenesData.cs" />
       <option value="$PROJECT_DIR$/Assets/CabinetPlayer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/System/ScenePartLoader.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Dialogue.cs" />
@@ -59,9 +66,10 @@
       <option value="$PROJECT_DIR$/Assets/ScriptableObjects/GameEvent.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameEventListener.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueBoxController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/OnSelectButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueTrigger.cs" />
+      <option value="$PROJECT_DIR$/Assets/ScriptableObjects/ScenesData.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1s7mNslhf74Iq31JhmXduBQcJs4" />
@@ -126,6 +134,7 @@
       <workItem from="1621043215678" duration="1692000" />
       <workItem from="1621269290797" duration="7981000" />
       <workItem from="1621286462464" duration="360000" />
+      <workItem from="1621296464581" duration="2715000" />
     </task>
     <servers />
   </component>

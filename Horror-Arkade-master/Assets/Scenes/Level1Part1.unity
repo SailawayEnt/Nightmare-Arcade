@@ -8515,20 +8515,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4569125025086690, guid: 927e473a2ba484d75b382fc1faaf0eeb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -56.00924
+      value: 62.295296
       objectReference: {fileID: 0}
     - target: {fileID: 4569125025086690, guid: 927e473a2ba484d75b382fc1faaf0eeb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14.132162
+      value: 32.20178
       objectReference: {fileID: 0}
     - target: {fileID: 4569125025086690, guid: 927e473a2ba484d75b382fc1faaf0eeb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 20682906277557268, guid: 927e473a2ba484d75b382fc1faaf0eeb,
         type: 3}
       propertyPath: orthographic size
-      value: 7.75
+      value: 5.9
       objectReference: {fileID: 0}
     - target: {fileID: 114210563312955460, guid: 927e473a2ba484d75b382fc1faaf0eeb,
         type: 3}

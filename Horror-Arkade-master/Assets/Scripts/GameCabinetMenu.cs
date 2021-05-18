@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 public class GameCabinetMenu : MonoBehaviour
 {
 
+   [SerializeField] private ScenesData _scenesData;
+
    public void CollectTicket()
    {
       Debug.Log("Collecting Ticket");
@@ -11,7 +13,7 @@ public class GameCabinetMenu : MonoBehaviour
    
    public void ExitCabinet()
    {
-      Debug.Log("Exiting Cabinet");
+      _scenesData.LoadLevelWithIndex(1);
    }
     
 }

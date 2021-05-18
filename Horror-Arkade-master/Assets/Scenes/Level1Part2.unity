@@ -1100,6 +1100,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114803962774154224, guid: 0d2ce79f41aef454d804e654a4a633f6,
         type: 3}
+      propertyPath: _scenesData
+      value: 
+      objectReference: {fileID: 11400000, guid: b533ad2b622cce24aa5f96e6dba0a567,
+        type: 2}
+    - target: {fileID: 114803962774154224, guid: 0d2ce79f41aef454d804e654a4a633f6,
+        type: 3}
       propertyPath: characterName
       value: Mega Star
       objectReference: {fileID: 0}
@@ -1152,6 +1158,10 @@ PrefabInstance:
     - target: {fileID: 1014629342379426, guid: 927e473a2ba484d75b382fc1faaf0eeb, type: 3}
       propertyPath: m_Name
       value: Cameras
+      objectReference: {fileID: 0}
+    - target: {fileID: 1014629342379426, guid: 927e473a2ba484d75b382fc1faaf0eeb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4030989770181816, guid: 927e473a2ba484d75b382fc1faaf0eeb, type: 3}
       propertyPath: m_RootOrder
@@ -1211,11 +1221,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4569125025086690, guid: 927e473a2ba484d75b382fc1faaf0eeb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -61.704834
+      value: -61.704704
       objectReference: {fileID: 0}
     - target: {fileID: 4569125025086690, guid: 927e473a2ba484d75b382fc1faaf0eeb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.6982174
+      value: -1.6982155
       objectReference: {fileID: 0}
     - target: {fileID: 4569125025086690, guid: 927e473a2ba484d75b382fc1faaf0eeb, type: 3}
       propertyPath: m_LocalPosition.z

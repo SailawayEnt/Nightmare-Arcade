@@ -13,6 +13,7 @@ public class ScenesData : ScriptableObject
      * Levels
      */
 
+
     //Load a scene with a given index
     public void LoadLevelWithIndex(int index)
     {

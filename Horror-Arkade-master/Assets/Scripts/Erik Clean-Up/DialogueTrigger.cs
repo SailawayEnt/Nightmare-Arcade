@@ -45,6 +45,8 @@ public class DialogueTrigger : MonoBehaviour
     [SerializeField] private string useItemAnimatorBool; //An animator bool can be set to true once an item is used, like ae key.
     private static readonly int Active = Animator.StringToHash("active");
 
+    [SerializeField] private ScenesData _scenesData;
+
     void OnTriggerStay2D(Collider2D col)
     {
         if (instantGet)
@@ -105,7 +107,7 @@ public class DialogueTrigger : MonoBehaviour
             {
                 if (characterName == "Mega Star")
                 {
-                    SceneManager.LoadSceneAsync(4);
+                    _scenesData.LoadLevelWithIndex(2);
                 }
             }
             else
