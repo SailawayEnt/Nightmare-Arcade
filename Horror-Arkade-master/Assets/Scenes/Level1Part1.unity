@@ -4286,75 +4286,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce1bbe003f390412a80f34448b33c93c, type: 3}
---- !u!1001 &1167262522
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 8224038759161475246}
-    m_Modifications:
-    - target: {fileID: 1971626845, guid: 0d2ce79f41aef454d804e654a4a633f6, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -16
-      objectReference: {fileID: 0}
-    - target: {fileID: 1971626845, guid: 0d2ce79f41aef454d804e654a4a633f6, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 17.278
-      objectReference: {fileID: 0}
-    - target: {fileID: 1971626845, guid: 0d2ce79f41aef454d804e654a4a633f6, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1490816698961836, guid: 0d2ce79f41aef454d804e654a4a633f6, type: 3}
-      propertyPath: m_Name
-      value: InteractableArkadeDoors
-      objectReference: {fileID: 0}
-    - target: {fileID: 4055982378703454, guid: 0d2ce79f41aef454d804e654a4a633f6, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4055982378703454, guid: 0d2ce79f41aef454d804e654a4a633f6, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.27
-      objectReference: {fileID: 0}
-    - target: {fileID: 4055982378703454, guid: 0d2ce79f41aef454d804e654a4a633f6, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.06269605
-      objectReference: {fileID: 0}
-    - target: {fileID: 4055982378703454, guid: 0d2ce79f41aef454d804e654a4a633f6, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.24840763
-      objectReference: {fileID: 0}
-    - target: {fileID: 4055982378703454, guid: 0d2ce79f41aef454d804e654a4a633f6, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4055982378703454, guid: 0d2ce79f41aef454d804e654a4a633f6, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4055982378703454, guid: 0d2ce79f41aef454d804e654a4a633f6, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4055982378703454, guid: 0d2ce79f41aef454d804e654a4a633f6, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4055982378703454, guid: 0d2ce79f41aef454d804e654a4a633f6, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4055982378703454, guid: 0d2ce79f41aef454d804e654a4a633f6, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4055982378703454, guid: 0d2ce79f41aef454d804e654a4a633f6, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0d2ce79f41aef454d804e654a4a633f6, type: 3}
 --- !u!1001 &1185451708
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8540,9 +8471,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be90ad71a0c0cdb45af63a20c84893e4, type: 3}
---- !u!4 &8224038759161475246 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8224038758437953693, guid: be90ad71a0c0cdb45af63a20c84893e4,
-    type: 3}
-  m_PrefabInstance: {fileID: 8224038759161475245}
-  m_PrefabAsset: {fileID: 0}

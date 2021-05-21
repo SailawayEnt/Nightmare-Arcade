@@ -1,7 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
+using Cinemachine;
 
 /*Triggers a dialogue conversation, passing unique commands and information to the dialogue box and inventory system for fetch quests, etc.*/
 
@@ -45,7 +43,10 @@ public class DialogueTrigger : MonoBehaviour
     [SerializeField] private string useItemAnimatorBool; //An animator bool can be set to true once an item is used, like ae key.
     private static readonly int Active = Animator.StringToHash("active");
 
-    [SerializeField] private ScenesData _scenesData;
+    [Header ("Switching Scenes")]
+    [SerializeField] private ScenesData scenesData;
+    [SerializeField] private CinemachineVirtualCamera currentVirtualCamera;
+    [SerializeField] private CinemachineVirtualCamera destinationVirtualCamera;
 
     void OnTriggerStay2D(Collider2D col)
     {
@@ -65,6 +66,8 @@ public class DialogueTrigger : MonoBehaviour
               {
                   var position = targetDestination.position;
                   col.transform.position = new Vector2(position.x, position.y);
+                  currentVirtualCamera.Priority = 1; 
+                  destinationVirtualCamera.Priority = 2;
               }
               else if (requiredItem == "" && requiredCoins == 0 || !GameManager.Instance.inventory.ContainsKey(requiredItem) && requiredCoins == 0 || (requiredCoins != 0 && NewPlayer.Instance.coins < requiredCoins))
               {
@@ -107,7 +110,7 @@ public class DialogueTrigger : MonoBehaviour
             {
                 if (characterName == "Mega Star")
                 {
-                    _scenesData.LoadLevelWithIndex(2);
+                    scenesData.LoadLevelWithIndex(2);
                 }
             }
             else
