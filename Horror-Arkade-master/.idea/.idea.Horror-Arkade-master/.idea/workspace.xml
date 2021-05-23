@@ -3,11 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="8ee225da-5995-44de-bfa6-5a9a2a492a40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LocationPortal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LocationPortal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/UI/HUD/HUD.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/UI/HUD/HUD.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/CheatMenu.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/CheatMenu.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LocationPortal.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LocationPortal.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Character.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Character.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1Part1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1Part1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/GameEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/GameEvent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Collectable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Collectable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,14 +33,27 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Events/Listeners/IGameEventListener.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CabinetPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Menu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/ScenesData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Levels.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/ConsumableItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Events/Listeners/VoidListener.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Events/GameEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Events/BaseGameEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.postprocessing@3.0.3/PostProcessing/Runtime/PostProcessLayer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory System/ItemSlot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory System/ItemContainer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Events/Listeners/UnityEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/InventoryItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Events/Listeners/BaseGameEventListener.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Events/VoidEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Levels.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/ScenePartLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameEventListener.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.postprocessing@3.0.3/PostProcessing/Runtime/PostProcessLayer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory System/IItemContainer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/Inventory.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -54,15 +74,34 @@
       <option value="$PROJECT_DIR$/Assets/CabinetPlayer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/System/ScenePartLoader.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Dialogue.cs" />
-      <option value="$PROJECT_DIR$/Assets/Editor/CheatMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/ScriptableObjects/GameEvent.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameEventListener.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueBoxController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/OnSelectButton.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/ScriptableObjects/ScenesData.cs" />
       <option value="$PROJECT_DIR$/Assets/LocationPortal.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueTrigger.cs" />
+      <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/ConsumableItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory System/ItemSlot.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory System/IItemContainer.cs" />
+      <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Events/Listeners/IGameEventListener.cs" />
+      <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Events/Void.cs.cs" />
+      <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Events/VoidEvent.cs" />
+      <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Events/BaseGameEvent.cs" />
+      <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/Inventory.cs" />
+      <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Events/Listeners/BaseGameEventListener.cs" />
+      <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Events/Listeners/UnityEvent.cs" />
+      <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Events/Listeners/VoidListener.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory System/ItemContainer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/CheatMenu.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/Cheat System/RaiseCheatFlag.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/Cheat System/RaiseTicketCheatFlag.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/Cheat System/CheatMenu.cs" />
+      <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/InventoryItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/HUD.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory System/InventorySlot.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Collectable.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1s7mNslhf74Iq31JhmXduBQcJs4" />
@@ -133,7 +172,9 @@
       <workItem from="1621533576321" duration="4266000" />
       <workItem from="1621544284270" duration="2000" />
       <workItem from="1621611985274" duration="1081000" />
-      <workItem from="1621621755536" duration="1383000" />
+      <workItem from="1621621755536" duration="10983000" />
+      <workItem from="1621703908708" duration="10057000" />
+      <workItem from="1621728352820" duration="2912000" />
     </task>
     <servers />
   </component>

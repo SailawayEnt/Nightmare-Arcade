@@ -5,10 +5,17 @@ public class GameCabinetMenu : MonoBehaviour
 {
 
    [SerializeField] private ScenesData _scenesData;
+   [SerializeField] private GameEvent onRecievedTicket;
+   public ConsumableItem ticketInventory;
 
    public void CollectTicket()
    {
-      Debug.Log("Collecting Ticket");
+      if (ticketInventory.CurrentStack < ticketInventory.MaxStack)
+      {
+         ticketInventory.CurrentStack += 1;
+         onRecievedTicket.Invoke();
+      }
+      _scenesData.LoadLevelWithIndex(1);
    }
    
    public void ExitCabinet()

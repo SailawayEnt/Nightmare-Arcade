@@ -7,8 +7,10 @@ using UnityEngine;
 public class Collectable : MonoBehaviour
 {
 
-    enum ItemType { InventoryItem, Coin, Health, Ammo }; //Creates an ItemType category
+    enum ItemType { InventoryItem, Coin, Health, Ammo, Ticket }; //Creates an ItemType category
     [SerializeField] ItemType itemType; //Allows us to select what type of item the gameObject is in the inspector
+    [SerializeField] private GameEvent onRecievedTicket;
+    public ConsumableItem ticketInventory;
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip bounceSound;
     [SerializeField] private AudioClip[] collectSounds;
@@ -62,6 +64,14 @@ public class Collectable : MonoBehaviour
             {
                 GameManager.Instance.hud.HealthBarHurt();
                 NewPlayer.Instance.ammo += itemAmount;
+            }
+        }
+        else if (itemType == ItemType.Ticket)
+        {
+            if (ticketInventory.CurrentStack < ticketInventory.MaxStack)
+            {
+                ticketInventory.CurrentStack += itemAmount;
+                onRecievedTicket.Invoke();
             }
         }
 

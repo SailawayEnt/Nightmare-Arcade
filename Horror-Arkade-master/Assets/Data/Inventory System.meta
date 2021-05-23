@@ -1,9 +1,7 @@
 fileFormatVersion: 2
-guid: 7a17dad1a2bb34c5595bf54ae9c0b4a1
-labels:
-- Character
-- Mine
-PrefabImporter:
+guid: 185e481aabb8db8469ca43b437e6e4e6
+folderAsset: yes
+DefaultImporter:
   externalObjects: {}
   userData: 
   assetBundleName: 

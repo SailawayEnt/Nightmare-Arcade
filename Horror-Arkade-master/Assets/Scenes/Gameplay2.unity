@@ -336,6 +336,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetDestination: {fileID: 1525946549}
+  currentVirtualCamera: {fileID: 0}
+  destinationVirtualCamera: {fileID: 0}
 --- !u!1001 &979056877
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1725,6 +1727,18 @@ PrefabInstance:
       propertyPath: _scenesData
       value: 
       objectReference: {fileID: 11400000, guid: b533ad2b622cce24aa5f96e6dba0a567,
+        type: 2}
+    - target: {fileID: 7903559005241584515, guid: b022250573709434c9737ce47e1017e3,
+        type: 3}
+      propertyPath: ticketInventory
+      value: 
+      objectReference: {fileID: 11400000, guid: 21901ac8abf55dc47b6a80538c8501c8,
+        type: 2}
+    - target: {fileID: 7903559005241584515, guid: b022250573709434c9737ce47e1017e3,
+        type: 3}
+      propertyPath: onRecievedTicket
+      value: 
+      objectReference: {fileID: 11400000, guid: 4cbb53a0b5e70a142994db3e7db18420,
         type: 2}
     - target: {fileID: 8277736113711888539, guid: b022250573709434c9737ce47e1017e3,
         type: 3}

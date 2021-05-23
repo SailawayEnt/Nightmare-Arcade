@@ -1,8 +1,10 @@
-﻿using UnityEditor;
+﻿using Packages.Rider.Editor.UnitTesting;
+using UnityEditor;
 using UnityEngine;
 
 public static class CheatMenu
 {
+
     [MenuItem("Cheats/Move Player To Start")]
     public static void MovePlayerToStart()
     {
