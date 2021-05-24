@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cb6495b29910654a8145f78a5ff5733, type: 3}
   m_Name: TicketInventory
   m_EditorClassIdentifier: 
-  name: Ticket Inventory
-  icon: {fileID: 0}
+  name: TicketInventory
+  icon: {fileID: 21300000, guid: 2b7371a99f7ef0544ae1ebcb56a10640, type: 3}
   maxStack: 9999999
-  currentStack: 0
-  useText: Does something, maybe?
+  useText: Do something, Maybe?

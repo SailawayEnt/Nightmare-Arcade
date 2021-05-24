@@ -3503,7 +3503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: 4
-  onRecievedTicket: {fileID: 11400000, guid: 4cbb53a0b5e70a142994db3e7db18420, type: 2}
+  onRecievedTicket: {fileID: 11400000, guid: 7a57bb289c9598149ba5bf41baeb9b1b, type: 2}
   ticketInventory: {fileID: 11400000, guid: 21901ac8abf55dc47b6a80538c8501c8, type: 2}
   audioSource: {fileID: 0}
   bounceSound: {fileID: 0}
@@ -6066,7 +6066,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: 4
-  onRecievedTicket: {fileID: 11400000, guid: 4cbb53a0b5e70a142994db3e7db18420, type: 2}
+  onRecievedTicket: {fileID: 11400000, guid: 7a57bb289c9598149ba5bf41baeb9b1b, type: 2}
   ticketInventory: {fileID: 11400000, guid: 21901ac8abf55dc47b6a80538c8501c8, type: 2}
   audioSource: {fileID: 0}
   bounceSound: {fileID: 0}

@@ -3,6 +3,8 @@ using UnityEngine;
 
 public abstract class InventoryItem : ScriptableObject
 {
+    const int DefaultStack = 0;
+    
     [Header("Basic Info")]
     [SerializeField] new string name = "New Inventory Item Name";
     [SerializeField] Sprite icon = null;
@@ -10,18 +12,18 @@ public abstract class InventoryItem : ScriptableObject
     [Header("Item Data")]
     [SerializeField][Min(1)]int maxStack = 1;
     
-    [Min(0)]public int defaultStack = 0;
     int _currentStack = 0;
 
     public int CurrentStack
     {
         get { return _currentStack; }
-        set { _currentStack = value; }
+        set
+        { _currentStack = value; }
     }
 
     void OnEnable()
     {
-        _currentStack = defaultStack;
+        _currentStack = DefaultStack;
     }
 
     public string Name => name;

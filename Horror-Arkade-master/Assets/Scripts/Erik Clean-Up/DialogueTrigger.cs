@@ -5,10 +5,13 @@ using Cinemachine;
 
 public class DialogueTrigger : MonoBehaviour
 {
+    private bool firstVisit = true;
 
     [Header ("References")]
-    [SerializeField] private GameObject finishTalkingActivateObject; //After completing a conversation, an object can activate. 
-    [SerializeField] private Animator iconAnimator; //The E icon animator
+    [SerializeField] GameObject finishTalkingActivateObject; //After completing a conversation, an object can activate. 
+    [SerializeField] Animator iconAnimator; //The E icon animator
+    [SerializeField] ConsumableItem ticketInventory; //The Ticket Inventory
+    [SerializeField] GameEvent onTicketChange;
 
     [Header("Trigger")]
     [SerializeField] private bool autoHit; //Does the player need to press the interact button, or will it simply fire automatically?
@@ -23,8 +26,10 @@ public class DialogueTrigger : MonoBehaviour
     [SerializeField] private string characterName; //The character's name shown in the dialogue UI
     [SerializeField] private string dialogueStringA; //The dialogue string that occurs before the fetch quest
     [SerializeField] private string dialogueStringB; //The dialogue string that occurs after fetch quest
+    [SerializeField] private string dialogueStringC; //The dialogue string that occurs after fetch quest
     [SerializeField] private AudioClip[] audioLinesA; //The audio lines that occurs before the fetch quest
     [SerializeField] private AudioClip[] audioLinesB; //The audio lines that occur after the fetch quest
+    [SerializeField] private AudioClip[] audioLinesC; //The audio lines that occur after the fetch quest
     [SerializeField] private AudioClip[] audioChoices; //The audio lines that occur when selecting an audio choice
 
     [Header ("Fetch Quest")]
@@ -39,6 +44,7 @@ public class DialogueTrigger : MonoBehaviour
     [SerializeField] private bool travelToScene; // Will travel to appropriate scene
     [SerializeField] private string requiredItem; //The required fetch quest item
     [SerializeField] private int requiredCoins; //Or the required coins (cannot require both an item and coins)
+    [SerializeField] private int requiredTickets; 
     public Animator useItemAnimator; //If the player uses an item, like a key, an animator can be fired (ie to open a door)
     [SerializeField] private string useItemAnimatorBool; //An animator bool can be set to true once an item is used, like ae key.
     private static readonly int Active = Animator.StringToHash("active");
@@ -69,15 +75,30 @@ public class DialogueTrigger : MonoBehaviour
                   currentVirtualCamera.Priority = 1; 
                   destinationVirtualCamera.Priority = 2;
               }
-              else if (requiredItem == "" && requiredCoins == 0 || !GameManager.Instance.inventory.ContainsKey(requiredItem) && requiredCoins == 0 || (requiredCoins != 0 && NewPlayer.Instance.coins < requiredCoins))
+              else if (requiredItem == "" && requiredCoins == 0 && requiredTickets == 0 || !GameManager.Instance.inventory.ContainsKey(requiredItem) && requiredCoins == 0 && requiredTickets == 0 || (requiredCoins != 0 && NewPlayer.Instance.coins < requiredCoins) || (requiredTickets != 0 && ticketInventory.CurrentStack < requiredTickets ))
               {
-                  GameManager.Instance.dialogueBoxController.Appear(dialogueStringA, characterName, this, false, audioLinesA, audioChoices, finishTalkingAnimatorBool, finishTalkingActivateObject, finishTalkingActivateObjectString, repeat);
-              }
-              else if (requiredCoins == 0 && GameManager.Instance.inventory.ContainsKey(requiredItem) || (requiredCoins != 0 && NewPlayer.Instance.coins >= requiredCoins))
-              {
-                  if (dialogueStringB != "")
+                  if (firstVisit)
                   {
-                      GameManager.Instance.dialogueBoxController.Appear(dialogueStringB, characterName, this, true, audioLinesB, audioChoices, "", null, "", repeat);
+                      GameManager.Instance.dialogueBoxController.Appear(dialogueStringA, characterName, this, false, audioLinesA, audioChoices, finishTalkingAnimatorBool, finishTalkingActivateObject, finishTalkingActivateObjectString, repeat);
+                      firstVisit = false;
+                  } else
+                  {
+                      if (dialogueStringB != "")
+                      {
+                          GameManager.Instance.dialogueBoxController.Appear(dialogueStringB, characterName, this, false, audioLinesB, audioChoices, finishTalkingAnimatorBool, finishTalkingActivateObject, finishTalkingActivateObjectString, repeat);
+                      }
+                      else
+                      {
+                          GameManager.Instance.dialogueBoxController.Appear(dialogueStringA, characterName, this, false, audioLinesA, audioChoices, finishTalkingAnimatorBool, finishTalkingActivateObject, finishTalkingActivateObjectString, repeat);
+                      }
+                  }
+                  
+              }
+              else if (requiredCoins == 0 && requiredTickets == 0 && GameManager.Instance.inventory.ContainsKey(requiredItem) || (requiredCoins != 0 && NewPlayer.Instance.coins >= requiredCoins) || (requiredTickets != 0 && ticketInventory.CurrentStack >= requiredTickets ))
+              {
+                  if (dialogueStringC != "")
+                  {
+                      GameManager.Instance.dialogueBoxController.Appear(dialogueStringC, characterName, this, true, audioLinesC, audioChoices, "", null, "", repeat);
                   }
                   else
                   {
@@ -131,9 +152,14 @@ public class DialogueTrigger : MonoBehaviour
                 {
                     GameManager.Instance.RemoveInventoryItem(requiredItem);
                 }
-                else
+                else if(requiredCoins > 0)
                 {
                     NewPlayer.Instance.coins -= requiredCoins;
+                }
+                else
+                {
+                    ticketInventory.CurrentStack -= requiredTickets;
+                    onTicketChange.Invoke();
                 }
 
                 repeat = false;

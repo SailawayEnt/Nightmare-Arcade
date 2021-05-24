@@ -28,40 +28,65 @@ public class Dialogue : MonoBehaviour
             "Looks like it takes 1 credit!"
         });
         
-        dialogue.Add("GameCabinetAb", new string[] {
+        dialogue.Add("GameCabinetAc", new string[] {
             "Inserts coin...",
             "Loading game..."
         });
 
         //NPC
         dialogue.Add("CharacterA", new string[] {
-            "Hi there!",
-            "I'm an NPC! This conversation is called 'npcA'...",
-            "If you go and find me 80 coins, my dialogue will move on to 'npcB'!",
-            "Feel free to edit my dialogue in the 'Dialogue.cs' file!",
-            "To keep it simple, you can also ask me one, and only one, question...",
-            "...Like you just did! And I'll just move on to the next sentence.",
-            "I'll answer that question, but it won't change much about the game!",
-            "You can always tweak the 'DialogueBox.cs' script to add more functionality!"
+            "Hey you!...",
+            "Yeah you...",
+            "You're new here aren't ya?",
+            "Here take this machete, it's dangerous to go alone",
+            "For free?",
+            "Ha no, you'll have to play on of my arkade games...",
+            "...er umm... MegaStar to get tickets and redeem those tickets for prizes.",
+            "You can find coins outside in random places",
+            "No-one appreciates the value of money ever since they raised minimum wage."
         });
 
         dialogue.Add("CharacterAChoice1", new string[] {
             "",
             "",
-            "Let me go find some coins!",
+            "",
+            "Oh, thank you!",
         });
 
         dialogue.Add("CharacterAChoice2", new string[] {
             "",
             "",
-            "What else can you do?"
+            "",
+            "Can I have one of those prizes?"
         });
 
         dialogue.Add("CharacterB", new string[] {
-            "Hey! You found 80 coins! That means 'npcB' is now being used inside 'Dialogue.cs'!",
-            "After my dialogue completes, I'll take 80 coins, or however many you specify in the inspector...",
-            "And I'll also give you a new ability!",
-            "In this case, how about a generic DOWNWARD SMASH? Simply attack while pressing down in mid-air!"
+            "I realize most those machines are broken",
+            "I've already tried tinkering around with them with no luck",
+            "Scram kid until you have tickets to redeem.",
+            "For free?",
+            "Ha no, you'll have to play on of my arkade games...",
+            "...er umm... MegaStar to get tickets and redeem those tickets for prizes.",
+            "You can find coins outside in random places",
+            "No-one appreciates the value of money ever since they raised minimum wage."
+        });
+        dialogue.Add("CharacterBChoice1", new string[] {
+            "",
+            "",
+            "Oh... ok...",
+        });
+
+        dialogue.Add("CharacterBChoice2", new string[] {
+            "",
+            "",
+            "Can I have one of those prizes?"
+        });
+        dialogue.Add("CharacterC", new string[] {
+            "Hey! You won a ticket!",
+            "I don't have a lot of prizes now-a-days...",
+            "Not since those... Things started invading",
+            "Here's an energy drink, Try smashing down with that machete I gave you earlier",
+            "That should get you around this dark place better."
         });
     }
 }

@@ -4,6 +4,6 @@
 public class ConsumableItem : InventoryItem
 {
     [Header("Consumable Data")] [SerializeField]
-    private string useText = "Does something, maybe?";
+    private string useText = "Do something, Maybe?";
 
 }
