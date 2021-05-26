@@ -3,48 +3,204 @@
   <component name="ChangeListManager">
     <list default="true" id="8ee225da-5995-44de-bfa6-5a9a2a492a40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Events/TestEvent.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Events/TestEvent.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Events/TicketReceived.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Events/TicketReceived.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Inventory System/InventoryEvent.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Inventory System/InventoryEvent.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Inventory System/PlayerInventory.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Inventory System/PlayerInventory.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Inventory System/TicketInventory.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Inventory System/TicketInventory.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/World/ArcadeInteriorBuilding.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/World/ArcadeInteriorBuilding.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CabinetPlayer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CabinetPlayer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Interactables/GameCabinet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Interactables/GameCabinet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/StartUp/Startup.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/StartUp/Startup.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1Part1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1Part1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1Part2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1Part2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Events/BaseGameEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Events/BaseGameEvent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Events/Listeners.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Events/Listeners/BaseGameEventListener.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Events/Listeners/BaseGameEventListener.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Events/Listeners/IGameEventListener.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Events/Listeners/IGameEventListener.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Events/Listeners/UnityEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Events/Listeners/UnityEvent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Events/Listeners/VoidListener.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Events/Listeners/VoidListener.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Events/Void.cs.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Events/Void.cs.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Events/VoidEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Events/VoidEvent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/ConsumableItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/ConsumableItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/Inventory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/Inventory.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/InventoryItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/InventoryItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Dialogue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Dialogue.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory System/IItemContainer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory System/IItemContainer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory System/ItemContainer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory System/ItemContainer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory System/ItemSlot.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory System/ItemSlot.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Fonts/Fonts/OpenSans-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Fonts/Fonts/OpenSans-Bold SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level2Part1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level2Part1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level2Part2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level2Part2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Animation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/Background.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/Background/Backgrounds 1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/Background/Backgrounds 1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/Background/Backgrounds.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/Background/Backgrounds.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/Enemies.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/Enemies/Enemy_straight_projectile.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/Enemies/Enemy_straight_projectile.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/EnemyWaves.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/EnemyWaves/Wave_1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/EnemyWaves/Wave_1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/EnemyWaves/Wave_2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/EnemyWaves/Wave_2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/EnemyWaves/Wave_3.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/EnemyWaves/Wave_3.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/EnemyWaves/Wave_4.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/EnemyWaves/Wave_4.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/EnemyWaves/Wave_5.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/EnemyWaves/Wave_5.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/EnemyWaves/Wave_6.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/EnemyWaves/Wave_6.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/Game_Controller.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/Game_Controller.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/Planets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/Planets/Cream-Violet-Planet.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/Planets/Cream-Violet-Planet.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/Planets/Purple-Planet-wih-Moon.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/Planets/Purple-Planet-wih-Moon.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/Planets/Red-Lines-PLanet.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/Planets/Red-Lines-PLanet.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/Player.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/Player.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/Projectiles.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/Projectiles/Enemy_Straight_Projetile.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/Projectiles/Enemy_Straight_Projetile.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/Projectiles/Player_Short_Lazer.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/Projectiles/Player_Short_Lazer.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/VFX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/VFX/Central_Gun.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/VFX/Central_Gun.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/VFX/Enemy Explosion PC.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/VFX/Enemy Explosion PC.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/VFX/Enemy Explosion.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/VFX/Enemy Explosion.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/VFX/Enemy Explosion_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/VFX/Enemy Explosion_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/VFX/Enemy Explosion_02_PC.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/VFX/Enemy Explosion_02_PC.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/VFX/EngineFx.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/VFX/EngineFx.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/VFX/Lazer Ray Hit Effect.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/VFX/Lazer Ray Hit Effect.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/VFX/Left_Gun.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/VFX/Left_Gun.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/VFX/Muzzle FX.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/VFX/Muzzle FX.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/VFX/PLayer Engine Effect.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/VFX/PLayer Engine Effect.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/VFX/Player Explosion.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/VFX/Player Explosion.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/VFX/Right_Gun.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/VFX/Right_Gun.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/VFX/Speed Effect PC.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/VFX/Speed Effect PC.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/VFX/Speed Effect.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Prefabs/VFX/Speed Effect.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Scripts/Bonus.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Scripts/Bonus.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Scripts/Boundary.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Scripts/Boundary.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Scripts/DirectMoving.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Scripts/DirectMoving.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Scripts/Enemy.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Scripts/Enemy.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Scripts/FollowThePath.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Scripts/FollowThePath.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Scripts/LevelController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Scripts/LevelController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Scripts/Player.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Scripts/Player.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Scripts/PlayerMoving.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Scripts/PlayerMoving.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Scripts/PlayerShooting.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Scripts/PlayerShooting.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Scripts/PoolingController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Scripts/PoolingController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Scripts/Projectile.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Scripts/Projectile.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Scripts/RepeatingBackground.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Scripts/RepeatingBackground.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Scripts/VisualEffect.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Scripts/VisualEffect.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Scripts/Wave.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Scripts/Wave.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/Background.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/Background/Nebula_1_1_Bottom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/Background/Nebula_1_1_Bottom.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/Background/Nebula_1_1_Top.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/Background/Nebula_1_1_Top.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/Background/Stars-Big_1_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/Background/Stars-Big_1_1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/Background/Stars-Big_1_1_PC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/Background/Stars-Big_1_1_PC.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/Background/Stars-Medium_1_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/Background/Stars-Medium_1_1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/Background/Stars-Medium_1_1_PC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/Background/Stars-Medium_1_1_PC.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/Enemies.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/Enemies/Enemy_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/Enemies/Enemy_01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/Planets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/Planets/Purple-Planet-wih-Moon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/Planets/Purple-Planet-wih-Moon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/Planets/Red-Lines-PLanet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/Planets/Red-Lines-PLanet.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/Planets/blue-planet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/Planets/blue-planet.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/Planets/cyan-planet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/Planets/cyan-planet.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/Player Ships.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/Player Ships/Short-Lazer-Ship.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/Player Ships/Short-Lazer-Ship.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/Power Ups.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/Power Ups/Power Up Ring.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/Power Ups/Power Up Ring.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/Power Ups/Power Up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/Power Ups/Power Up.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Enemy Hit Effect.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Enemy Hit Effect/Enemy Hit Effect_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Enemy Hit Effect/Enemy Hit Effect_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Enemy Hit Effect/Enemy Hit Effect_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Enemy Hit Effect/Enemy Hit Effect_01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Enemy Hit Effect/Enemy Hit Effect_02.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Enemy Hit Effect/Enemy Hit Effect_02.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Enemy Hit Effect/Enemy Hit Effect_02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Enemy Hit Effect/Enemy Hit Effect_02.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Engines.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Engines/Engine_01_Basic.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Engines/Engine_01_Basic.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Engines/Engine_01_Basic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Engines/Engine_01_Basic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Engines/Engine_01_Effect.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Engines/Engine_01_Effect.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Engines/Engine_01_Effect.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Engines/Engine_01_Effect.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Engines/Engine_01_Effect_Sphere.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Engines/Engine_01_Effect_Sphere.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Engines/Engine_01_Effect_Sphere.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Engines/Engine_01_Effect_Sphere.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Explosions.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Explosions/Rocket_Explosion_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Explosions/Rocket_Explosion_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Explosions/Rocket_Explosion_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Explosions/Rocket_Explosion_01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Explosions/Rocket_Explosion_PC.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Explosions/Rocket_Explosion_PC.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Explosions/Small Explosion_01_Parts_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Explosions/Small Explosion_01_Parts_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Explosions/Small Explosion_01_Parts_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Explosions/Small Explosion_01_Parts_01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Explosions/Small Explosion_01_Parts_PC.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Explosions/Small Explosion_01_Parts_PC.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Explosions/Small Explosion_01_Smoke_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Explosions/Small Explosion_01_Smoke_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Explosions/Small Explosion_01_Smoke_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Explosions/Small Explosion_01_Smoke_01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Explosions/Small Explosion_01_Smoke_01_PC.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Explosions/Small Explosion_01_Smoke_01_PC.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Explosions/Small Explosion_01_Smoke_02.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Explosions/Small Explosion_01_Smoke_02.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Explosions/Small Explosion_01_Smoke_02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Explosions/Small Explosion_01_Smoke_02.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Explosions/Small Explosion_01_Smoke_02_PC.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Explosions/Small Explosion_01_Smoke_02_PC.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Muzzle.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Muzzle/Muzzle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Muzzle/Muzzle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Muzzle/Muzzle_Sprite_Sheet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/VFX/Muzzle/Muzzle_Sprite_Sheet.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/Weapons.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/Weapons/Ball_02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/Weapons/Ball_02.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/Weapons/Machine Gun.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Template FREE/Sprites/Weapons/Machine Gun.png.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,15 +219,14 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/CabinetPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/InventoryItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Menu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/ScenesData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/ConsumableItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Events/GameEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.postprocessing@3.0.3/PostProcessing/Runtime/PostProcessLayer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/InventoryItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Levels.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.postprocessing@3.0.3/PostProcessing/Runtime/PostProcessLayer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/ScenePartLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameEventListener.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -115,13 +270,13 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/HUD.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory System/InventorySlot.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Collectable.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Editor/Cheat System/CheatMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/InventoryItem.cs" />
       <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/ConsumableItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Dialogue.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueBoxController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueTrigger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1s7mNslhf74Iq31JhmXduBQcJs4" />
@@ -197,6 +352,9 @@
       <workItem from="1621728352820" duration="3104000" />
       <workItem from="1621813701189" duration="2000" />
       <workItem from="1621871396460" duration="8097000" />
+      <workItem from="1621989700886" duration="4000" />
+      <workItem from="1621991946467" duration="3000" />
+      <workItem from="1621993706348" duration="791000" />
     </task>
     <servers />
   </component>
