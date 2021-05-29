@@ -41,6 +41,7 @@
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/Boundary.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/Boundary.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/LevelController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/LevelController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/PlayerMoving.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/PlayerMoving.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,6 +121,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/SpaceGame/LevelController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SpaceGame/Boundary.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SpaceGame/PlayerMoving.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1s7mNslhf74Iq31JhmXduBQcJs4" />
@@ -202,7 +204,7 @@
       <workItem from="1622067772492" duration="958000" />
       <workItem from="1622231102088" duration="12000" />
       <workItem from="1622231223808" duration="1633000" />
-      <workItem from="1622311357713" duration="4484000" />
+      <workItem from="1622311357713" duration="5330000" />
     </task>
     <servers />
   </component>
