@@ -32,7 +32,7 @@ public class PlayerMoving : MonoBehaviour {
     private void Start()
     {
         mainCamera = Camera.main;
-        ResizeBorders();                //setting 'Player's' moving borders deending on Viewport's size
+        ResizeBorders();                //setting 'Player's' moving borders depending on Viewport's size
     }
 
     private void Update()

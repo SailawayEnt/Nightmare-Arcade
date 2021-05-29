@@ -27,11 +27,19 @@ public class LevelController : MonoBehaviour {
     public float planetsSpeed;
     List<GameObject> planetsList = new List<GameObject>();
 
-    Camera mainCamera;   
+    Camera mainCamera;
 
-    private void Start()
+    [SerializeField] GameObject playerGO;
+    void Awake()
     {
         mainCamera = Camera.main;
+    }
+
+    public IEnumerator LoadFirstWave()
+    {
+        yield return new WaitForSeconds(0.25f);
+        Debug.Log("wait 20 seconds");
+        playerGO.gameObject.SetActive(true);
         //for each element in 'enemyWaves' array creating coroutine which generates the wave
         for (int i = 0; i<enemyWaves.Length; i++) 
         {
@@ -39,6 +47,7 @@ public class LevelController : MonoBehaviour {
         }
         StartCoroutine(PowerupBonusCreation());
         StartCoroutine(PlanetsCreation());
+        
     }
     
     //Create a new wave after a delay

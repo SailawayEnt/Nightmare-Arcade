@@ -71,7 +71,7 @@ public class Collectable : MonoBehaviour
             if (ticketInventory.CurrentStack < ticketInventory.MaxStack)
             {
                 ticketInventory.CurrentStack += itemAmount;
-                onRecievedTicket.Invoke();
+                onRecievedTicket?.Invoke();
             }
         }
 
