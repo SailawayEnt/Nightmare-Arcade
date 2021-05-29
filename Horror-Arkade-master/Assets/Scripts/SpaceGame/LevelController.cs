@@ -38,7 +38,6 @@ public class LevelController : MonoBehaviour {
     public IEnumerator LoadFirstWave()
     {
         yield return new WaitForSeconds(0.25f);
-        Debug.Log("wait 20 seconds");
         playerGO.gameObject.SetActive(true);
         //for each element in 'enemyWaves' array creating coroutine which generates the wave
         for (int i = 0; i<enemyWaves.Length; i++) 
