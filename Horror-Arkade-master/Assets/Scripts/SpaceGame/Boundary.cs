@@ -13,7 +13,7 @@ public class Boundary : MonoBehaviour {
     private void Start()
     {
         boundareCollider = GetComponent<BoxCollider2D>();
-        // ResizeCollider();
+        ResizeCollider();
     }
 
     //changing the collider's size up to Viewport's size multiply 1.5

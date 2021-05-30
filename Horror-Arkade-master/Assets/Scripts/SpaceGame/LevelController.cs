@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 #region Serializable classes
 [System.Serializable]
@@ -26,6 +28,14 @@ public class LevelController : MonoBehaviour {
     public float timeBetweenPlanets;
     public float planetsSpeed;
     List<GameObject> planetsList = new List<GameObject>();
+    bool allEnemiesDied = false;
+    bool gameEnded = false;
+
+    [SerializeField] GameEvent onTicketReceived;
+    [SerializeField] GameEvent onGameWon;
+    [SerializeField] ConsumableItem ticketInventory;
+    [SerializeField] ScenesData scenesData;
+    
 
     Camera mainCamera;
 
@@ -35,18 +45,49 @@ public class LevelController : MonoBehaviour {
         mainCamera = Camera.main;
     }
 
+    private void Update()
+    {
+        if(!allEnemiesDied)
+        StartCoroutine("FindEnemies");
+        
+    }
+
     public IEnumerator LoadFirstWave()
     {
         yield return new WaitForSeconds(0.25f);
         playerGO.gameObject.SetActive(true);
         //for each element in 'enemyWaves' array creating coroutine which generates the wave
-        for (int i = 0; i<enemyWaves.Length; i++) 
+        for (int i = 0; i < enemyWaves.Length; i++) 
         {
             StartCoroutine(CreateEnemyWave(enemyWaves[i].timeToStart, enemyWaves[i].wave));
         }
+        
+
         StartCoroutine(PowerupBonusCreation());
         StartCoroutine(PlanetsCreation());
         
+    }
+
+    public IEnumerator FindEnemies()
+    {
+        yield return new WaitForSeconds(.5f);
+        GameObject[] enemyGOs;
+        enemyGOs = GameObject.FindGameObjectsWithTag("Enemy");
+        
+
+        if (enemyGOs.Length == 0 && !gameEnded)
+        {
+            allEnemiesDied = true;
+            if (ticketInventory.CurrentStack < ticketInventory.MaxStack)
+            {
+                Debug.Log("game won and ticket given");
+               ticketInventory.CurrentStack += 1;
+               onTicketReceived?.Invoke();
+               scenesData.LoadLevelWithIndex(1);
+            }
+            onGameWon?.Invoke();
+            gameEnded = true;
+        }
     }
     
     //Create a new wave after a delay
@@ -55,7 +96,9 @@ public class LevelController : MonoBehaviour {
         if (delay != 0)
             yield return new WaitForSeconds(delay);
         if (Player.instance != null)
+        {
             Instantiate(Wave);
+        }
     }
 
     //endless coroutine generating 'levelUp' bonuses. 

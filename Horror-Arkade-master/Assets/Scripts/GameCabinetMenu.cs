@@ -58,5 +58,17 @@ public class GameCabinetMenu : MonoBehaviour
    {
       menu.SetActive(false);
    }
+
+   public void ResetCabinetGame()
+   {
+      cabinetPlayer.transform.position = new Vector2(0, 0);
+
+      ShowMenu();
+   }
+
+   void ShowMenu()
+   {
+      menu.SetActive(true);
+   }
     
 }

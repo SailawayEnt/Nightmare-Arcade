@@ -201,6 +201,12 @@ PrefabInstance:
       propertyPath: borders.minYOffset
       value: 2.25
       objectReference: {fileID: 0}
+    - target: {fileID: 114960433178452790, guid: 8e33fda0c220936498f5288af83d7450,
+        type: 3}
+      propertyPath: onPlayerDeath
+      value: 
+      objectReference: {fileID: 11400000, guid: 0731a5c1c0cafd8438c152887a58d37b,
+        type: 2}
     - target: {fileID: 199119291531354066, guid: 8e33fda0c220936498f5288af83d7450,
         type: 3}
       propertyPath: m_Materials.Array.size
@@ -305,6 +311,30 @@ PrefabInstance:
       propertyPath: playerGO
       value: 
       objectReference: {fileID: 2127475601}
+    - target: {fileID: 114004447756405556, guid: 01cf4a33fc66cde4abc060ccfeadeb5a,
+        type: 3}
+      propertyPath: onGameWon
+      value: 
+      objectReference: {fileID: 11400000, guid: c67423ce65867be4ebec4e4b3463359b,
+        type: 2}
+    - target: {fileID: 114004447756405556, guid: 01cf4a33fc66cde4abc060ccfeadeb5a,
+        type: 3}
+      propertyPath: scenesData
+      value: 
+      objectReference: {fileID: 11400000, guid: b533ad2b622cce24aa5f96e6dba0a567,
+        type: 2}
+    - target: {fileID: 114004447756405556, guid: 01cf4a33fc66cde4abc060ccfeadeb5a,
+        type: 3}
+      propertyPath: ticketInventory
+      value: 
+      objectReference: {fileID: 11400000, guid: 21901ac8abf55dc47b6a80538c8501c8,
+        type: 2}
+    - target: {fileID: 114004447756405556, guid: 01cf4a33fc66cde4abc060ccfeadeb5a,
+        type: 3}
+      propertyPath: onTicketReceived
+      value: 
+      objectReference: {fileID: 11400000, guid: 7a57bb289c9598149ba5bf41baeb9b1b,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01cf4a33fc66cde4abc060ccfeadeb5a, type: 3}
 --- !u!1001 &1260136712

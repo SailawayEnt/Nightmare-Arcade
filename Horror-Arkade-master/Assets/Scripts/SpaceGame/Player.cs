@@ -9,6 +9,7 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
+    [SerializeField] GameEvent onPlayerDeath;
     public GameObject destructionFX;
 
     public static Player instance; 
@@ -30,6 +31,7 @@ public class Player : MonoBehaviour
     {
         Instantiate(destructionFX, transform.position, Quaternion.identity); //generating destruction visual effect and destroying the 'Player' object
         Destroy(gameObject);
+        onPlayerDeath?.Invoke();
     }
 }
 
