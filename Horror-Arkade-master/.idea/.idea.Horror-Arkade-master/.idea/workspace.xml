@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ee225da-5995-44de-bfa6-5a9a2a492a40" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/EnemyWaves/Wave_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/EnemyWaves/Wave_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/EnemyWaves/Wave_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/EnemyWaves/Wave_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/EnemyWaves/Wave_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/EnemyWaves/Wave_3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/EnemyWaves/Wave_4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/EnemyWaves/Wave_4.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/EnemyWaves/Wave_5.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/EnemyWaves/Wave_5.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/EnemyWaves/Wave_6.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/EnemyWaves/Wave_6.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level2Part2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level2Part2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/Boundary.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/Boundary.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/LevelController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/LevelController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/Player.cs" afterDir="false" />
-    </list>
+    <list default="true" id="8ee225da-5995-44de-bfa6-5a9a2a492a40" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -179,7 +165,7 @@
       <workItem from="1622231102088" duration="12000" />
       <workItem from="1622231223808" duration="1633000" />
       <workItem from="1622311357713" duration="5330000" />
-      <workItem from="1622330971185" duration="7449000" />
+      <workItem from="1622330971185" duration="7821000" />
     </task>
     <servers />
   </component>
