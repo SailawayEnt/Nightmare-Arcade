@@ -151,6 +151,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &408386949 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7144326018794861003, guid: 7a17dad1a2bb34c5595bf54ae9c0b4a1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1927976917}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &556293161
 GameObject:
   m_ObjectHideFlags: 0
@@ -179,7 +185,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &672905347
 GameObject:
@@ -290,6 +296,51 @@ Transform:
   m_Father: {fileID: 4055981247355236}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1009467358 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 598654000571740062, guid: 7a17dad1a2bb34c5595bf54ae9c0b4a1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1927976917}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1009467359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009467358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4961029f65a0ba140a87b25004538b8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 7f2650219bea94c4a9a7c359f29e109d, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1009467361}
+        m_MethodName: ReceiveMachete
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1009467361 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2046054192, guid: 7a17dad1a2bb34c5595bf54ae9c0b4a1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1927976917}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009467358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ea31900703ef40079d0744742811071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1174364724
 GameObject:
   m_ObjectHideFlags: 0
@@ -484,9 +535,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 780164644}
   m_ShowDebugText: 1
-  m_ChildCameras:
-  - {fileID: 114803847268591408}
-  - {fileID: 114803848367143317}
+  m_ChildCameras: []
   m_ActivateAfter: 0
   m_MinDuration: 2
   m_RandomizeChoice: 0
@@ -590,6 +639,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1793066711 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1844852900, guid: 7a17dad1a2bb34c5595bf54ae9c0b4a1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1927976917}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1880188546 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1400763188, guid: 7a17dad1a2bb34c5595bf54ae9c0b4a1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1927976917}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1927976917
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -665,6 +726,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1844852900, guid: 7a17dad1a2bb34c5595bf54ae9c0b4a1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1844852901, guid: 7a17dad1a2bb34c5595bf54ae9c0b4a1, type: 3}
       propertyPath: m_LocalScale.x
       value: 5.41632
@@ -718,6 +783,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2046054192, guid: 7a17dad1a2bb34c5595bf54ae9c0b4a1, type: 3}
+      propertyPath: blastGO
+      value: 
+      objectReference: {fileID: 1880188546}
+    - target: {fileID: 2046054192, guid: 7a17dad1a2bb34c5595bf54ae9c0b4a1, type: 3}
+      propertyPath: machete
+      value: 
+      objectReference: {fileID: 408386949}
+    - target: {fileID: 2046054192, guid: 7a17dad1a2bb34c5595bf54ae9c0b4a1, type: 3}
       propertyPath: maxSpeed
       value: 12
       objectReference: {fileID: 0}
@@ -725,6 +798,15 @@ PrefabInstance:
       propertyPath: pauseMenu
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2046054192, guid: 7a17dad1a2bb34c5595bf54ae9c0b4a1, type: 3}
+      propertyPath: attackHitGO
+      value: 
+      objectReference: {fileID: 1793066711}
+    - target: {fileID: 2046054192, guid: 7a17dad1a2bb34c5595bf54ae9c0b4a1, type: 3}
+      propertyPath: macheteData
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2f147e8b518045b4cd4099144985e,
+        type: 2}
     - target: {fileID: 2046054195, guid: 7a17dad1a2bb34c5595bf54ae9c0b4a1, type: 3}
       propertyPath: m_SortingLayer
       value: -1
@@ -1072,6 +1154,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Bounds.m_Extent.y
       value: 0.6500001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7144326018794861003, guid: 7a17dad1a2bb34c5595bf54ae9c0b4a1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7571311553563251724, guid: 7a17dad1a2bb34c5595bf54ae9c0b4a1,
         type: 3}
@@ -1883,6 +1970,7 @@ MonoBehaviour:
   iconAnimator: {fileID: 95835149654362648}
   ticketInventory: {fileID: 0}
   onTicketChange: {fileID: 0}
+  onInitialItemReceived: {fileID: 0}
   autoHit: 0
   completed: 0
   repeat: 1
@@ -1904,6 +1992,7 @@ MonoBehaviour:
   getItemSprite: {fileID: 0}
   getSound: {fileID: 8300000, guid: 9eec99a76d7df4a45bf9c565de92875a, type: 3}
   instantGet: 0
+  givesInitialItem: 0
   travelToScene: 0
   requiredItem: 
   requiredCoins: 0
@@ -1979,7 +2068,7 @@ MonoBehaviour:
   m_NoiseProfile: {fileID: 11400000, guid: b241f91b9ccf8ff489abf204b30d3112, type: 2}
   m_PivotOffset: {x: 0, y: 0, z: 0}
   m_AmplitudeGain: 0.3
-  m_FrequencyGain: 0
+  m_FrequencyGain: 7.752955e-10
   mNoiseOffsets: {x: 86.06326, y: -579.1395, z: -410.80508}
 --- !u!212 &212157337931357076
 SpriteRenderer:
@@ -2063,7 +2152,7 @@ PrefabInstance:
     - target: {fileID: 5158415170166539323, guid: 36ca0d5a14d598845b5afbacc17d3d85,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5158415170166539323, guid: 36ca0d5a14d598845b5afbacc17d3d85,
         type: 3}

@@ -14,17 +14,19 @@ public class NewPlayer : PhysicsObject
     [Header ("Reference")]
     public AudioSource audioSource;
     [SerializeField] private Animator animator;
-    private AnimatorFunctions animatorFunctions;
+    AnimatorFunctions animatorFunctions;
     // public GameObject attackHit;
-    private CapsuleCollider2D capsuleCollider;
+    CapsuleCollider2D capsuleCollider;
     public CameraEffects cameraEffects;
-    [SerializeField] private ParticleSystem deathParticles;
-    [SerializeField] private AudioSource flameParticlesAudioSource;
-    [SerializeField] private GameObject graphic;
-    [SerializeField] private Component[] graphicSprites;
-    [SerializeField] private ParticleSystem jumpParticles;
-    [SerializeField] private GameObject pauseMenu;
+    [SerializeField] ParticleSystem deathParticles;
+    [SerializeField] AudioSource flameParticlesAudioSource;
+    [SerializeField] GameObject graphic;
+    [SerializeField] Component[] graphicSprites;
+    [SerializeField] ParticleSystem jumpParticles;
+    [SerializeField] GameObject pauseMenu;
+    [SerializeField] GameObject machete;
     public RecoveryCounter recoveryCounter;
+    
 
     // Singleton instantiation
     private static NewPlayer instance;
@@ -62,7 +64,8 @@ public class NewPlayer : PhysicsObject
     public int health;
     public int maxHealth;
     public int maxAmmo;
-
+    [SerializeField] PersistantItem macheteData;
+    
     [Header ("Sounds")]
     public AudioClip deathSound;
     public AudioClip equipSound;
@@ -79,6 +82,14 @@ public class NewPlayer : PhysicsObject
     public AudioClip stepSound;
     [System.NonSerialized] public int whichHurtSound;
 
+    void Awake()
+    {
+        if (macheteData.HasReceived)
+        {
+            machete.SetActive(true);
+        }
+    }
+
     void Start()
     {
         Cursor.visible = false;
@@ -87,7 +98,8 @@ public class NewPlayer : PhysicsObject
         animatorFunctions = GetComponent<AnimatorFunctions>();
         origLocalScale = transform.localScale;
         recoveryCounter = GetComponent<RecoveryCounter>();
-        
+
+
         //Find all sprites so we can hide them when the player dies.
         graphicSprites = GetComponentsInChildren<SpriteRenderer>();
 
@@ -137,7 +149,7 @@ public class NewPlayer : PhysicsObject
             }
 
             //Punch
-            if (Input.GetMouseButtonDown(0))
+            if (macheteData.HasReceived && Input.GetMouseButtonDown(0))
             {
                 animator.SetTrigger("attack");
                 Shoot(false);
@@ -427,6 +439,12 @@ public class NewPlayer : PhysicsObject
                 }
             }
         }
+    }
+
+    public void ReceiveMachete()
+    {
+        macheteData.HasReceived = true;
+        machete.SetActive(true);
     }
 
     public void SetUpCheatItems()

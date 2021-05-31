@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ee225da-5995-44de-bfa6-5a9a2a492a40" name="Default Changelist" comment="" />
+    <list default="true" id="8ee225da-5995-44de-bfa6-5a9a2a492a40" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/World/ArcadeInteriorBuilding.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/World/ArcadeInteriorBuilding.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1Part2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1Part2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level2Part2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level2Part2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/InventoryItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/InventoryItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Dialogue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Dialogue.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +58,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Parallax/ParallaxLayer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Startup.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" />
       <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Levels.cs" />
       <option value="$PROJECT_DIR$/Assets/ScriptableObjects/LevelTest.cs" />
       <option value="$PROJECT_DIR$/Assets/CabinetPlayer.cs" />
@@ -71,17 +84,19 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/HUD.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory System/InventorySlot.cs" />
       <option value="$PROJECT_DIR$/Assets/Editor/Cheat System/CheatMenu.cs" />
-      <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/InventoryItem.cs" />
       <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/ConsumableItem.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Dialogue.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueBoxController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Collectable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SpaceGame/PlayerMoving.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SpaceGame/Player.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SpaceGame/Boundary.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SpaceGame/LevelController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Dialogue.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueTrigger.cs" />
+      <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/InventoryItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/PersistantItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1s7mNslhf74Iq31JhmXduBQcJs4" />
@@ -166,6 +181,7 @@
       <workItem from="1622231223808" duration="1633000" />
       <workItem from="1622311357713" duration="5330000" />
       <workItem from="1622330971185" duration="7821000" />
+      <workItem from="1622482031683" duration="6711000" />
     </task>
     <servers />
   </component>

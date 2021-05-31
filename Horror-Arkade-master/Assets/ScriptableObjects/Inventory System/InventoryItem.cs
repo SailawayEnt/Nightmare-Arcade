@@ -16,9 +16,8 @@ public abstract class InventoryItem : ScriptableObject
 
     public int CurrentStack
     {
-        get { return _currentStack; }
-        set
-        { _currentStack = value; }
+        get => _currentStack;
+        set => _currentStack = value;
     }
 
     void OnEnable()

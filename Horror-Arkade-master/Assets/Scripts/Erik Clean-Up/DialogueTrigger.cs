@@ -12,6 +12,7 @@ public class DialogueTrigger : MonoBehaviour
     [SerializeField] Animator iconAnimator; //The E icon animator
     [SerializeField] ConsumableItem ticketInventory; //The Ticket Inventory
     [SerializeField] GameEvent onTicketChange;
+    [SerializeField] GameEvent onInitialItemReceived;
 
     [Header("Trigger")]
     [SerializeField] private bool autoHit; //Does the player need to press the interact button, or will it simply fire automatically?
@@ -40,7 +41,8 @@ public class DialogueTrigger : MonoBehaviour
     [SerializeField] private string finishTalkingActivateObjectString; //After completing a conversation, an object's name can be searched for and activated.
     [SerializeField] private Sprite getItemSprite; //The sprite of the inventory item given, shown in HUD
     [SerializeField] private AudioClip getSound; //When the player is given an object, this sound will play
-    [SerializeField] private bool instantGet; //Player can be immediately given an item the moment the conversation begins
+    [SerializeField] bool instantGet; //Player can be immediately given an item the moment the conversation begins
+    [SerializeField] bool givesInitialItem;
     [SerializeField] private bool travelToScene; // Will travel to appropriate scene
     [SerializeField] private string requiredItem; //The required fetch quest item
     [SerializeField] private int requiredCoins; //Or the required coins (cannot require both an item and coins)
@@ -57,9 +59,7 @@ public class DialogueTrigger : MonoBehaviour
     void OnTriggerStay2D(Collider2D col)
     {
         if (instantGet)
-        {
             InstantGet();
-        }
 
         if (col.gameObject == NewPlayer.Instance.gameObject && !sleeping && !completed && NewPlayer.Instance.grounded)
         {
@@ -68,6 +68,9 @@ public class DialogueTrigger : MonoBehaviour
             {
               iconAnimator.SetBool("active", false);
               
+              if (givesInitialItem)
+                  ReceiveItem();
+
               if (characterName == "Enter Door")
               {
                   var position = targetDestination.position;
@@ -193,7 +196,14 @@ public class DialogueTrigger : MonoBehaviour
 
     public void InstantGet()
     {
-        GameManager.Instance.GetInventoryItem(getWhichItem, null);
-        instantGet = false;
+            GameManager.Instance.GetInventoryItem(getWhichItem, null);
+            instantGet = false;
+    }
+
+    public void ReceiveItem()
+    {
+        onInitialItemReceived?.Invoke();
+        givesInitialItem = false;
+        
     }
 }

@@ -25,7 +25,7 @@ public class Dialogue : MonoBehaviour
         // Game Cabinet
         dialogue.Add("GameCabinetA", new string[] {
             "This looks like a fun game...",
-            "Looks like it takes 1 credit!"
+            "Looks like it takes 1 coin!"
         });
         
         dialogue.Add("GameCabinetAc", new string[] {
@@ -35,10 +35,7 @@ public class Dialogue : MonoBehaviour
 
         //NPC
         dialogue.Add("CharacterA", new string[] {
-            "Hey you!...",
-            "Yeah you...",
-            "You're new here aren't ya?",
-            "Here take this machete, it's dangerous to go alone",
+            "Hey you!... Yeah you... You're new here aren't ya? Here take this machete, it's dangerous to go alone",
             "For free?",
             "Ha no, you'll have to play on of my arkade games...",
             "...er umm... MegaStar to get tickets and redeem those tickets for prizes.",
@@ -47,16 +44,10 @@ public class Dialogue : MonoBehaviour
         });
 
         dialogue.Add("CharacterAChoice1", new string[] {
-            "",
-            "",
-            "",
             "Oh, thank you!",
         });
 
         dialogue.Add("CharacterAChoice2", new string[] {
-            "",
-            "",
-            "",
             "Can I have one of those prizes?"
         });
 
