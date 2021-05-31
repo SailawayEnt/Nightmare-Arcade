@@ -40,4 +40,19 @@ public static class CheatMenu
     {
         NewPlayer.Instance.coins += 10000;
     }
+    
+    [MenuItem("Cheats/Collect 1 Ticket")]
+    public static void Collect1Ticket()
+    {
+        CheatManager.Instance.Receive1Ticket();
+        // GameManager.Instance.Receive1Ticket();
+        // var ticketInventory = CheatManager.instance.TicketInventorySystem;
+        // var onTicketReceived = CheatManager.instance.onTicketReceived;
+        //
+        // if (ticketInventory.CurrentStack < ticketInventory.MaxStack)
+        // {
+        //     ticketInventory.CurrentStack += 1;
+        //     onTicketReceived.Invoke();
+        // }
+    }
 }

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: dfc417ba93316754399b13df4a2d7ccf
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - onTicketReceived: {fileID: 11400000, guid: 7a57bb289c9598149ba5bf41baeb9b1b, type: 2}
+  - ticketInventorySystem: {fileID: 11400000, guid: 21901ac8abf55dc47b6a80538c8501c8,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

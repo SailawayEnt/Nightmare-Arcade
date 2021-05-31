@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,6 +14,8 @@ public class GameManager : MonoBehaviour
     private static GameManager instance;
     [SerializeField] public AudioTrigger gameMusic;
     [SerializeField] public AudioTrigger gameAmbience;
+    [SerializeField]  GameEvent onTicketReceived;
+    [SerializeField] ConsumableItem ticketInventorySystem;
 
     // Singleton instantiation
     public static GameManager Instance
@@ -23,7 +26,6 @@ public class GameManager : MonoBehaviour
             return instance;
         }
     }
-
     // Use this for initialization
     void Start()
     {
@@ -51,6 +53,16 @@ public class GameManager : MonoBehaviour
     {   
         inventory.Clear();
         hud.SetInventoryImage(hud.blankUI);
+    }
+    
+    
+    public void Receive1Ticket()
+    {
+        if (ticketInventorySystem.CurrentStack < ticketInventorySystem.MaxStack)
+        {
+            ticketInventorySystem.CurrentStack += 1;
+            onTicketReceived?.Invoke();
+        }
     }
 
 }
