@@ -22,6 +22,7 @@ public class DialogueTrigger : MonoBehaviour
     
     [Header("Target")]
     [SerializeField] private Transform targetDestination;
+    [SerializeField] GameObject thePlayer;
 
     [Header ("Dialogue")]
     [SerializeField] private string characterName; //The character's name shown in the dialogue UI
@@ -74,8 +75,8 @@ public class DialogueTrigger : MonoBehaviour
 
               if (characterName == "Enter Door")
               {
-                  var position = targetDestination.position;
-                  col.transform.position = new Vector2(position.x, position.y);
+                  thePlayer.transform.position = targetDestination.transform.position;
+                  
                   currentVirtualCamera.Priority = 1; 
                   destinationVirtualCamera.Priority = 2;
               }

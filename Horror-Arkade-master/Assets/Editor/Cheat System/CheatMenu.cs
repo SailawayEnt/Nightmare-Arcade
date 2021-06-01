@@ -45,14 +45,5 @@ public static class CheatMenu
     public static void Collect1Ticket()
     {
         CheatManager.Instance.Receive1Ticket();
-        // GameManager.Instance.Receive1Ticket();
-        // var ticketInventory = CheatManager.instance.TicketInventorySystem;
-        // var onTicketReceived = CheatManager.instance.onTicketReceived;
-        //
-        // if (ticketInventory.CurrentStack < ticketInventory.MaxStack)
-        // {
-        //     ticketInventory.CurrentStack += 1;
-        //     onTicketReceived.Invoke();
-        // }
     }
 }

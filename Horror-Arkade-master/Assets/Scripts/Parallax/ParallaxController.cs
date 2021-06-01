@@ -13,14 +13,13 @@ public class ParallaxController : MonoBehaviour
 
     Camera cam;
 
-
     void Start()
     {
         cam = Camera.main;
         onCameraMove += MoveLayer;
         FindLayers();
-        oldCameraPosition.x = cam.transform.position.x;
-        oldCameraPosition.y = cam.transform.position.y;
+        // oldCameraPosition.x = cam.transform.position.x;
+        // oldCameraPosition.y = cam.transform.position.y;
     }
 
     private void FixedUpdate()
@@ -36,7 +35,7 @@ public class ParallaxController : MonoBehaviour
                 cameraPositionChange = new Vector2(oldCameraPosition.x - cam.transform.position.x, oldCameraPosition.y - cam.transform.position.y);
                 onCameraMove(cameraPositionChange.x, cameraPositionChange.y);
             }
-
+        
             oldCameraPosition = new Vector2(cam.transform.position.x, cam.transform.position.y);
         }
     }

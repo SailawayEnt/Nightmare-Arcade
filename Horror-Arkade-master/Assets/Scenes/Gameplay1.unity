@@ -258,6 +258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetDestination: {fileID: 1525946549}
+  thePlayer: {fileID: 1009467358}
   currentVirtualCamera: {fileID: 114803848367143317}
   destinationVirtualCamera: {fileID: 114803847268591408}
 --- !u!4 &780164644 stripped
@@ -290,11 +291,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 806854758}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.96, y: 17.278, z: 0}
+  m_LocalPosition: {x: -706.72, y: 273.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4055981247355236}
-  m_RootOrder: 2
+  m_Father: {fileID: 1174364725}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1009467358 stripped
 GameObject:
@@ -392,12 +393,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1174364724}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 761.73883, y: -254.90308, z: -211.97467}
+  m_LocalPosition: {x: 761.73883, y: -254.90308, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 672905348}
   - {fileID: 1525946549}
   - {fileID: 4055981247355236}
+  - {fileID: 806854759}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -650,7 +652,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1525946548}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -692.796, y: 253.038, z: 0}
+  m_LocalPosition: {x: -695, y: 253.06, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1174364725}
@@ -826,7 +828,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1844852900, guid: 7a17dad1a2bb34c5595bf54ae9c0b4a1, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1844852901, guid: 7a17dad1a2bb34c5595bf54ae9c0b4a1, type: 3}
       propertyPath: m_LocalScale.x
@@ -1601,7 +1603,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1064248486455794}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 56, y: 21.9565, z: -10}
+  m_LocalPosition: {x: 69.99977, y: 1.7, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4880037189193072}
@@ -1616,12 +1618,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1490815534189718}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -695.5, y: 256.14307, z: 211.8162}
+  m_LocalPosition: {x: -698.05, y: 256.14307, z: 211.8162}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4990150841970606}
   - {fileID: 2758646277703854676}
-  - {fileID: 806854759}
   m_Father: {fileID: 1174364725}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1646,8 +1647,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1884548753240648}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -57.55, y: 1.53, z: -10.255}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1689,7 +1690,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1671191764673602}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.08, y: 0.3, z: 0}
+  m_LocalPosition: {x: 0, y: 0.3, z: 0}
   m_LocalScale: {x: 0.62375, y: 0.62375, z: 0.62375}
   m_Children:
   - {fileID: 4508249154313274}
@@ -1886,7 +1887,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad980451443d70438faac0bc6c235a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackedObjectOffset: {x: 0, y: 0, z: 0}
+  m_TrackedObjectOffset: {x: -0.0002288818, y: 0.45350027, z: 0}
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 3
   m_LookaheadIgnoreY: 0
@@ -2003,7 +2004,7 @@ MonoBehaviour:
   - m_Script
   m_LockStageInInspector: 
   m_StreamingVersion: 20170927
-  m_Priority: 1
+  m_Priority: 2
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
@@ -2038,7 +2039,7 @@ MonoBehaviour:
   - m_Script
   m_LockStageInInspector: 
   m_StreamingVersion: 20170927
-  m_Priority: 2
+  m_Priority: 1
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
@@ -2079,6 +2080,7 @@ MonoBehaviour:
   repeat: 1
   sleeping: 0
   targetDestination: {fileID: 806854759}
+  thePlayer: {fileID: 1009467358}
   characterName: Enter Door
   dialogueStringA: 
   dialogueStringB: 
@@ -2155,7 +2157,7 @@ MonoBehaviour:
   m_NoiseProfile: {fileID: 11400000, guid: b241f91b9ccf8ff489abf204b30d3112, type: 2}
   m_PivotOffset: {x: 0, y: 0, z: 0}
   m_AmplitudeGain: 0.3
-  m_FrequencyGain: 8.395045e-22
+  m_FrequencyGain: 2e-44
   mNoiseOffsets: {x: 278.73395, y: 19.195435, z: -964.04175}
 --- !u!114 &114843164022317251
 MonoBehaviour:
@@ -2172,7 +2174,7 @@ MonoBehaviour:
   m_NoiseProfile: {fileID: 11400000, guid: b241f91b9ccf8ff489abf204b30d3112, type: 2}
   m_PivotOffset: {x: 0, y: 0, z: 0}
   m_AmplitudeGain: 0.3
-  m_FrequencyGain: 7.752955e-10
+  m_FrequencyGain: 4e-45
   mNoiseOffsets: {x: 86.06326, y: -579.1395, z: -410.80508}
 --- !u!212 &212157337931357076
 SpriteRenderer:
@@ -3814,7 +3816,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7016830368267607220}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -20.220001, y: -21.44, z: -0.9671364}
+  m_LocalPosition: {x: -20.220001, y: -19, z: -0.9671364}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1414200454}
@@ -3859,10 +3861,10 @@ PolygonCollider2D:
       - {x: 105.40016, y: -5.0131307}
       - {x: 121.281876, y: -5.041471}
       - {x: 140.42744, y: -2.3229184}
-      - {x: 151.08276, y: -3.3034072}
-      - {x: 151.27315, y: 27.78934}
-      - {x: -43.06477, y: 28.381647}
-      - {x: -42.538616, y: -2.2172284}
+      - {x: 129.73805, y: -1.3781943}
+      - {x: 130.01215, y: 27.287113}
+      - {x: -49.842514, y: 28.818918}
+      - {x: -49.753635, y: -2.9460206}
 --- !u!1001 &7113145125069167296
 PrefabInstance:
   m_ObjectHideFlags: 0
