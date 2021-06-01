@@ -15,6 +15,11 @@ public class GameCabinetMenu : MonoBehaviour
    // [SerializeField] GameEvent onRecievedTicket;
    // public ConsumableItem ticketInventory;
 
+   [Header("Main Game References")] 
+   [SerializeField] GameObject player;
+   [SerializeField] Transform playerTargetPosition;
+   
+
    GameObject levelControllerGO;
 
    void Awake()
@@ -52,6 +57,8 @@ public class GameCabinetMenu : MonoBehaviour
    public void ExitCabinet()
    {
       scenesData.LoadLevelWithIndex(1);
+      player.SetActive(true);
+      player.transform.position = playerTargetPosition.transform.position;
    }
    
    void HideMenu()

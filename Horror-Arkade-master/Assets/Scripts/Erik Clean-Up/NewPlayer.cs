@@ -83,14 +83,15 @@ public class NewPlayer : PhysicsObject
 
     void Awake()
     {
-        if (macheteData.HasReceived)
-        {
-            machete.SetActive(true);
-        }
+       
     }
 
     void Start()
     {
+        if (macheteData.HasReceived)
+        {
+            machete.SetActive(true);
+        }
         Cursor.visible = false;
         SetUpCheatItems();
         health = maxHealth;

@@ -22,6 +22,12 @@ public static class CheatMenu
     {
         NewPlayer.Instance.gameObject.transform.position = new Vector2(70f, -2.21f);
     }
+    
+    [MenuItem("Cheats/Move Player Left Of Bridge")]
+    public static void MovePlayerLeftOfBridge()
+    {
+        NewPlayer.Instance.gameObject.transform.position = new Vector2(115.3f, -7.102964f);
+    }
 
     [MenuItem("Cheats/Collect 100 Credits")]
     public static void Collect100Credits()
