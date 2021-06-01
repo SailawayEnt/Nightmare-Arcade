@@ -3,12 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="8ee225da-5995-44de-bfa6-5a9a2a492a40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/Cheat System/CheatMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/Cheat System/CheatMenu.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1Part2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1Part2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueTrigger.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RaiseTicketCheatFlag.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RaiseTicketCheatFlag.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,13 +84,13 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/SpaceGame/LevelController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Dialogue.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/InventoryItem.cs" />
       <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/PersistantItem.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" />
       <option value="$PROJECT_DIR$/Assets/Editor/Cheat System/CheatMenu.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Other/CheatManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueTrigger.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1s7mNslhf74Iq31JhmXduBQcJs4" />
@@ -178,7 +176,7 @@
       <workItem from="1622311357713" duration="5330000" />
       <workItem from="1622330971185" duration="7821000" />
       <workItem from="1622482031683" duration="8659000" />
-      <workItem from="1622492186750" duration="7193000" />
+      <workItem from="1622492186750" duration="8816000" />
     </task>
     <servers />
   </component>

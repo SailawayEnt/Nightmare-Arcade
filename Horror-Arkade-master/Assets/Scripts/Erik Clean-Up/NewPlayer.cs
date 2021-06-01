@@ -63,6 +63,7 @@ public class NewPlayer : PhysicsObject
     public int maxHealth;
     public int maxAmmo;
     [SerializeField] PersistantItem macheteData;
+    [SerializeField] PersistantItem energyDrinkData;
     
     [Header ("Sounds")]
     public AudioClip deathSound;
@@ -443,6 +444,13 @@ public class NewPlayer : PhysicsObject
     {
         macheteData.HasReceived = true;
         machete.SetActive(true);
+    }
+
+    public void ReceiveEnergyDrink()
+    {
+        energyDrinkData.HasReceived = true;
+        Debug.Log("Received Energy Drink ToDO: Slam Machete Into Ground and Long Jump");
+        // ToDO: Slam Machete Into Ground and Long Jump
     }
 
     public void SetUpCheatItems()

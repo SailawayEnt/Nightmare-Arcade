@@ -36,6 +36,7 @@ public class DialogueTrigger : MonoBehaviour
     [Header ("Fetch Quest")]
     [SerializeField] private GameObject deleteGameObject; //If an NPC is holding the object, and gives it to you, this object will destroy
     [SerializeField] private string getWhichItem; //The inventory item given if items is fetched
+    [SerializeField] GameEvent giveWhichItem; //The inventory item given if items is fetched
     [SerializeField] private int getCoinAmount; //Or the amount of coins given if item is fetched
     [SerializeField] private string finishTalkingAnimatorBool; //After completing a conversation, an animation can be fired
     [SerializeField] private string finishTalkingActivateObjectString; //After completing a conversation, an object's name can be searched for and activated.
@@ -175,6 +176,11 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (!completed)
         {
+            if (giveWhichItem)
+            {
+                giveWhichItem?.Invoke();
+            }
+            
             if (getWhichItem != "")
             {
                 GameManager.Instance.GetInventoryItem(getWhichItem, getItemSprite);

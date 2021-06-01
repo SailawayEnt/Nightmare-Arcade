@@ -329,6 +329,33 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1009467360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009467358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4961029f65a0ba140a87b25004538b8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: d520c7a48060e8442bf617791bcaa55d, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1009467361}
+        m_MethodName: ReceiveEnergyDrink
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1009467361 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2046054192, guid: 7a17dad1a2bb34c5595bf54ae9c0b4a1,
@@ -878,6 +905,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: e7c2f147e8b518045b4cd4099144985e,
         type: 2}
+    - target: {fileID: 2046054192, guid: 7a17dad1a2bb34c5595bf54ae9c0b4a1, type: 3}
+      propertyPath: energyDrinkData
+      value: 
+      objectReference: {fileID: 11400000, guid: 5bfe3a9956244f9478f6c00ac4921007,
+        type: 2}
     - target: {fileID: 2046054195, guid: 7a17dad1a2bb34c5595bf54ae9c0b4a1, type: 3}
       propertyPath: m_SortingLayer
       value: -1
@@ -1089,12 +1121,12 @@ PrefabInstance:
     - target: {fileID: 4065167126261687791, guid: 7a17dad1a2bb34c5595bf54ae9c0b4a1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 56
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 4065167126261687791, guid: 7a17dad1a2bb34c5595bf54ae9c0b4a1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 18.5
+      value: -2.21
       objectReference: {fileID: 0}
     - target: {fileID: 4065167126261687791, guid: 7a17dad1a2bb34c5595bf54ae9c0b4a1,
         type: 3}
@@ -1554,7 +1586,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1064249534412631}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 56, y: 21.13586, z: -10}
+  m_LocalPosition: {x: 70, y: 0.4258597, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4880038422418389}
@@ -2057,6 +2089,7 @@ MonoBehaviour:
   audioChoices: []
   deleteGameObject: {fileID: 0}
   getWhichItem: 
+  giveWhichItem: {fileID: 0}
   getCoinAmount: 0
   finishTalkingAnimatorBool: 
   finishTalkingActivateObjectString: 

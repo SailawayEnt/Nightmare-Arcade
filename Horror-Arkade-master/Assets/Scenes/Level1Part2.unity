@@ -179,6 +179,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7396943089812095064, guid: e4e25398a9827db429bd872f2d70943e,
         type: 3}
+      propertyPath: giveWhichItem
+      value: 
+      objectReference: {fileID: 11400000, guid: d520c7a48060e8442bf617791bcaa55d,
+        type: 2}
+    - target: {fileID: 7396943089812095064, guid: e4e25398a9827db429bd872f2d70943e,
+        type: 3}
       propertyPath: onTicketChange
       value: 
       objectReference: {fileID: 11400000, guid: 7a57bb289c9598149ba5bf41baeb9b1b,
