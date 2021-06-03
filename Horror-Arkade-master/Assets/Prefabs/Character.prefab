@@ -10047,6 +10047,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4065167126261687791}
+  - component: {fileID: 5298218149920614346}
+  - component: {fileID: 1289833988263579849}
   - component: {fileID: 4773369241142620335}
   - component: {fileID: 4773369241142620304}
   - component: {fileID: 4109124665113923721}
@@ -10092,6 +10094,48 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5298218149920614346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598654000571740062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1d5c6d3d0a81f4aa0b02d6252a9cfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1289833988263579849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598654000571740062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: 0}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: 
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!50 &4773369241142620335
 Rigidbody2D:
   serializedVersion: 4
@@ -10293,6 +10337,7 @@ MonoBehaviour:
   graphicSprites: []
   jumpParticles: {fileID: 99222071}
   pauseMenu: {fileID: 0}
+  machete: {fileID: 0}
   recoveryCounter: {fileID: 0}
   cheatItems: []
   dead: 0
@@ -10307,6 +10352,8 @@ MonoBehaviour:
   health: 5
   maxHealth: 5
   maxAmmo: 100
+  macheteData: {fileID: 0}
+  energyDrinkData: {fileID: 0}
   deathSound: {fileID: 8300000, guid: 6a78b508a5f344caf90ef54788c6d8b0, type: 3}
   equipSound: {fileID: 8300000, guid: dcdc034a174c940b5a22b2789c876245, type: 3}
   grassSound: {fileID: 8300000, guid: 27e58179389da43abaf2aa220d014dc1, type: 3}
