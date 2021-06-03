@@ -784,7 +784,10 @@ MonoBehaviour:
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 780164644}
   m_ShowDebugText: 1
-  m_ChildCameras: []
+  m_ChildCameras:
+  - {fileID: 114803847268591408}
+  - {fileID: 114803848367143317}
+  - {fileID: 508659654}
   m_ActivateAfter: 0
   m_MinDuration: 2
   m_RandomizeChoice: 0
@@ -2164,7 +2167,7 @@ MonoBehaviour:
   m_NoiseProfile: {fileID: 11400000, guid: b241f91b9ccf8ff489abf204b30d3112, type: 2}
   m_PivotOffset: {x: 0, y: 0, z: 0}
   m_AmplitudeGain: 0.3
-  m_FrequencyGain: 0.0000001203617
+  m_FrequencyGain: 0
   mNoiseOffsets: {x: 86.06326, y: -579.1395, z: -410.80508}
 --- !u!1001 &253529587446645372
 PrefabInstance:
