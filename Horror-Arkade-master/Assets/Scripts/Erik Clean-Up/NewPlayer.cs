@@ -14,7 +14,6 @@ public class NewPlayer : PhysicsObject
     
     [Header ("Reference")]
     public AudioSource audioSource;
-    [SerializeField] private Animator animator;
     // AnimatorFunctions animatorFunctions;
     // public GameObject attackHit;
     CapsuleCollider2D capsuleCollider;
