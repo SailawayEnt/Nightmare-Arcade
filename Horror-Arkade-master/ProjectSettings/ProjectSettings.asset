@@ -691,5 +691,5 @@ PlayerSettings:
   organizationId: atmosgames
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 1
-  disableOldInputManagerSupport: 0
+  disableOldInputManagerSupport: 1
   legacyClampBlendShapeWeights: 1

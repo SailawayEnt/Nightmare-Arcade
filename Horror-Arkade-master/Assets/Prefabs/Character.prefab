@@ -10047,18 +10047,18 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4065167126261687791}
-  - component: {fileID: 5298218149920614346}
+  - component: {fileID: 2046054192}
   - component: {fileID: 1289833988263579849}
   - component: {fileID: 4773369241142620335}
   - component: {fileID: 4773369241142620304}
   - component: {fileID: 4109124665113923721}
   - component: {fileID: 4773369241142620334}
   - component: {fileID: 2046054195}
-  - component: {fileID: 2046054192}
   - component: {fileID: 2046054194}
   - component: {fileID: 2046054197}
   - component: {fileID: 1009467359}
   - component: {fileID: 1009467360}
+  - component: {fileID: 2999535824697921600}
   - component: {fileID: 4439017944772475138}
   m_Layer: 10
   m_Name: Character
@@ -10097,7 +10097,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5298218149920614346
+--- !u!114 &2046054192
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10106,11 +10106,69 @@ MonoBehaviour:
   m_GameObject: {fileID: 598654000571740062}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d1d5c6d3d0a81f4aa0b02d6252a9cfc, type: 3}
+  m_Script: {fileID: 11500000, guid: 1ea31900703ef40079d0744742811071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInput: {fileID: 0}
-  movementSmoothingSpeed: 1
+  minGroundNormalY: 0.65
+  gravityModifier: 3.2
+  contactFilter:
+    useTriggers: 0
+    useLayerMask: 1
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 6401
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
+  playerAnimationBehaviour: {fileID: 0}
+  playerMovementBehaviour: {fileID: 0}
+  audioSource: {fileID: 4109124665113923721}
+  cameraEffects: {fileID: 0}
+  deathParticles: {fileID: 198378920903945115}
+  flameParticlesAudioSource: {fileID: 0}
+  graphic: {fileID: 598654000571740062}
+  graphicSprites: []
+  jumpParticles: {fileID: 99222071}
+  pauseMenu: {fileID: 0}
+  machete: {fileID: 7144326018794861003}
+  recoveryCounter: {fileID: 0}
+  cheatItems: []
+  dead: 0
+  frozen: 0
+  fallForgiveness: 0.2
+  hurtLaunchPower: {x: 1, y: 1}
+  launchRecovery: 3
+  maxSpeed: 12
+  jumpPower: 17
+  ammo: 0
+  coins: 0
+  health: 5
+  maxHealth: 5
+  maxAmmo: 100
+  macheteData: {fileID: 11400000, guid: e7c2f147e8b518045b4cd4099144985e, type: 2}
+  energyDrinkData: {fileID: 11400000, guid: 5bfe3a9956244f9478f6c00ac4921007, type: 2}
+  deathSound: {fileID: 8300000, guid: 6a78b508a5f344caf90ef54788c6d8b0, type: 3}
+  equipSound: {fileID: 8300000, guid: dcdc034a174c940b5a22b2789c876245, type: 3}
+  grassSound: {fileID: 8300000, guid: 27e58179389da43abaf2aa220d014dc1, type: 3}
+  hurtSound: {fileID: 8300000, guid: 33b69245045964ec1a92cd67194a85d9, type: 3}
+  hurtSounds:
+  - {fileID: 8300000, guid: 7784b97f137244a999da3068a3bd0e9a, type: 3}
+  - {fileID: 8300000, guid: 7784b97f137244a999da3068a3bd0e9a, type: 3}
+  - {fileID: 8300000, guid: 7784b97f137244a999da3068a3bd0e9a, type: 3}
+  holsterSound: {fileID: 8300000, guid: 0e64e9b9e4daa4805ba66582f4fb6059, type: 3}
+  jumpSound: {fileID: 8300000, guid: b547b9b6dbd2748d09af2a0f424d3143, type: 3}
+  landSound: {fileID: 8300000, guid: 801d5a8d18edb4d4a9c59d836b5bd581, type: 3}
+  poundSound: {fileID: 8300000, guid: 030c66bb75f554234962323482a876cb, type: 3}
+  punchSound: {fileID: 8300000, guid: 827213ae71917459b9c9368275ce2059, type: 3}
+  poundActivationSounds:
+  - {fileID: 8300000, guid: 40b837875a63d406e8174d3d4c61c86e, type: 3}
+  outOfAmmoSound: {fileID: 8300000, guid: a7ec378dfd4c942a298621e7cfcdad7d, type: 3}
+  stepSound: {fileID: 8300000, guid: 27e58179389da43abaf2aa220d014dc1, type: 3}
 --- !u!114 &1289833988263579849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10350,77 +10408,6 @@ SortingGroup:
   m_SortingLayerID: -525760289
   m_SortingLayer: -1
   m_SortingOrder: -13
---- !u!114 &2046054192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 598654000571740062}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ea31900703ef40079d0744742811071, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minGroundNormalY: 0.65
-  gravityModifier: 3.2
-  contactFilter:
-    useTriggers: 0
-    useLayerMask: 1
-    useDepth: 0
-    useOutsideDepth: 0
-    useNormalAngle: 0
-    useOutsideNormalAngle: 0
-    layerMask:
-      serializedVersion: 2
-      m_Bits: 6401
-    minDepth: 0
-    maxDepth: 0
-    minNormalAngle: 0
-    maxNormalAngle: 0
-  audioSource: {fileID: 4109124665113923721}
-  animator: {fileID: 4773369241142620334}
-  cameraEffects: {fileID: 0}
-  deathParticles: {fileID: 198378920903945115}
-  flameParticlesAudioSource: {fileID: 0}
-  graphic: {fileID: 598654000571740062}
-  graphicSprites: []
-  jumpParticles: {fileID: 99222071}
-  pauseMenu: {fileID: 0}
-  machete: {fileID: 7144326018794861003}
-  recoveryCounter: {fileID: 0}
-  cheatItems: []
-  dead: 0
-  frozen: 0
-  fallForgiveness: 0.2
-  hurtLaunchPower: {x: 1, y: 1}
-  launchRecovery: 3
-  maxSpeed: 12
-  jumpPower: 17
-  ammo: 0
-  coins: 0
-  health: 5
-  maxHealth: 5
-  maxAmmo: 100
-  macheteData: {fileID: 11400000, guid: e7c2f147e8b518045b4cd4099144985e, type: 2}
-  energyDrinkData: {fileID: 11400000, guid: 5bfe3a9956244f9478f6c00ac4921007, type: 2}
-  deathSound: {fileID: 8300000, guid: 6a78b508a5f344caf90ef54788c6d8b0, type: 3}
-  equipSound: {fileID: 8300000, guid: dcdc034a174c940b5a22b2789c876245, type: 3}
-  grassSound: {fileID: 8300000, guid: 27e58179389da43abaf2aa220d014dc1, type: 3}
-  hurtSound: {fileID: 8300000, guid: 33b69245045964ec1a92cd67194a85d9, type: 3}
-  hurtSounds:
-  - {fileID: 8300000, guid: 7784b97f137244a999da3068a3bd0e9a, type: 3}
-  - {fileID: 8300000, guid: 7784b97f137244a999da3068a3bd0e9a, type: 3}
-  - {fileID: 8300000, guid: 7784b97f137244a999da3068a3bd0e9a, type: 3}
-  holsterSound: {fileID: 8300000, guid: 0e64e9b9e4daa4805ba66582f4fb6059, type: 3}
-  jumpSound: {fileID: 8300000, guid: b547b9b6dbd2748d09af2a0f424d3143, type: 3}
-  landSound: {fileID: 8300000, guid: 801d5a8d18edb4d4a9c59d836b5bd581, type: 3}
-  poundSound: {fileID: 8300000, guid: 030c66bb75f554234962323482a876cb, type: 3}
-  punchSound: {fileID: 8300000, guid: 827213ae71917459b9c9368275ce2059, type: 3}
-  poundActivationSounds:
-  - {fileID: 8300000, guid: 40b837875a63d406e8174d3d4c61c86e, type: 3}
-  outOfAmmoSound: {fileID: 8300000, guid: a7ec378dfd4c942a298621e7cfcdad7d, type: 3}
-  stepSound: {fileID: 8300000, guid: 27e58179389da43abaf2aa220d014dc1, type: 3}
 --- !u!114 &2046054194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10503,6 +10490,36 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2999535824697921600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598654000571740062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 378779c905c7f8c4498828036c49fd7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minGroundNormalY: 0.65
+  gravityModifier: 1
+  contactFilter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
+  playerTransform: {fileID: 0}
+  movementSpeed: 3
 --- !u!114 &4439017944772475138
 MonoBehaviour:
   m_ObjectHideFlags: 0

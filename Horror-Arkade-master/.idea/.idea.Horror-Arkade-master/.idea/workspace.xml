@@ -3,12 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="8ee225da-5995-44de-bfa6-5a9a2a492a40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Character/Chacacter.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Character/Chacacter.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Character.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Character.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/EnemyBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/EnemyBase.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/PlayerController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/PlayerController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,14 +39,13 @@
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/InventoryItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Levels.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovementBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/ScenePartLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameEventListener.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimationBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Parallax/ParallaxLayer.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Startup.cs" />
       <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Levels.cs" />
       <option value="$PROJECT_DIR$/Assets/ScriptableObjects/LevelTest.cs" />
       <option value="$PROJECT_DIR$/Assets/CabinetPlayer.cs" />
@@ -96,6 +94,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/MenuHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimationBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/EnemyBase.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovementBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" />
     </changedPaths>
   </component>
@@ -187,7 +187,7 @@
       <workItem from="1622517993468" duration="85000" />
       <workItem from="1622751119335" duration="673000" />
       <workItem from="1622754139718" duration="1997000" />
-      <workItem from="1622827163567" duration="9328000" />
+      <workItem from="1622827163567" duration="17790000" />
     </task>
     <servers />
   </component>

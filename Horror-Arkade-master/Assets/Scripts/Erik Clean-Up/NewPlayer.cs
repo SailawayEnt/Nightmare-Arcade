@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
@@ -11,10 +12,22 @@ public class NewPlayer : PhysicsObject
 {
     [Header("Sub Behaviours")]
     [SerializeField] PlayerAnimationBehaviour playerAnimationBehaviour;
+    [SerializeField] PlayerMovementBehaviour playerMovementBehaviour;
+    
+    [Header("Input Settings")]
+    [SerializeField] PlayerInput playerInput;
+    float rawInputX;
+    Vector2 rawInputMovement;
+    
+    //Action Maps
+    string actionMapPlayerControls = "Main Player Controls";
+    string actionMapMenuControls = "Menu Controls";
+
+    //Current Control Scheme
+    string currentControlScheme;
     
     [Header ("Reference")]
     public AudioSource audioSource;
-    // AnimatorFunctions animatorFunctions;
     // public GameObject attackHit;
     CapsuleCollider2D capsuleCollider;
     public CameraEffects cameraEffects;
@@ -48,7 +61,7 @@ public class NewPlayer : PhysicsObject
     [System.NonSerialized] public string groundType = "grass";
     [System.NonSerialized] public RaycastHit2D ground; 
     [SerializeField] Vector2 hurtLaunchPower; //How much force should be applied to the player when getting hurt?
-    private float launch; //The float added to x and y moveSpeed. This is set with hurtLaunchPower, and is always brought back to zero
+    float launch; //The float added to x and y moveSpeed. This is set with hurtLaunchPower, and is always brought back to zero
     [SerializeField] private float launchRecovery; //How slow should recovering from the launch be? (Higher the number, the longer the launch will last)
     public float maxSpeed = 7; //Max move speed
     public float jumpPower = 17;
@@ -83,21 +96,18 @@ public class NewPlayer : PhysicsObject
     public AudioClip stepSound;
     [System.NonSerialized] public int whichHurtSound;
 
-    void Awake()
-    {
-       
-    }
-
     void Start()
     {
         if (macheteData.HasReceived)
         {
             machete.SetActive(true);
         }
+        
+        currentControlScheme = playerInput.currentControlScheme;
+        
         Cursor.visible = false;
         SetUpCheatItems();
         health = maxHealth;
-        // animatorFunctions = GetComponent<AnimatorFunctions>();
         origLocalScale = transform.localScale;
         recoveryCounter = GetComponent<RecoveryCounter>();
 
@@ -107,8 +117,99 @@ public class NewPlayer : PhysicsObject
 
         SetGroundType();
     }
+    
+    //INPUT SYSTEM ACTION METHODS --------------
 
-    private void Update()
+    //This is called from PlayerInput; when a joystick or arrow keys has been pushed.
+    //It stores the input Vector as a Vector3 to then be used by the smoothing function.
+
+
+    public void OnMovement(InputAction.CallbackContext value)
+    {
+        Vector2 inputMovement = value.ReadValue<Vector2>();
+        rawInputMovement = new Vector2(inputMovement.x, inputMovement.y);
+        rawInputX = rawInputMovement.x;
+    }
+
+    //This is called from PlayerInput, when a button has been pushed, that corresponds with the 'Attack' action
+    public void OnAttack(InputAction.CallbackContext value)
+    {
+        if(macheteData.HasReceived && value.started && !frozen)
+        {
+            //Punch
+            playerAnimationBehaviour.PlayAttackAnimation();
+            Shoot(false);
+        }
+    }
+    
+    //This is called from PlayerInput, when a button has been pushed, that corresponds with the 'Jump' action
+    public void OnJump(InputAction.CallbackContext value)
+    {
+        if (value.started && playerAnimationBehaviour.GetGroundedAnimationValue() == true && !jumping && !frozen)
+        {
+            playerAnimationBehaviour.SetPoundedAnimationValue(false);
+            Jump(1f);
+        }
+    }
+
+    //This is called from Player Input, when a button has been pushed, that correspons with the 'TogglePause' action
+    public void OnTogglePause(InputAction.CallbackContext value)
+    {
+        if(value.started)
+        {
+            Debug.Log("TODO: Setup Pause");
+            
+            // pauseMenu.SetActive(true);
+            
+            // GameManager.Instance.TogglePauseState(this);
+        }
+    }
+    
+    //INPUT SYSTEM AUTOMATIC CALLBACKS --------------
+
+    //This is automatically called from PlayerInput, when the input device has changed
+    //(IE: Keyboard -> Xbox Controller)
+    public void OnControlsChanged()
+    {
+
+        if(playerInput.currentControlScheme != currentControlScheme)
+        {
+            currentControlScheme = playerInput.currentControlScheme;
+            
+            Debug.Log("TODO: OnControlsChanged");
+
+            // playerVisualsBehaviour.UpdatePlayerVisuals();
+            // RemoveAllBindingOverrides();
+        }
+    }
+
+    //This is automatically called from PlayerInput, when the input device has been disconnected and can not be identified
+    //IE: Device unplugged or has run out of batteries
+
+
+
+    public void OnDeviceLost()
+    {
+        // playerVisualsBehaviour.SetDisconnectedDeviceVisuals();
+        Debug.Log("TODO: OnDeviceLost");
+    }
+
+
+    public void OnDeviceRegained()
+    {
+        StartCoroutine(WaitForDeviceToBeRegained());
+    }
+
+    IEnumerator WaitForDeviceToBeRegained()
+    {
+        yield return new WaitForSeconds(0.1f);
+        // playerVisualsBehaviour.UpdatePlayerVisuals();
+        Debug.Log("TODO: WaitForDeviceToBeRegained");
+    }
+
+
+
+    void Update()
     {
         ComputeVelocity();
     }
@@ -124,21 +225,10 @@ public class NewPlayer : PhysicsObject
         //Lerp launch back to zero at all times
         launch += (0 - launch) * Time.deltaTime * launchRecovery;
 
-        if (Input.GetButtonDown("Cancel"))
-        {
-            pauseMenu.SetActive(true);
-        }
-
         //Movement, jumping, and attacking!
         if (!frozen)
         {
-            move.x = Input.GetAxis("Horizontal") + launch;
-
-            if (Input.GetButtonDown("Jump") && playerAnimationBehaviour.GetGroundedAnimationValue() == true && !jumping)
-            {
-                playerAnimationBehaviour.SetPoundedAnimationValue(false);
-                Jump(1f);
-            }
+            move.x = rawInputX + launch;
 
             //Flip the graphic's localScale
             if (move.x > 0.01f)
@@ -150,27 +240,21 @@ public class NewPlayer : PhysicsObject
                graphic.transform.localScale = new Vector3(-origLocalScale.x, transform.localScale.y, transform.localScale.z);
             }
 
-            //Punch
-            if (macheteData.HasReceived && Input.GetMouseButtonDown(0))
-            {
-                playerAnimationBehaviour.PlayAttackAnimation();
-                Shoot(false);
-            }
-
-            //Secondary attack (currently shooting) with right click
-            if (Input.GetMouseButtonDown(1))
-            {
-                Shoot(true);
-            }
-            else if (Input.GetMouseButtonUp(1))
-            {
-                Shoot(false);
-            }
-
-            if (shooting)
-            {
-                SubtractAmmo();
-            }
+            //
+            // //Secondary attack (currently shooting) with right click
+            // if (Input.GetMouseButtonDown(1))
+            // {
+            //     Shoot(true);
+            // }
+            // else if (Input.GetMouseButtonUp(1))
+            // {
+            //     Shoot(false);
+            // }
+            //
+            // if (shooting)
+            // {
+            //     SubtractAmmo();
+            // }
 
             //Allow the player to jump even if they have just fallen off an edge ("fall forgiveness")
             if (!grounded)
@@ -192,8 +276,8 @@ public class NewPlayer : PhysicsObject
 
             //Set each animator float, bool, and trigger to it knows which animation to fire
             var velocityXValue = Mathf.Abs(velocity.x) / maxSpeed;
-            playerAnimationBehaviour.UpdateMovementAnimation(velocityXValue,velocity.y, (int)Input.GetAxis("HorizontalDirection"));
-            playerAnimationBehaviour.UpdateAttackDirection((int)Input.GetAxis("VerticalDirection"));
+            playerAnimationBehaviour.UpdateMovementAnimation(velocityXValue, velocity.y, (int)move.x);
+            playerAnimationBehaviour.UpdateAttackDirection((int)rawInputMovement.y);
             // animator.SetBool("hasChair", GameManager.Instance.inventory.ContainsKey("chair"));
             targetVelocity = move * maxSpeed;
 
@@ -332,7 +416,7 @@ public class NewPlayer : PhysicsObject
     {
         //Play a step sound at a random pitch between two floats, while also increasing the volume based on the Horizontal axis
         audioSource.pitch = (Random.Range(0.9f, 1.1f));
-        audioSource.PlayOneShot(stepSound, Mathf.Abs(Input.GetAxis("Horizontal") / 10));
+        audioSource.PlayOneShot(stepSound, Mathf.Abs(rawInputX / 10));
     }
 
     public void PlayJumpSound()
@@ -461,4 +545,16 @@ public class NewPlayer : PhysicsObject
             GameManager.Instance.GetInventoryItem(cheatItems[i], null);
         }
     }
+    
+    //Get Data ----
+    public InputActionAsset GetActionAsset()
+    {
+        return playerInput.actions;
+    }
+
+    public PlayerInput GetPlayerInput()
+    {
+        return playerInput;
+    }
+    
 }

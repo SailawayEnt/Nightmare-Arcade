@@ -11,7 +11,6 @@ public class EnemyBase : MonoBehaviour
     [Header ("Reference")]
     [System.NonSerialized] public AudioSource audioSource;
     public Animator animator;
-    private AnimatorFunctions animatorFunctions;
     [SerializeField] Instantiator instantiator;
     [System.NonSerialized] public RecoveryCounter recoveryCounter;
 
@@ -26,7 +25,6 @@ public class EnemyBase : MonoBehaviour
     {
         recoveryCounter = GetComponent<RecoveryCounter>();
         audioSource = GetComponent<AudioSource>();
-        animatorFunctions = GetComponent<AnimatorFunctions>();
     }
 
     void Update()
