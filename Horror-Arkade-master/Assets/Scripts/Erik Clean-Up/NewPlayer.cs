@@ -9,10 +9,13 @@ using Random = UnityEngine.Random;
 
 public class NewPlayer : PhysicsObject
 {
+    [Header("Sub Behaviours")]
+    [SerializeField] PlayerAnimationBehaviour playerAnimationBehaviour;
+    
     [Header ("Reference")]
     public AudioSource audioSource;
     [SerializeField] private Animator animator;
-    AnimatorFunctions animatorFunctions;
+    // AnimatorFunctions animatorFunctions;
     // public GameObject attackHit;
     CapsuleCollider2D capsuleCollider;
     public CameraEffects cameraEffects;
@@ -95,7 +98,7 @@ public class NewPlayer : PhysicsObject
         Cursor.visible = false;
         SetUpCheatItems();
         health = maxHealth;
-        animatorFunctions = GetComponent<AnimatorFunctions>();
+        // animatorFunctions = GetComponent<AnimatorFunctions>();
         origLocalScale = transform.localScale;
         recoveryCounter = GetComponent<RecoveryCounter>();
 
@@ -132,9 +135,9 @@ public class NewPlayer : PhysicsObject
         {
             move.x = Input.GetAxis("Horizontal") + launch;
 
-            if (Input.GetButtonDown("Jump") && animator.GetBool("grounded") == true && !jumping)
+            if (Input.GetButtonDown("Jump") && playerAnimationBehaviour.GetGroundedAnimationValue() == true && !jumping)
             {
-                animator.SetBool("pounded", false);
+                playerAnimationBehaviour.SetPoundedAnimationValue(false);
                 Jump(1f);
             }
 
@@ -151,7 +154,7 @@ public class NewPlayer : PhysicsObject
             //Punch
             if (macheteData.HasReceived && Input.GetMouseButtonDown(0))
             {
-                animator.SetTrigger("attack");
+                playerAnimationBehaviour.PlayAttackAnimation();
                 Shoot(false);
             }
 
@@ -179,21 +182,20 @@ public class NewPlayer : PhysicsObject
                 }
                 else
                 {
-                    animator.SetBool("grounded", false);
+                    playerAnimationBehaviour.SetGroundedAnimationValue(false);
                 }
             }
             else
             {
                 fallForgivenessCounter = 0;
-                animator.SetBool("grounded", true);
+                playerAnimationBehaviour.SetGroundedAnimationValue(true);
             }
 
             //Set each animator float, bool, and trigger to it knows which animation to fire
-            animator.SetFloat("velocityX", Mathf.Abs(velocity.x) / maxSpeed);
-            animator.SetFloat("velocityY", velocity.y);
-            animator.SetInteger("attackDirectionY", (int)Input.GetAxis("VerticalDirection"));
-            animator.SetInteger("moveDirection", (int)Input.GetAxis("HorizontalDirection"));
-            animator.SetBool("hasChair", GameManager.Instance.inventory.ContainsKey("chair"));
+            var velocityXValue = Mathf.Abs(velocity.x) / maxSpeed;
+            playerAnimationBehaviour.UpdateMovementAnimation(velocityXValue,velocity.y, (int)Input.GetAxis("HorizontalDirection"));
+            playerAnimationBehaviour.UpdateAttackDirection((int)Input.GetAxis("VerticalDirection"));
+            // animator.SetBool("hasChair", GameManager.Instance.inventory.ContainsKey("chair"));
             targetVelocity = move * maxSpeed;
 
 
@@ -223,10 +225,8 @@ public class NewPlayer : PhysicsObject
         //Set all animator params to ensure the player stops running, jumping, etc and simply stands
         if (freeze)
         {
-            animator.SetInteger("moveDirection", 0);
-            animator.SetBool("grounded", true);
-            animator.SetFloat("velocityX", 0f);
-            animator.SetFloat("velocityY", 0f);
+            playerAnimationBehaviour.UpdateMovementAnimation(0.0f, 0.0f, 0);
+            playerAnimationBehaviour.SetGroundedAnimationValue(true);
             GetComponent<PhysicsObject>().targetVelocity = Vector2.zero;
         }
 
@@ -243,7 +243,7 @@ public class NewPlayer : PhysicsObject
         {
             HurtEffect();
             cameraEffects.Shake(100, 1);
-            animator.SetTrigger("hurt");
+            playerAnimationBehaviour.SetHurtAnimationValue();
             velocity.y = hurtLaunchPower.y;
             launch = hurtDirection * (hurtLaunchPower.x);
             recoveryCounter.counter = 0;
@@ -372,7 +372,7 @@ public class NewPlayer : PhysicsObject
         //A series of events needs to occur when the player activates the pound ability
         if (!pounding)
         {
-            animator.SetBool("pounded", false);
+            playerAnimationBehaviour.SetPoundedAnimationValue(false);
 
             if (velocity.y <= 0)
             {
@@ -389,21 +389,21 @@ public class NewPlayer : PhysicsObject
         //As long as the player as activated the pound in ActivatePound, the following will occur when hitting the ground.
         if (pounding)
         {
-            animator.ResetTrigger("attack");
+            playerAnimationBehaviour.ResetAttackAnimation();
             velocity.y = jumpPower / 1.4f;
-            animator.SetBool("pounded", true);
+            playerAnimationBehaviour.SetPoundedAnimationValue(true);
             GameManager.Instance.audioSource.PlayOneShot(poundSound);
             cameraEffects.Shake(200, 1f);
             pounding = false;
             recoveryCounter.counter = 0;
-            animator.SetBool("pounded", true);
+            playerAnimationBehaviour.SetPoundedAnimationValue(true);
         }
     }
 
     public void FlashEffect()
     {
         //Flash the player quickly
-        animator.SetTrigger("flash");
+        playerAnimationBehaviour.SetFlashAnimationValue();
     }
 
     public void Hide(bool hide)
@@ -422,7 +422,7 @@ public class NewPlayer : PhysicsObject
             {
                 if (!shooting)
                 {
-                    animator.SetBool("shooting", true);
+                    playerAnimationBehaviour.SetShootingAnimation(true);
                     GameManager.Instance.audioSource.PlayOneShot(equipSound);
                     flameParticlesAudioSource.Play();
                     shooting = true;
@@ -432,7 +432,7 @@ public class NewPlayer : PhysicsObject
             {
                 if (shooting)
                 {
-                    animator.SetBool("shooting", false);
+                    playerAnimationBehaviour.SetShootingAnimation(false);
                     flameParticlesAudioSource.Stop();
                     GameManager.Instance.audioSource.PlayOneShot(holsterSound);
                     shooting = false;
