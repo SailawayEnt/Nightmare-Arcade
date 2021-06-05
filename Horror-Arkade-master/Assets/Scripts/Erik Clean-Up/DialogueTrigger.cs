@@ -66,7 +66,7 @@ public class DialogueTrigger : MonoBehaviour
         if (col.gameObject == NewPlayer.Instance.gameObject && !sleeping && !completed && NewPlayer.Instance.grounded)
         {
             iconAnimator.SetBool(Active, true);
-            if (autoHit || (Input.GetAxis("Submit") > 0))
+            if (autoHit || NewPlayer.Instance.InteractPressedValue > 0)
             {
               iconAnimator.SetBool("active", false);
               

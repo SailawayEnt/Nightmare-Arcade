@@ -54,7 +54,7 @@ public class DialogueBoxController : MonoBehaviour
         {
             //Submit
             //Check for key press
-            if (((Input.GetAxis("Submit") > 0) || (Input.GetAxis("Jump") > 0)) && !submitKeyIsDown)
+            if (((NewPlayer.Instance.InteractPressedValue > 0) || (NewPlayer.Instance.JumpPressedValue > 0)) && !submitKeyIsDown)
             {
                 submitKeyIsDown = true;
                 if (!typing)
@@ -78,7 +78,7 @@ public class DialogueBoxController : MonoBehaviour
             }
 
             //Check for first release to ensure we can't spam
-            if (submitKeyIsDown && Input.GetAxis("Submit") < .001 && Input.GetAxis("Jump") < .001)
+            if ((NewPlayer.Instance.InteractPressedValue < .001) && (NewPlayer.Instance.JumpPressedValue < .001))
             {
                 if (!typing)
                 {
@@ -92,7 +92,7 @@ public class DialogueBoxController : MonoBehaviour
 
             //Choices
             //Check for key press
-            if ((Input.GetAxis("Horizontal") != 0) && !horizontalKeyIsDown && animator.GetBool("hasChoices") == true)
+            if ((NewPlayer.Instance.HorizontalDirection != 0) && !horizontalKeyIsDown && animator.GetBool("hasChoices") == true)
             {
                 if (animator.GetInteger("choiceSelection") == 1)
                 {
@@ -109,7 +109,7 @@ public class DialogueBoxController : MonoBehaviour
             }
 
             //Check for first release to ensure we can't spam
-            if (horizontalKeyIsDown && Input.GetAxis("Horizontal") == 0)
+            if (horizontalKeyIsDown && (NewPlayer.Instance.HorizontalDirection == 0))
             {
                 horizontalKeyIsDown = false;
             }

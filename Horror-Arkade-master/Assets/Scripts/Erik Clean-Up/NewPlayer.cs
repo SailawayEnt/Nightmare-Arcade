@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Xml.Schema;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -16,10 +17,19 @@ public class NewPlayer : PhysicsObject
     
     [Header("Input Settings")]
     [SerializeField] PlayerInput playerInput;
-    float rawInputX;
-    Vector2 rawInputMovement;
-    int horizontalDirection;
-    int verticalDirection;
+    float _rawInputX;
+    Vector2 _rawInputMovement;
+    int _horizontalDirection;
+    public int HorizontalDirection { get; private set;  }
+    
+    int _verticalDirection;
+    public int VerticalDirection { get; private set;  }
+    
+    float _interactPressedValue;
+    public float InteractPressedValue { get; private set; }
+    
+    float _jumpPressedValue;
+    public float JumpPressedValue { get; private set; }
     
     //Action Maps
     string actionMapPlayerControls = "Main Player Controls";
@@ -97,6 +107,7 @@ public class NewPlayer : PhysicsObject
     public AudioClip outOfAmmoSound;
     public AudioClip stepSound;
     [System.NonSerialized] public int whichHurtSound;
+    
 
     void Start()
     {
@@ -130,10 +141,10 @@ public class NewPlayer : PhysicsObject
     {
         Vector2 inputMovement = value.ReadValue<Vector2>();
         var newInputMovement = Vector2Int.RoundToInt(inputMovement);
-        rawInputMovement = new Vector2(inputMovement.x, inputMovement.y);
-        rawInputX = rawInputMovement.x;
-        horizontalDirection = newInputMovement.x;
-        verticalDirection = newInputMovement.y;
+        _rawInputMovement = new Vector2(inputMovement.x, inputMovement.y);
+        _rawInputX = _rawInputMovement.x;
+        HorizontalDirection = newInputMovement.x;
+        VerticalDirection = newInputMovement.y;
     }
 
     //This is called from PlayerInput, when a button has been pushed, that corresponds with the 'Attack' action
@@ -147,9 +158,15 @@ public class NewPlayer : PhysicsObject
         }
     }
     
+    public void OnInteract(InputAction.CallbackContext value)
+    {
+        InteractPressedValue = value.ReadValue<float>();
+    }
+    
     //This is called from PlayerInput, when a button has been pushed, that corresponds with the 'Jump' action
     public void OnJump(InputAction.CallbackContext value)
     {
+        JumpPressedValue = value.ReadValue<float>();
         if (value.started && playerAnimationBehaviour.GetGroundedAnimationValue() == true && !jumping && !frozen)
         {
             playerAnimationBehaviour.SetPoundedAnimationValue(false);
@@ -221,7 +238,7 @@ public class NewPlayer : PhysicsObject
 
     protected void ComputeVelocity()
     {
-        //Player movement & attack
+        //Player movement
         Vector2 move = Vector2.zero;
         var playerTransform = transform;
         var position = playerTransform.position;
@@ -230,10 +247,10 @@ public class NewPlayer : PhysicsObject
         //Lerp launch back to zero at all times
         launch += (0 - launch) * Time.deltaTime * launchRecovery;
 
-        //Movement, jumping, and attacking!
+        //Movement
         if (!frozen)
         {
-            move.x = rawInputX + launch;
+            move.x = _rawInputX + launch;
 
             //Flip the graphic's localScale
             if (move.x > 0.01f)
@@ -282,8 +299,8 @@ public class NewPlayer : PhysicsObject
             //Set each animator float, bool, and trigger to it knows which animation to fire
             var velocityXValue = Mathf.Abs(velocity.x) / maxSpeed;
             
-            playerAnimationBehaviour.UpdateMovementAnimation(velocityXValue, velocity.y, horizontalDirection);
-            playerAnimationBehaviour.UpdateAttackDirection(horizontalDirection);
+            playerAnimationBehaviour.UpdateMovementAnimation(velocityXValue, velocity.y, HorizontalDirection);
+            playerAnimationBehaviour.UpdateAttackDirection(VerticalDirection);
             // animator.SetBool("hasChair", GameManager.Instance.inventory.ContainsKey("chair"));
             targetVelocity = move * maxSpeed;
 
@@ -422,7 +439,7 @@ public class NewPlayer : PhysicsObject
     {
         //Play a step sound at a random pitch between two floats, while also increasing the volume based on the Horizontal axis
         audioSource.pitch = (Random.Range(0.9f, 1.1f));
-        audioSource.PlayOneShot(stepSound, Mathf.Abs(rawInputX / 10));
+        audioSource.PlayOneShot(stepSound, Mathf.Abs(_rawInputX / 10));
     }
 
     public void PlayJumpSound()
@@ -550,6 +567,18 @@ public class NewPlayer : PhysicsObject
         {
             GameManager.Instance.GetInventoryItem(cheatItems[i], null);
         }
+    }
+    
+    //Switching Action Maps ----
+
+    public void EnableGameplayControls()
+    {
+        playerInput.SwitchCurrentActionMap(actionMapPlayerControls);  
+    }
+
+    public void EnablePauseMenuControls()
+    {
+        playerInput.SwitchCurrentActionMap(actionMapMenuControls);
     }
     
     //Get Data ----
