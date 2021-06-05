@@ -18,6 +18,8 @@ public class NewPlayer : PhysicsObject
     [SerializeField] PlayerInput playerInput;
     float rawInputX;
     Vector2 rawInputMovement;
+    int horizontalDirection;
+    int verticalDirection;
     
     //Action Maps
     string actionMapPlayerControls = "Main Player Controls";
@@ -127,8 +129,11 @@ public class NewPlayer : PhysicsObject
     public void OnMovement(InputAction.CallbackContext value)
     {
         Vector2 inputMovement = value.ReadValue<Vector2>();
+        var newInputMovement = Vector2Int.RoundToInt(inputMovement);
         rawInputMovement = new Vector2(inputMovement.x, inputMovement.y);
         rawInputX = rawInputMovement.x;
+        horizontalDirection = newInputMovement.x;
+        verticalDirection = newInputMovement.y;
     }
 
     //This is called from PlayerInput, when a button has been pushed, that corresponds with the 'Attack' action
@@ -276,8 +281,9 @@ public class NewPlayer : PhysicsObject
 
             //Set each animator float, bool, and trigger to it knows which animation to fire
             var velocityXValue = Mathf.Abs(velocity.x) / maxSpeed;
-            playerAnimationBehaviour.UpdateMovementAnimation(velocityXValue, velocity.y, (int)move.x);
-            playerAnimationBehaviour.UpdateAttackDirection((int)rawInputMovement.y);
+            
+            playerAnimationBehaviour.UpdateMovementAnimation(velocityXValue, velocity.y, horizontalDirection);
+            playerAnimationBehaviour.UpdateAttackDirection(horizontalDirection);
             // animator.SetBool("hasChair", GameManager.Instance.inventory.ContainsKey("chair"));
             targetVelocity = move * maxSpeed;
 
