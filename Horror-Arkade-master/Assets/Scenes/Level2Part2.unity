@@ -183,6 +183,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114660646102788534, guid: 8e33fda0c220936498f5288af83d7450,
         type: 3}
+      propertyPath: speedMultiplier
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114660646102788534, guid: 8e33fda0c220936498f5288af83d7450,
+        type: 3}
       propertyPath: borders.maxXOffset
       value: 3.2
       objectReference: {fileID: 0}
@@ -201,6 +206,11 @@ PrefabInstance:
       propertyPath: borders.minYOffset
       value: 2.25
       objectReference: {fileID: 0}
+    - target: {fileID: 114960433178452790, guid: 8e33fda0c220936498f5288af83d7450,
+        type: 3}
+      propertyPath: playerInput
+      value: 
+      objectReference: {fileID: 2127475607}
     - target: {fileID: 114960433178452790, guid: 8e33fda0c220936498f5288af83d7450,
         type: 3}
       propertyPath: onPlayerDeath
@@ -237,8 +247,170 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -525760289
       objectReference: {fileID: 0}
+    - target: {fileID: 8347711438489372780, guid: 8e33fda0c220936498f5288af83d7450,
+        type: 3}
+      propertyPath: m_DefaultActionMap
+      value: MegaStar Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8347711438489372780, guid: 8e33fda0c220936498f5288af83d7450,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8347711438489372780, guid: 8e33fda0c220936498f5288af83d7450,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[11].m_ActionId
+      value: f74bf113-4d32-4d8d-bd9c-b89fea7b24f8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8347711438489372780, guid: 8e33fda0c220936498f5288af83d7450,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[11].m_ActionName
+      value: MegaStar Player/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d,/XInputControllerWindows/leftStick]
+      objectReference: {fileID: 0}
+    - target: {fileID: 8347711438489372780, guid: 8e33fda0c220936498f5288af83d7450,
+        type: 3}
+      propertyPath: m_DeviceLostEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8347711438489372780, guid: 8e33fda0c220936498f5288af83d7450,
+        type: 3}
+      propertyPath: m_DeviceRegainedEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8347711438489372780, guid: 8e33fda0c220936498f5288af83d7450,
+        type: 3}
+      propertyPath: m_ControlsChangedEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8347711438489372780, guid: 8e33fda0c220936498f5288af83d7450,
+        type: 3}
+      propertyPath: m_DeviceLostEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8347711438489372780, guid: 8e33fda0c220936498f5288af83d7450,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[11].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8347711438489372780, guid: 8e33fda0c220936498f5288af83d7450,
+        type: 3}
+      propertyPath: m_DeviceLostEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 271878660}
+    - target: {fileID: 8347711438489372780, guid: 8e33fda0c220936498f5288af83d7450,
+        type: 3}
+      propertyPath: m_DeviceRegainedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8347711438489372780, guid: 8e33fda0c220936498f5288af83d7450,
+        type: 3}
+      propertyPath: m_ControlsChangedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8347711438489372780, guid: 8e33fda0c220936498f5288af83d7450,
+        type: 3}
+      propertyPath: m_DeviceLostEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8347711438489372780, guid: 8e33fda0c220936498f5288af83d7450,
+        type: 3}
+      propertyPath: m_DeviceLostEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnDeviceLost
+      objectReference: {fileID: 0}
+    - target: {fileID: 8347711438489372780, guid: 8e33fda0c220936498f5288af83d7450,
+        type: 3}
+      propertyPath: m_DeviceRegainedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 271878660}
+    - target: {fileID: 8347711438489372780, guid: 8e33fda0c220936498f5288af83d7450,
+        type: 3}
+      propertyPath: m_ControlsChangedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 271878660}
+    - target: {fileID: 8347711438489372780, guid: 8e33fda0c220936498f5288af83d7450,
+        type: 3}
+      propertyPath: m_DeviceRegainedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8347711438489372780, guid: 8e33fda0c220936498f5288af83d7450,
+        type: 3}
+      propertyPath: m_ControlsChangedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8347711438489372780, guid: 8e33fda0c220936498f5288af83d7450,
+        type: 3}
+      propertyPath: m_DeviceRegainedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnDeviceRegained
+      objectReference: {fileID: 0}
+    - target: {fileID: 8347711438489372780, guid: 8e33fda0c220936498f5288af83d7450,
+        type: 3}
+      propertyPath: m_ControlsChangedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnControlsChanged
+      objectReference: {fileID: 0}
+    - target: {fileID: 8347711438489372780, guid: 8e33fda0c220936498f5288af83d7450,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[11].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8347711438489372780, guid: 8e33fda0c220936498f5288af83d7450,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[11].m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8347711438489372780, guid: 8e33fda0c220936498f5288af83d7450,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[11].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 271878660}
+    - target: {fileID: 8347711438489372780, guid: 8e33fda0c220936498f5288af83d7450,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[11].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8347711438489372780, guid: 8e33fda0c220936498f5288af83d7450,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[11].m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8347711438489372780, guid: 8e33fda0c220936498f5288af83d7450,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[11].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnMovement
+      objectReference: {fileID: 0}
+    - target: {fileID: 8347711438489372780, guid: 8e33fda0c220936498f5288af83d7450,
+        type: 3}
+      propertyPath: m_DeviceLostEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8347711438489372780, guid: 8e33fda0c220936498f5288af83d7450,
+        type: 3}
+      propertyPath: m_DeviceRegainedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8347711438489372780, guid: 8e33fda0c220936498f5288af83d7450,
+        type: 3}
+      propertyPath: m_ControlsChangedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8347711438489372780, guid: 8e33fda0c220936498f5288af83d7450,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[11].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e33fda0c220936498f5288af83d7450, type: 3}
+--- !u!114 &271878660 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114960433178452790, guid: 8e33fda0c220936498f5288af83d7450,
+    type: 3}
+  m_PrefabInstance: {fileID: 271878659}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127475601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0eb41f2cd4a34c640ab7314296953cc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &974050356
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -608,3 +780,15 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 271878659}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2127475607 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8347711438489372780, guid: 8e33fda0c220936498f5288af83d7450,
+    type: 3}
+  m_PrefabInstance: {fileID: 271878659}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127475601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

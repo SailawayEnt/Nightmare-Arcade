@@ -59,6 +59,7 @@ public class GameCabinetMenu : MonoBehaviour
       scenesData.LoadLevelWithIndex(1);
       player.SetActive(true);
       player.transform.position = playerTargetPosition.transform.position;
+      // NewPlayer.Instance.EnableGameplayControls();
    }
    
    void HideMenu()

@@ -1,7 +1,6 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 /// <summary>
 /// This script defines which sprite the 'Player" uses and its health.
@@ -13,11 +12,77 @@ public class Player : MonoBehaviour
     public GameObject destructionFX;
 
     public static Player instance; 
+    
+    //Current Control Scheme
+    string _currentControlScheme;
+    
+    [Header("Input Settings")]
+    [SerializeField] PlayerInput playerInput;
 
-    private void Awake()
+    Vector2 _inputMovement;
+    public Vector2 InputMovement { get; private set; }
+    
+    
+    //INPUT SYSTEM ACTION METHODS --------------
+
+    //This is called from PlayerInput; when a joystick or arrow keys has been pushed.
+    //It stores the input Vector as a Vector3 to then be used by the smoothing function.
+
+
+    public void OnMovement(InputAction.CallbackContext value)
+    {
+        InputMovement = value.ReadValue<Vector2>();
+    }
+    
+    //INPUT SYSTEM AUTOMATIC CALLBACKS --------------
+
+    //This is automatically called from PlayerInput, when the input device has changed
+    //(IE: Keyboard -> Xbox Controller)
+    public void OnControlsChanged()
+    {
+
+        if(playerInput.currentControlScheme != _currentControlScheme)
+        {
+            _currentControlScheme = playerInput.currentControlScheme;
+            
+            Debug.Log("TODO: OnControlsChanged");
+
+            // playerVisualsBehaviour.UpdatePlayerVisuals();
+            // RemoveAllBindingOverrides();
+        }
+    }
+    
+    //This is automatically called from PlayerInput, when the input device has been disconnected and can not be identified
+    //IE: Device unplugged or has run out of batteries
+
+    public void OnDeviceLost()
+    {
+        // playerVisualsBehaviour.SetDisconnectedDeviceVisuals();
+        Debug.Log("TODO: OnDeviceLost");
+    }
+
+
+    public void OnDeviceRegained()
+    {
+        StartCoroutine(WaitForDeviceToBeRegained());
+    }
+
+    IEnumerator WaitForDeviceToBeRegained()
+    {
+        yield return new WaitForSeconds(0.1f);
+        // playerVisualsBehaviour.UpdatePlayerVisuals();
+        Debug.Log("TODO: WaitForDeviceToBeRegained");
+    }
+
+    void Awake()
     {
         if (instance == null) 
             instance = this;
+    }
+
+    void Start()
+    {
+        _currentControlScheme = playerInput.currentControlScheme;
     }
 
     //method for damage proceccing by 'Player'
@@ -34,19 +99,3 @@ public class Player : MonoBehaviour
         onPlayerDeath?.Invoke();
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

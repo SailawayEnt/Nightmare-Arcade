@@ -36,7 +36,7 @@ public class NewPlayer : PhysicsObject
     string actionMapMenuControls = "Menu Controls";
 
     //Current Control Scheme
-    string currentControlScheme;
+    string _currentControlScheme;
     
     [Header ("Reference")]
     public AudioSource audioSource;
@@ -116,7 +116,7 @@ public class NewPlayer : PhysicsObject
             machete.SetActive(true);
         }
         
-        currentControlScheme = playerInput.currentControlScheme;
+        _currentControlScheme = playerInput.currentControlScheme;
         
         Cursor.visible = false;
         SetUpCheatItems();
@@ -194,9 +194,9 @@ public class NewPlayer : PhysicsObject
     public void OnControlsChanged()
     {
 
-        if(playerInput.currentControlScheme != currentControlScheme)
+        if(playerInput.currentControlScheme != _currentControlScheme)
         {
-            currentControlScheme = playerInput.currentControlScheme;
+            _currentControlScheme = playerInput.currentControlScheme;
             
             Debug.Log("TODO: OnControlsChanged");
 
@@ -207,8 +207,6 @@ public class NewPlayer : PhysicsObject
 
     //This is automatically called from PlayerInput, when the input device has been disconnected and can not be identified
     //IE: Device unplugged or has run out of batteries
-
-
 
     public void OnDeviceLost()
     {
@@ -303,10 +301,6 @@ public class NewPlayer : PhysicsObject
             playerAnimationBehaviour.UpdateAttackDirection(VerticalDirection);
             // animator.SetBool("hasChair", GameManager.Instance.inventory.ContainsKey("chair"));
             targetVelocity = move * maxSpeed;
-
-
-
-
         }
         else
         {
