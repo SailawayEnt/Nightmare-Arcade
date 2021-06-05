@@ -51,6 +51,7 @@ public class NewPlayer : PhysicsObject
     [SerializeField] GameObject pauseMenu;
     [SerializeField] GameObject machete;
     public RecoveryCounter recoveryCounter;
+    [SerializeField] Vector2Value startingPosition;
     
 
     // Singleton instantiation
@@ -111,6 +112,7 @@ public class NewPlayer : PhysicsObject
 
     void Start()
     {
+        transform.position = startingPosition.initialValue;
         if (macheteData.HasReceived)
         {
             machete.SetActive(true);

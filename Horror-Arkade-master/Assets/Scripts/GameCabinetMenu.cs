@@ -17,10 +17,11 @@ public class GameCabinetMenu : MonoBehaviour
 
    [Header("Main Game References")] 
    [SerializeField] GameObject player;
-   [SerializeField] Transform playerTargetPosition;
+   [SerializeField] Vector2Value playerPositionStorage;
    
 
    GameObject levelControllerGO;
+   
 
    void Awake()
    {
@@ -57,9 +58,6 @@ public class GameCabinetMenu : MonoBehaviour
    public void ExitCabinet()
    {
       scenesData.LoadLevelWithIndex(1);
-      player.SetActive(true);
-      player.transform.position = playerTargetPosition.transform.position;
-      // NewPlayer.Instance.EnableGameplayControls();
    }
    
    void HideMenu()

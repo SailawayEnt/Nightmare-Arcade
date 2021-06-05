@@ -3,18 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="8ee225da-5995-44de-bfa6-5a9a2a492a40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Input/InputActions_Player.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Input/InputActions_Player.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Character.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Character.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/StartUp/LevelTriggers.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/StartUp/LevelTriggers.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/StartUp/Startup.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/StartUp/Startup.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/PauseMenu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/PauseMenu.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level2Part2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level2Part2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1Part2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1Part2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueTrigger.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/PlayerMoving.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/PlayerMoving.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +41,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Events/GameEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/EventSystemManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Types/Vector2Value.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/InventoryItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Levels.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovementBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
@@ -55,9 +52,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Levels.cs" />
-      <option value="$PROJECT_DIR$/Assets/ScriptableObjects/LevelTest.cs" />
-      <option value="$PROJECT_DIR$/Assets/CabinetPlayer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/System/ScenePartLoader.cs" />
       <option value="$PROJECT_DIR$/Assets/ScriptableObjects/GameEvent.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameEventListener.cs" />
@@ -100,12 +94,15 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimationBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/EnemyBase.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovementBehaviour.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueBoxController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SpaceGame/Player.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SpaceGame/PlayerMoving.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" />
+      <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Types/Vector2Value.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraEffects.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/System/SceneTransition.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1s7mNslhf74Iq31JhmXduBQcJs4" />
@@ -199,7 +196,8 @@
       <workItem from="1622827163567" duration="17832000" />
       <workItem from="1622850407986" duration="1181000" />
       <workItem from="1622856173333" duration="898000" />
-      <workItem from="1622910471405" duration="10426000" />
+      <workItem from="1622910471405" duration="11028000" />
+      <workItem from="1622926992800" duration="6525000" />
     </task>
     <servers />
   </component>

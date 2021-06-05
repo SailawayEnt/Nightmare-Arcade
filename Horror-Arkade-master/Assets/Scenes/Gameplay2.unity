@@ -490,12 +490,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5840785a2085f643ae9fb78896c7d5f, type: 3}
---- !u!4 &473915100 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 253529588252582427, guid: c5840785a2085f643ae9fb78896c7d5f,
-    type: 3}
-  m_PrefabInstance: {fileID: 473915099}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &556293161
 GameObject:
   m_ObjectHideFlags: 0
@@ -853,24 +847,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7113145125069167296}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1614313439
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1614313435}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ee6b7c1ac50d2944a629ea3761f1dad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetDestination: {fileID: 1402847323}
-  cabinetPlayer: {fileID: 1802558231}
-  scenesData: {fileID: 11400000, guid: b533ad2b622cce24aa5f96e6dba0a567, type: 2}
-  menu: {fileID: 1230635597}
-  player: {fileID: 563124810}
-  playerTargetPosition: {fileID: 473915100}
 --- !u!114 &1614313440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -887,7 +863,7 @@ MonoBehaviour:
   response:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1614313439}
+      - m_Target: {fileID: 7113145125069167297}
         m_MethodName: ResetCabinetGame
         m_Mode: 1
         m_Arguments:
@@ -1896,7 +1872,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1614313439}
+      objectReference: {fileID: 7113145125069167297}
     - target: {fileID: 3766575078102451864, guid: b022250573709434c9737ce47e1017e3,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -1963,7 +1939,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1614313439}
+      objectReference: {fileID: 7113145125069167297}
     - target: {fileID: 4537027110168075081, guid: b022250573709434c9737ce47e1017e3,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -2155,6 +2131,26 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -37.5
       objectReference: {fileID: 0}
+    - target: {fileID: 7639457209781811722, guid: b022250573709434c9737ce47e1017e3,
+        type: 3}
+      propertyPath: menu
+      value: 
+      objectReference: {fileID: 1230635597}
+    - target: {fileID: 7639457209781811722, guid: b022250573709434c9737ce47e1017e3,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 563124810}
+    - target: {fileID: 7639457209781811722, guid: b022250573709434c9737ce47e1017e3,
+        type: 3}
+      propertyPath: cabinetPlayer
+      value: 
+      objectReference: {fileID: 1802558231}
+    - target: {fileID: 7639457209781811722, guid: b022250573709434c9737ce47e1017e3,
+        type: 3}
+      propertyPath: targetDestination
+      value: 
+      objectReference: {fileID: 1402847323}
     - target: {fileID: 7903559005241584515, guid: b022250573709434c9737ce47e1017e3,
         type: 3}
       propertyPath: menu
@@ -2217,3 +2213,15 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 7903559005241584515, guid: b022250573709434c9737ce47e1017e3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b022250573709434c9737ce47e1017e3, type: 3}
+--- !u!114 &7113145125069167297 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7639457209781811722, guid: b022250573709434c9737ce47e1017e3,
+    type: 3}
+  m_PrefabInstance: {fileID: 7113145125069167296}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614313435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ee6b7c1ac50d2944a629ea3761f1dad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

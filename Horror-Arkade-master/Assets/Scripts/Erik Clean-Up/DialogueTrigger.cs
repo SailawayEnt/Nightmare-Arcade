@@ -20,10 +20,6 @@ public class DialogueTrigger : MonoBehaviour
     [SerializeField] private bool repeat; //Set to true if the player should be able to talk again and again to the NPC. 
     [SerializeField] private bool sleeping;
     
-    [Header("Target")]
-    [SerializeField] private Transform targetDestination;
-    [SerializeField] GameObject thePlayer;
-
     [Header ("Dialogue")]
     [SerializeField] private string characterName; //The character's name shown in the dialogue UI
     [SerializeField] private string dialogueStringA; //The dialogue string that occurs before the fetch quest
@@ -57,6 +53,8 @@ public class DialogueTrigger : MonoBehaviour
     [SerializeField] private ScenesData scenesData;
     [SerializeField] private CinemachineVirtualCamera currentVirtualCamera;
     [SerializeField] private CinemachineVirtualCamera destinationVirtualCamera;
+    [SerializeField] Vector2 playerPosition;
+    [SerializeField] Vector2Value playerPositionStorage;
 
     void OnTriggerStay2D(Collider2D col)
     {
@@ -75,8 +73,8 @@ public class DialogueTrigger : MonoBehaviour
 
               if (characterName == "Enter Door")
               {
-                  thePlayer.transform.position = targetDestination.transform.position;
-                  
+                  playerPositionStorage.initialValue = playerPosition;
+                  NewPlayer.Instance.transform.position = playerPositionStorage.initialValue;
                   currentVirtualCamera.Priority = 1; 
                   destinationVirtualCamera.Priority = 2;
               }
@@ -136,6 +134,7 @@ public class DialogueTrigger : MonoBehaviour
             {
                 if (characterName == "Mega Star")
                 {
+                    playerPositionStorage.initialValue = NewPlayer.Instance.transform.position; 
                     scenesData.LoadLevelWithIndex(2);
                 }
             }
