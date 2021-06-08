@@ -1439,7 +1439,6 @@ GameObject:
   - component: {fileID: 5756025195583310171}
   - component: {fileID: 3326974196663286250}
   - component: {fileID: 7075231412507321271}
-  - component: {fileID: 7903559005241584515}
   m_Layer: 5
   m_Name: GameCabinetMenu
   m_TagString: Untagged
@@ -1529,25 +1528,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &7903559005241584515
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 261108632966269357}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ee6b7c1ac50d2944a629ea3761f1dad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetDestination: {fileID: 0}
-  cabinetPlayer: {fileID: 0}
-  scenesData: {fileID: 0}
-  menu: {fileID: 0}
-  player: {fileID: 0}
-  playerPositionStorage: {fileID: 11400000, guid: 3e8dd63c235d9d2468027963c58ee072,
-    type: 2}
 --- !u!1 &3691017909120396776
 GameObject:
   m_ObjectHideFlags: 0
@@ -1667,7 +1647,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7903559005241584515}
+      - m_Target: {fileID: 0}
         m_MethodName: CollectTicket
         m_Mode: 1
         m_Arguments:
@@ -2120,7 +2100,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7903559005241584515}
+      - m_Target: {fileID: 0}
         m_MethodName: ExitCabinet
         m_Mode: 1
         m_Arguments:

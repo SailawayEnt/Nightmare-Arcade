@@ -50,11 +50,12 @@ public class DialogueTrigger : MonoBehaviour
     private static readonly int Active = Animator.StringToHash("active");
 
     [Header ("Switching Scenes")]
-    [SerializeField] private ScenesData scenesData;
-    [SerializeField] private CinemachineVirtualCamera currentVirtualCamera;
-    [SerializeField] private CinemachineVirtualCamera destinationVirtualCamera;
+    [SerializeField] ScenesData scenesData;
+    [SerializeField] CinemachineVirtualCamera currentVirtualCamera;
+    [SerializeField] CinemachineVirtualCamera destinationVirtualCamera;
     [SerializeField] Vector2 playerPosition;
     [SerializeField] Vector2Value playerPositionStorage;
+    [SerializeField] GameObject PlayerGO;
 
     void OnTriggerStay2D(Collider2D col)
     {
@@ -134,6 +135,7 @@ public class DialogueTrigger : MonoBehaviour
             {
                 if (characterName == "Mega Star")
                 {
+                    
                     playerPositionStorage.initialValue = NewPlayer.Instance.transform.position; 
                     scenesData.LoadLevelWithIndex(2);
                 }

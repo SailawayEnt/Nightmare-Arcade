@@ -7,9 +7,9 @@ public class GameCabinetMenu : MonoBehaviour
 {
    [Header("Target")] 
    [SerializeField] Transform targetDestination;
-
+   
    // Player cabinetPlayer;
-   [SerializeField] CabinetPlayer cabinetPlayer;
+   [SerializeField] GameObject cabinetPlayer;
    [SerializeField] ScenesData scenesData;
    public GameObject menu;
    // [SerializeField] GameEvent onRecievedTicket;
@@ -20,12 +20,12 @@ public class GameCabinetMenu : MonoBehaviour
    [SerializeField] Vector2Value playerPositionStorage;
    
 
-   GameObject levelControllerGO;
+   GameObject _levelControllerGO;
    
 
    void Awake()
    {
-      cabinetPlayer = GameObject.FindObjectOfType<CabinetPlayer>();
+      // cabinetPlayer = GameObject.FindObjectOfType<CabinetPlayer>();
    }
 
    public void StartGame()
@@ -40,8 +40,8 @@ public class GameCabinetMenu : MonoBehaviour
    IEnumerator WaitForLoad()
    {
       yield return new WaitForSeconds(0.25f);
-      levelControllerGO = GameObject.Find("Level_Controller");
-      StartCoroutine(levelControllerGO.GetComponent<LevelController>().LoadFirstWave());
+      _levelControllerGO = GameObject.Find("Level_Controller");
+      StartCoroutine(_levelControllerGO.GetComponent<LevelController>().LoadFirstWave());
       
       
    }
@@ -57,6 +57,8 @@ public class GameCabinetMenu : MonoBehaviour
    
    public void ExitCabinet()
    {
+      cabinetPlayer.SetActive(false);
+      player.SetActive(true);
       scenesData.LoadLevelWithIndex(1);
    }
    

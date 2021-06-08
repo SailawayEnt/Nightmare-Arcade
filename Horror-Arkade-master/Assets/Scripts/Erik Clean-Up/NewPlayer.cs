@@ -34,6 +34,7 @@ public class NewPlayer : PhysicsObject
     //Action Maps
     string actionMapPlayerControls = "Main Player Controls";
     string actionMapMenuControls = "Menu Controls";
+    string actionMapMegaStarControls = "MegaStar Player";
 
     //Current Control Scheme
     string _currentControlScheme;
@@ -113,6 +114,8 @@ public class NewPlayer : PhysicsObject
 
     void Start()
     {
+        // GameManager.isMain
+        EnableGameplayControls();
         transform.position = startingPosition.initialValue;
         if (macheteData.HasReceived)
         {
@@ -196,7 +199,6 @@ public class NewPlayer : PhysicsObject
     //(IE: Keyboard -> Xbox Controller)
     public void OnControlsChanged()
     {
-
         if(playerInput.currentControlScheme != _currentControlScheme)
         {
             _currentControlScheme = playerInput.currentControlScheme;
@@ -578,6 +580,11 @@ public class NewPlayer : PhysicsObject
     public void EnablePauseMenuControls()
     {
         playerInput.SwitchCurrentActionMap(actionMapMenuControls);
+    }
+    
+    public void EnableMegaStarControls()
+    {
+        playerInput.SwitchCurrentActionMap(actionMapMegaStarControls);
     }
     
     //Get Data ----

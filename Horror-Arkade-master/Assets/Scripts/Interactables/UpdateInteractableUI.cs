@@ -1,14 +1,20 @@
-﻿using TMPro;
+﻿using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Networking;
 using UnityEngine.UI;
 
 public class UpdateInteractableUI : MonoBehaviour
 {
     //Input System Stored Data
-    private InputActionAsset focusedInputActionAsset;
-    private PlayerInput focusedPlayerInput;
-    private InputAction focusedInputAction;
+    // InputActionAsset focusedInputActionAsset;
+    PlayerInput _playerInput;
+    InputAction _inputAction;
+    NewPlayer _player;
+    
+    [Header("Rebind Settings")]
+    public string actionName;
     
     [Header("Device Display Settings")]
     public DeviceDisplayConfigurator deviceDisplaySettings;
@@ -16,14 +22,32 @@ public class UpdateInteractableUI : MonoBehaviour
     [Header("UI Display - Binding Text or Icon")]
     public TextMeshProUGUI bindingNameDisplayText;
     public Image bindingIconDisplayImage;
+
+    public void UpdateBehaviour()
+    {   
+        GetPlayerInput();
+        SetupInputAction();
+        // UpdateActionDisplayUI();
+        UpdateDisplayUI();
+    }
     
+    void GetPlayerInput()
+    {
+        _player = FindObjectOfType<NewPlayer>();
+        _playerInput = _player.GetPlayerInput();
+    }
+    
+    void SetupInputAction()
+    {
+        _inputAction = _playerInput.actions.FindAction(actionName);
+    }
+
     public void UpdateDisplayUI()
     {
-        Debug.Log("trying to update the UI");
-        int controlBindingIndex = focusedInputAction.GetBindingIndexForControl(focusedInputAction.controls[0]);
-        string currentBindingInput = InputControlPath.ToHumanReadableString(focusedInputAction.bindings[controlBindingIndex].effectivePath, InputControlPath.HumanReadableStringOptions.OmitDevice);
+        int controlBindingIndex = _inputAction.GetBindingIndexForControl(_inputAction.controls[0]);
+        string currentBindingInput = InputControlPath.ToHumanReadableString(_inputAction.bindings[controlBindingIndex].effectivePath, InputControlPath.HumanReadableStringOptions.OmitDevice);
         
-        Sprite currentDisplayIcon = deviceDisplaySettings.GetDeviceBindingIcon(focusedPlayerInput, currentBindingInput);
+        Sprite currentDisplayIcon = deviceDisplaySettings.GetDeviceBindingIcon(_playerInput, currentBindingInput);
 
         if(currentDisplayIcon)
         {

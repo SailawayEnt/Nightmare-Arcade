@@ -16,6 +16,12 @@ public class GameManager : MonoBehaviour
     [SerializeField] public AudioTrigger gameAmbience;
     [SerializeField]  GameEvent onTicketReceived;
     [SerializeField] ConsumableItem ticketInventorySystem;
+    
+    // Player
+    [SerializeField] NewPlayer player;
+    bool _isPaused;
+    bool _isMainGame;
+    
 
     // Singleton instantiation
     public static GameManager Instance
@@ -53,6 +59,31 @@ public class GameManager : MonoBehaviour
     {   
         inventory.Clear();
         hud.SetInventoryImage(hud.blankUI);
+    }
+    
+    public void SwitchPlayerControlScheme()
+    {
+        switch(_isPaused)
+        {
+            case true:
+                player.EnablePauseMenuControls();
+                break;
+    
+            case false:
+                player.EnableGameplayControls();
+                break;
+        }
+        
+        switch(_isMainGame)
+        {
+            case true:
+                player.EnableGameplayControls();
+                break;
+    
+            case false:
+                player.EnableMegaStarControls();
+                break;
+        }
     }
     
     
