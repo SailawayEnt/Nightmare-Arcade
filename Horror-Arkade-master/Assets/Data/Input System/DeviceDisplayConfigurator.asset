@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 196a834b1acc1174e8e8ea2bced7f568, type: 3}
+  m_Name: DeviceDisplayConfigurator
+  m_EditorClassIdentifier: 
+  listDeviceSets:
+  - deviceRawPath: Keyboard:/Keyboard
+    deviceDisplaySettings: {fileID: 11400000, guid: 22fd1d7cba9486e44a8e79ff985a74b3,
+      type: 2}
+  - deviceRawPath: XInputControllerWindows:/XInputControllerWindows
+    deviceDisplaySettings: {fileID: 11400000, guid: 72221aca550a3a046badebea680c9647,
+      type: 2}
+  - deviceRawPath: DualShock4GamepadHID:/DualShock4GamepadHID
+    deviceDisplaySettings: {fileID: 11400000, guid: f972604912dd94b40bbc4a0f1706024e,
+      type: 2}
+  - deviceRawPath: SwitchProControllerHID:/SwitchProControllerHID
+    deviceDisplaySettings: {fileID: 11400000, guid: 0d8b60f269629b44b84e378ea9452f3d,
+      type: 2}
+  - deviceRawPath: Gamepad:/Gamepad
+    deviceDisplaySettings: {fileID: 11400000, guid: 9814e61700d91094e90afa9d62545800,
+      type: 2}
+  disconnectedDeviceSettings:
+    disconnectedDisplayName: 
+    disconnectedDisplayColor: {r: 0, g: 0, b: 0, a: 0}

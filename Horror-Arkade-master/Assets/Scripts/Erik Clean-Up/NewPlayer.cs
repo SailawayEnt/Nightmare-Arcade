@@ -52,6 +52,7 @@ public class NewPlayer : PhysicsObject
     [SerializeField] GameObject machete;
     public RecoveryCounter recoveryCounter;
     [SerializeField] Vector2Value startingPosition;
+    [SerializeField] GameEvent onControllerChanged;
     
 
     // Singleton instantiation
@@ -199,11 +200,8 @@ public class NewPlayer : PhysicsObject
         if(playerInput.currentControlScheme != _currentControlScheme)
         {
             _currentControlScheme = playerInput.currentControlScheme;
-            
-            Debug.Log("TODO: OnControlsChanged");
-
-            // playerVisualsBehaviour.UpdatePlayerVisuals();
-            // RemoveAllBindingOverrides();
+            onControllerChanged?.Invoke();
+            RemoveAllBindingOverrides();
         }
     }
 
@@ -563,6 +561,11 @@ public class NewPlayer : PhysicsObject
         {
             GameManager.Instance.GetInventoryItem(cheatItems[i], null);
         }
+    }
+    
+    void RemoveAllBindingOverrides()
+    {
+        InputActionRebindingExtensions.RemoveAllBindingOverrides(playerInput.currentActionMap);
     }
     
     //Switching Action Maps ----

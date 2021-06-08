@@ -9,7 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 883ee7febae8c2340adb166beb13e75a, type: 3}
-  m_Name: Player Position
+  m_Script: {fileID: 11500000, guid: 515bdadbd4b5e954da7de3ec1d28a530, type: 3}
+  m_Name: ControllerChanged
   m_EditorClassIdentifier: 
-  initialValue: {x: 70, y: -2.21}
