@@ -46,3 +46,5 @@ MonoBehaviour:
   onTicketReceived: {fileID: 11400000, guid: 7a57bb289c9598149ba5bf41baeb9b1b, type: 2}
   ticketInventorySystem: {fileID: 11400000, guid: 21901ac8abf55dc47b6a80538c8501c8,
     type: 2}
+  onCoinReceived: {fileID: 11400000, guid: 788769ffa171e074da55c7bdd4a27017, type: 2}
+  coinInventorSystem: {fileID: 11400000, guid: 829a929706776ba448bf86ad6e224f77, type: 2}

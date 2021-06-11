@@ -214,9 +214,21 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 114803962774154224, guid: 0d2ce79f41aef454d804e654a4a633f6,
         type: 3}
+      propertyPath: onCoinChange
+      value: 
+      objectReference: {fileID: 11400000, guid: 788769ffa171e074da55c7bdd4a27017,
+        type: 2}
+    - target: {fileID: 114803962774154224, guid: 0d2ce79f41aef454d804e654a4a633f6,
+        type: 3}
       propertyPath: characterName
       value: Mega Star
       objectReference: {fileID: 0}
+    - target: {fileID: 114803962774154224, guid: 0d2ce79f41aef454d804e654a4a633f6,
+        type: 3}
+      propertyPath: coinInventory
+      value: 
+      objectReference: {fileID: 11400000, guid: 829a929706776ba448bf86ad6e224f77,
+        type: 2}
     - target: {fileID: 114803962774154224, guid: 0d2ce79f41aef454d804e654a4a633f6,
         type: 3}
       propertyPath: onEventRaised

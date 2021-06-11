@@ -32,24 +32,30 @@ public static class CheatMenu
     [MenuItem("Cheats/Collect 100 Credits")]
     public static void Collect100Credits()
     {
-        NewPlayer.Instance.coins += 100;
+        CheatManager.Instance.ReceiveCoin(100);
     }
     
     [MenuItem("Cheats/Collect 1,000 Credits")]
     public static void Collect1000Credits()
     {
-        NewPlayer.Instance.coins += 1000;
+        CheatManager.Instance.ReceiveCoin(1000);
     }
     
     [MenuItem("Cheats/Collect 10,000 Credits")]
     public static void Collect10000Credits()
     {
-        NewPlayer.Instance.coins += 10000;
+        CheatManager.Instance.ReceiveCoin(10000);
     }
     
     [MenuItem("Cheats/Collect 1 Ticket")]
     public static void Collect1Ticket()
     {
-        CheatManager.Instance.Receive1Ticket();
+        CheatManager.Instance.ReceiveTicket(1);
+    }
+    
+    [MenuItem("Cheats/Collect 100 Ticket")]
+    public static void Collect100Ticket()
+    {
+        CheatManager.Instance.ReceiveTicket(100);
     }
 }

@@ -5,6 +5,8 @@ public class CheatManager : MonoBehaviour
     [Header("Reference")] 
     [SerializeField] GameEvent onTicketReceived;
     [SerializeField] ConsumableItem ticketInventorySystem;
+    [SerializeField] GameEvent onCoinReceived;
+    [SerializeField] ConsumableItem coinInventorSystem;
     
     // Singleton instantiation
     private static CheatManager _instance;
@@ -20,11 +22,19 @@ public class CheatManager : MonoBehaviour
         }
     }
 
-    public void Receive1Ticket()
+    public void ReceiveCoin(int quantity)
+    {
+        if (coinInventorSystem.CurrentStack < coinInventorSystem.MaxStack)
+        {
+            coinInventorSystem.CurrentStack += quantity;
+            onCoinReceived.Invoke();
+        }
+    }
+    public void ReceiveTicket(int quantity)
     {
         if (ticketInventorySystem.CurrentStack < ticketInventorySystem.MaxStack)
         {
-            ticketInventorySystem.CurrentStack += 1;
+            ticketInventorySystem.CurrentStack += quantity;
             onTicketReceived.Invoke();
         }
     }

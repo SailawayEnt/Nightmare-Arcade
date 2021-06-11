@@ -3,11 +3,23 @@
   <component name="ChangeListManager">
     <list default="true" id="8ee225da-5995-44de-bfa6-5a9a2a492a40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/Cheat System/CheatMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/Cheat System/CheatMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Interactables/Coin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Interactables/Coin.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Interactables/WorkingGameCabinet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Interactables/WorkingGameCabinet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/StartUp/CheatManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/StartUp/CheatManager.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/StartUp/GameManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/StartUp/GameManager.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/ScenePartLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/System/ScenePartLoader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utilities/Input System/DeviceDisplayConfigurator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utilities/Input System/DeviceDisplayConfigurator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1Part2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1Part2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Events/GameEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Events/GameEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/ConsumableItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/ConsumableItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/PersistantItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/PersistantItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Collectable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Collectable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory System/InventorySlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory System/InventorySlot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Other/CheatManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Other/CheatManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/HUD.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/HUD.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +44,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Menu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/ConsumableItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.0.2/InputSystem/Utilities/ReadOnlyArray.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Events/GameEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.0.2/InputSystem/Plugins/PlayerInput/PlayerInput.cs" root0="SKIP_HIGHLIGHTING" />
@@ -44,6 +57,7 @@
     <setting file="file://J:/Unity Editors/2019.4.26f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UIPanelQuitBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.0.2/InputSystem/Utilities/DelegateHelpers.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A5949084-5872-4118-9A97-4C7DF1839E1C/1d/36218f61/UnityEvent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/ScenesData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactables/UpdateInteractableUI.cs" root0="FORCE_HIGHLIGHTING" />
@@ -55,7 +69,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Events/Void.cs.cs" />
       <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Events/VoidEvent.cs" />
       <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Events/BaseGameEvent.cs" />
       <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/Inventory.cs" />
@@ -66,19 +79,12 @@
       <option value="$PROJECT_DIR$/Assets/Editor/CheatMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Editor/Cheat System/RaiseCheatFlag.cs" />
       <option value="$PROJECT_DIR$/Assets/Editor/Cheat System/RaiseTicketCheatFlag.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/HUD.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory System/InventorySlot.cs" />
-      <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/ConsumableItem.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Collectable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SpaceGame/Boundary.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SpaceGame/LevelController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Dialogue.cs" />
       <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/InventoryItem.cs" />
-      <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/PersistantItem.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Other/CheatManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Parallax/ParallaxController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/LocationPortal.cs" />
-      <option value="$PROJECT_DIR$/Assets/Editor/Cheat System/CheatMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/Singleton.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Managers/EventSystemManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIPanelQuitBehaviour.cs" />
@@ -97,15 +103,23 @@
       <option value="$PROJECT_DIR$/Assets/Editor/Input System/DeviceDisplayConfiguratorEditor.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/Input System/DeviceDisplaySettings.cs" />
       <option value="$PROJECT_DIR$/Assets/Editor/Input System/DeviceDisplaySettingsEditor.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueTrigger.cs" />
       <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.0.2/InputSystem/Plugins/Users/InputUser.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Interactables/UpdateInteractableUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/Input System/DeviceDisplayConfigurator.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/ScriptableObjects/ScenesData.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/System/ScenePartLoader.cs" />
+      <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/ConsumableItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/PersistantItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Events/GameEvent.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Collectable.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueTrigger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Other/CheatManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/Cheat System/CheatMenu.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory System/InventorySlot.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/HUD.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1s7mNslhf74Iq31JhmXduBQcJs4" />
@@ -205,6 +219,7 @@
       <workItem from="1623164204092" duration="3374000" />
       <workItem from="1623177109720" duration="7081000" />
       <workItem from="1623346297039" duration="3659000" />
+      <workItem from="1623437756913" duration="5391000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cb6495b29910654a8145f78a5ff5733, type: 3}
+  m_Name: CoinInventory
+  m_EditorClassIdentifier: 
+  name: Coin Inventory
+  icon: {fileID: 7412158409161412960, guid: 6601089fcdc67504eb56b99aa1179c23, type: 3}
+  maxStack: 9999999
+  useText: Do something, Maybe?

@@ -12,7 +12,6 @@ public class HUD : MonoBehaviour
     [Header ("Reference")]
     public Animator animator;
     [SerializeField] private GameObject ammoBar;
-    public TextMeshProUGUI coinsMesh;
     [SerializeField] private GameObject healthBar;
     [SerializeField] private Image inventoryItemGraphic;
     [SerializeField] private GameObject startUp;
@@ -20,8 +19,6 @@ public class HUD : MonoBehaviour
     private float ammoBarWidth;
     private float ammoBarWidthEased; //Easing variables slowly ease towards a number
     [System.NonSerialized] public Sprite blankUI; //The sprite that is shown in the UI when you don't have any items
-    private float coins;
-    private float coinsEased;
     private float healthBarWidth;
     private float healthBarWidthEased;
     [System.NonSerialized] public string loadSceneName;
@@ -34,23 +31,11 @@ public class HUD : MonoBehaviour
         healthBarWidthEased = healthBarWidth;
         ammoBarWidth = 1;
         ammoBarWidthEased = ammoBarWidth;
-        coins = (float)NewPlayer.Instance.coins;
-        coinsEased = coins;
         blankUI = inventoryItemGraphic.GetComponent<Image>().sprite;
     }
 
     void Update()
     {
-        //Update coins text mesh to reflect how many coins the player has! However, we want them to count up.
-        coinsMesh.text = Mathf.Round(coinsEased).ToString();
-        coinsEased += ((float)NewPlayer.Instance.coins - coinsEased) * Time.deltaTime * 5f;
-
-        if (coinsEased >= coins)
-        {
-            animator.SetTrigger("getGem");
-            coins = coinsEased + 1;
-        }
-
         //Controls the width of the health bar based on the player's total health
         healthBarWidth = (float)NewPlayer.Instance.health / (float)NewPlayer.Instance.maxHealth;
         healthBarWidthEased += (healthBarWidth - healthBarWidthEased) * Time.deltaTime * healthBarWidthEased;

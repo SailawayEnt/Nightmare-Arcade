@@ -288,7 +288,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1524664889
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 1
   m_Sprite: {fileID: 7412158409161412960, guid: 6601089fcdc67504eb56b99aa1179c23,
     type: 3}
@@ -341,6 +341,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: 1
+  onRecievedTicket: {fileID: 0}
+  ticketInventory: {fileID: 0}
+  onRecievedCoin: {fileID: 11400000, guid: 788769ffa171e074da55c7bdd4a27017, type: 2}
+  coinInventory: {fileID: 11400000, guid: 829a929706776ba448bf86ad6e224f77, type: 2}
   audioSource: {fileID: 0}
   bounceSound: {fileID: 8300000, guid: 4606c2e00ff414c58b47cffcae0c3a4e, type: 3}
   collectSounds:

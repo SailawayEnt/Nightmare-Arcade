@@ -49,6 +49,10 @@ MonoBehaviour:
   hud: {fileID: 0}
   gameMusic: {fileID: 0}
   gameAmbience: {fileID: 0}
+  onTicketReceived: {fileID: 11400000, guid: 7a57bb289c9598149ba5bf41baeb9b1b, type: 2}
+  ticketInventorySystem: {fileID: 11400000, guid: 21901ac8abf55dc47b6a80538c8501c8,
+    type: 2}
+  player: {fileID: 0}
 --- !u!82 &2902462224266964070
 AudioSource:
   m_ObjectHideFlags: 0

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Persistant Item", menuName = "Items/Persistant Item")]
+[CreateAssetMenu(fileName = "New Persistant Item", menuName = "Scriptable Objects/Items/Persistant Item")]
 public class PersistantItem : InventoryItem
 {
     const bool  DefaultState = false;

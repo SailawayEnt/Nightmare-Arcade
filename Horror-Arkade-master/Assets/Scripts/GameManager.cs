@@ -14,9 +14,7 @@ public class GameManager : MonoBehaviour
     private static GameManager instance;
     [SerializeField] public AudioTrigger gameMusic;
     [SerializeField] public AudioTrigger gameAmbience;
-    [SerializeField]  GameEvent onTicketReceived;
-    [SerializeField] ConsumableItem ticketInventorySystem;
-    
+
     // Player
     [SerializeField] NewPlayer player;
     bool _isPaused;
@@ -85,15 +83,4 @@ public class GameManager : MonoBehaviour
                 break;
         }
     }
-    
-    
-    public void Receive1Ticket()
-    {
-        if (ticketInventorySystem.CurrentStack < ticketInventorySystem.MaxStack)
-        {
-            ticketInventorySystem.CurrentStack += 1;
-            onTicketReceived?.Invoke();
-        }
-    }
-
 }

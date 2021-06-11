@@ -9,8 +9,10 @@ public class Collectable : MonoBehaviour
 
     enum ItemType { InventoryItem, Coin, Health, Ammo, Ticket }; //Creates an ItemType category
     [SerializeField] ItemType itemType; //Allows us to select what type of item the gameObject is in the inspector
-    [SerializeField] private GameEvent onRecievedTicket;
+    [SerializeField] GameEvent onRecievedTicket;
     public ConsumableItem ticketInventory;
+    [SerializeField] GameEvent onRecievedCoin;
+    [SerializeField] ConsumableItem coinInventory;
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip bounceSound;
     [SerializeField] private AudioClip[] collectSounds;
@@ -48,7 +50,11 @@ public class Collectable : MonoBehaviour
         }
         else if (itemType == ItemType.Coin)
         {
-            NewPlayer.Instance.coins += itemAmount;
+            if (coinInventory.CurrentStack < coinInventory.MaxStack)
+            {
+                coinInventory.CurrentStack += itemAmount;
+                onRecievedCoin?.Invoke();
+            }
         }
         else if (itemType == ItemType.Health)
         {

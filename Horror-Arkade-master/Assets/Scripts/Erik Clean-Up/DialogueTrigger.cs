@@ -13,6 +13,8 @@ public class DialogueTrigger : MonoBehaviour
     [SerializeField] ConsumableItem ticketInventory; //The Ticket Inventory
     [SerializeField] GameEvent onTicketChange;
     [SerializeField] GameEvent onInitialItemReceived;
+    [SerializeField] ConsumableItem coinInventory; // The Coin Inventory
+    [SerializeField] GameEvent onCoinChange;
 
     [Header("Trigger")]
     [SerializeField] private bool autoHit; //Does the player need to press the interact button, or will it simply fire automatically?
@@ -79,7 +81,7 @@ public class DialogueTrigger : MonoBehaviour
                   currentVirtualCamera.Priority = 1; 
                   destinationVirtualCamera.Priority = 2;
               }
-              else if (requiredItem == "" && requiredCoins == 0 && requiredTickets == 0 || !GameManager.Instance.inventory.ContainsKey(requiredItem) && requiredCoins == 0 && requiredTickets == 0 || (requiredCoins != 0 && NewPlayer.Instance.coins < requiredCoins) || (requiredTickets != 0 && ticketInventory.CurrentStack < requiredTickets ))
+              else if (requiredItem == "" && requiredCoins == 0 && requiredTickets == 0 || !GameManager.Instance.inventory.ContainsKey(requiredItem) && requiredCoins == 0 && requiredTickets == 0 || (requiredCoins != 0 && coinInventory.CurrentStack < requiredCoins) || (requiredTickets != 0 && ticketInventory.CurrentStack < requiredTickets ))
               {
                   if (firstVisit)
                   {
@@ -98,7 +100,7 @@ public class DialogueTrigger : MonoBehaviour
                   }
                   
               }
-              else if (requiredCoins == 0 && requiredTickets == 0 && GameManager.Instance.inventory.ContainsKey(requiredItem) || (requiredCoins != 0 && NewPlayer.Instance.coins >= requiredCoins) || (requiredTickets != 0 && ticketInventory.CurrentStack >= requiredTickets ))
+              else if (requiredCoins == 0 && requiredTickets == 0 && GameManager.Instance.inventory.ContainsKey(requiredItem) || (requiredCoins != 0 && coinInventory.CurrentStack >= requiredCoins) || (requiredTickets != 0 && ticketInventory.CurrentStack >= requiredTickets ))
               {
                   if (dialogueStringC != "")
                   {
@@ -135,9 +137,13 @@ public class DialogueTrigger : MonoBehaviour
             {
                 if (characterName == "Mega Star")
                 {
-                    
                     playerPositionStorage.initialValue = NewPlayer.Instance.transform.position; 
                     scenesData.LoadLevelWithIndex(2);
+                    if(requiredCoins > 0)
+                    {
+                        coinInventory.CurrentStack -= requiredCoins;
+                        onCoinChange.Invoke();
+                    }
                 }
             }
             else
@@ -160,7 +166,8 @@ public class DialogueTrigger : MonoBehaviour
                 }
                 else if(requiredCoins > 0)
                 {
-                    NewPlayer.Instance.coins -= requiredCoins;
+                    coinInventory.CurrentStack -= requiredCoins;
+                    onCoinChange.Invoke();
                 }
                 else
                 {
@@ -190,7 +197,8 @@ public class DialogueTrigger : MonoBehaviour
 
             if (getCoinAmount != 0)
             {
-                NewPlayer.Instance.coins += getCoinAmount;
+                coinInventory.CurrentStack += getCoinAmount;
+                onCoinChange?.Invoke();
             }
 
             if (getSound != null)
