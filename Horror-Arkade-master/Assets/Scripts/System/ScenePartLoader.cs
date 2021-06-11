@@ -1,21 +1,11 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public enum CheckMethod
-{
-    Distance,
-    Trigger
-}
 public class ScenePartLoader : MonoBehaviour
 {
-
-    public Transform player;
-    public CheckMethod checkMethod;
-    public float loadRange;
-
     //Scene state
-    private bool isLoaded;
-    private bool shouldLoad;
+    bool _isLoaded;
+    bool _shouldLoad;
     
     
     void Start()
@@ -28,7 +18,7 @@ public class ScenePartLoader : MonoBehaviour
                 Scene scene = SceneManager.GetSceneAt(i);
                 if (scene.name == gameObject.name)
                 {
-                    isLoaded = true;
+                    _isLoaded = true;
                 }
             }
         }
@@ -36,48 +26,27 @@ public class ScenePartLoader : MonoBehaviour
 
     void Update()
     {
-        //Checking which method to use
-        if (checkMethod == CheckMethod.Distance)
-        {
-            DistanceCheck();
-        }
-        else if (checkMethod == CheckMethod.Trigger)
-        {
-            
-            TriggerCheck();
-        }
+        TriggerCheck();
     }
-
-    void DistanceCheck()
-    {
-        //Checking if the player is within the range
-        if (Vector3.Distance(player.position, transform.position) < loadRange)
-        {
-            LoadScene();
-        }
-        else
-        {
-            UnLoadScene();
-        }
-    }
+    
 
     void LoadScene()
     {
-        if (!isLoaded)
+        if (!_isLoaded)
         {
             //Loading the scene, using the gameobject name as it's the same as the name of the scene to load
             SceneManager.LoadSceneAsync(gameObject.name, LoadSceneMode.Additive);
             //We set it to true to avoid loading the scene twice
-            isLoaded = true;
+            _isLoaded = true;
         }
     }
 
     void UnLoadScene()
     {
-        if (isLoaded)
+        if (_isLoaded)
         {
             SceneManager.UnloadSceneAsync(gameObject.name);
-            isLoaded = false;
+            _isLoaded = false;
         }
     }
 
@@ -87,13 +56,13 @@ public class ScenePartLoader : MonoBehaviour
         {
             if (col.gameObject == NewPlayer.Instance.gameObject)
             {
-                shouldLoad = true;
+                _shouldLoad = true;
             }
         }else if (CabinetPlayer.Instance)
         {
             if (col.gameObject == CabinetPlayer.Instance.gameObject)
             {
-                shouldLoad = true;
+                _shouldLoad = true;
             }
         }
     }
@@ -104,13 +73,13 @@ public class ScenePartLoader : MonoBehaviour
         {
             if (col.gameObject == NewPlayer.Instance.gameObject)
             {
-                shouldLoad = false;
+                _shouldLoad = false;
             }
         }else if (CabinetPlayer.Instance)
         {
             if (col.gameObject == CabinetPlayer.Instance.gameObject)
             {
-                shouldLoad = false;
+                _shouldLoad = false;
             }
         }
     }
@@ -118,7 +87,7 @@ public class ScenePartLoader : MonoBehaviour
     void TriggerCheck()
     {
         //shouldLoad is set from the Trigger methods
-        if (shouldLoad)
+        if (_shouldLoad)
         {
             LoadScene();
         }
@@ -127,8 +96,6 @@ public class ScenePartLoader : MonoBehaviour
             UnLoadScene();
         }
     }
-
-
 
 }
 

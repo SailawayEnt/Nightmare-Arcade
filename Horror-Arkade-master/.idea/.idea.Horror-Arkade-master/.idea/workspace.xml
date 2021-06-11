@@ -3,17 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="8ee225da-5995-44de-bfa6-5a9a2a492a40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Character.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Character.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Interactables/DialogueObject.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Interactables/DialogueObject.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/StartUp/Startup.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/StartUp/Startup.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1Part2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1Part2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactables/UpdateInteractableUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactables/UpdateInteractableUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/ScenePartLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/System/ScenePartLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utilities/Input System/DeviceDisplayConfigurator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utilities/Input System/DeviceDisplayConfigurator.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,8 +55,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory System/IItemContainer.cs" />
-      <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Events/Listeners/IGameEventListener.cs" />
       <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Events/Void.cs.cs" />
       <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Events/VoidEvent.cs" />
       <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Events/BaseGameEvent.cs" />
@@ -105,13 +97,15 @@
       <option value="$PROJECT_DIR$/Assets/Editor/Input System/DeviceDisplayConfiguratorEditor.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/Input System/DeviceDisplaySettings.cs" />
       <option value="$PROJECT_DIR$/Assets/Editor/Input System/DeviceDisplaySettingsEditor.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/Input System/DeviceDisplayConfigurator.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueTrigger.cs" />
       <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.0.2/InputSystem/Plugins/Users/InputUser.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Interactables/UpdateInteractableUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/Input System/DeviceDisplayConfigurator.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" />
+      <option value="$PROJECT_DIR$/Assets/ScriptableObjects/ScenesData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/System/ScenePartLoader.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1s7mNslhf74Iq31JhmXduBQcJs4" />
@@ -210,6 +204,7 @@
       <workItem from="1623089339319" duration="7521000" />
       <workItem from="1623164204092" duration="3374000" />
       <workItem from="1623177109720" duration="7081000" />
+      <workItem from="1623346297039" duration="3659000" />
     </task>
     <servers />
   </component>

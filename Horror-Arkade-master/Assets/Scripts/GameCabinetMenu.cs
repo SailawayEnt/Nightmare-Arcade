@@ -23,11 +23,6 @@ public class GameCabinetMenu : MonoBehaviour
    GameObject _levelControllerGO;
    
 
-   void Awake()
-   {
-      // cabinetPlayer = GameObject.FindObjectOfType<CabinetPlayer>();
-   }
-
    public void StartGame()
    {
       HideMenu();
