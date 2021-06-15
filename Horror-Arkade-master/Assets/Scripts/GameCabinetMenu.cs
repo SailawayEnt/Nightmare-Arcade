@@ -19,7 +19,12 @@ public class GameCabinetMenu : MonoBehaviour
    
 
    GameObject _levelControllerGO;
-   
+
+   void Awake()
+   {
+      
+   }
+
 
    public void StartGame()
    {
@@ -32,11 +37,9 @@ public class GameCabinetMenu : MonoBehaviour
 
    IEnumerator WaitForLoad()
    {
-      yield return new WaitForSeconds(0.25f);
+      yield return new WaitForSeconds(.25f);
       _levelControllerGO = GameObject.Find("Level_Controller");
       StartCoroutine(_levelControllerGO.GetComponent<LevelController>().LoadFirstWave());
-      
-      
    }
    
    public void ExitCabinet()

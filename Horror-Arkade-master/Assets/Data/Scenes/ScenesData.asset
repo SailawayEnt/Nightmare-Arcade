@@ -20,3 +20,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 873ea0bbbd5e0974bb321c669bf08b63, type: 2}
   - {fileID: 11400000, guid: 7a42752a6a4ee0a438a69c9cb0c6d6aa, type: 2}
   CurrentLevelIndex: 1
+  startingPosition: {fileID: 11400000, guid: 3e8dd63c235d9d2468027963c58ee072, type: 2}

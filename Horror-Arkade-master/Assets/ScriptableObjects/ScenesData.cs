@@ -6,7 +6,8 @@ public class ScenesData : ScriptableObject
 {
     public List<Levels> levels = new List<Levels>();
     public List<Menu> menus = new List<Menu>();
-    public int CurrentLevelIndex=1;
+    public int CurrentLevelIndex = 1;
+    public Vector2Value startingPosition;
 
     /*
      * Levels
@@ -45,6 +46,7 @@ public class ScenesData : ScriptableObject
     //New game, load level 1
     public void NewGame()
     {
+        startingPosition.initialValue = new Vector2(-44.42f, -5.822211f);
         LoadLevelWithIndex(1);
     }
    

@@ -3,48 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="8ee225da-5995-44de-bfa6-5a9a2a492a40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Scenes/Level2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Scenes/Level2.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Data/Scenes/ScenesData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Scenes/ScenesData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/System/Player Position.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/System/Player Position.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scene Part Loaders/level1Part2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Scene Part Loaders/level1Part2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scene Part Loaders/level1Part2.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Scene Part Loaders/level1Part2.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scene Part Loaders/level1Part3.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scene Part Loaders/level1Part3.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scene Part Loaders/level2Part1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Scene Part Loaders/level2Part1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scene Part Loaders/level2Part1.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Scene Part Loaders/level2Part1.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scene Part Loaders/level2Part2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scene Part Loaders/level2Part2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/StartUp/Managers.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/StartUp/Managers.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/StartUp/Outside Arkade To Part 2 Scene Transition.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/StartUp/Outside Arkade To Part 2 Scene Transition.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/World/SceneLayers.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/World/SceneLayers.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay2.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay2.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1Part2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1Part2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1Part2.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1Part2.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1Part3.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1Part3.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level2Part1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level2Part1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level2Part1.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level2Part1.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level2Part2.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level2Part2.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Events/GameEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Events/GameEvent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/ConsumableItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/ConsumableItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/PersistantItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/PersistantItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Levels.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Levels.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Menu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay3.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/ScenesData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/ScenesData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Types/Vector2Value.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Types/Vector2Value.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueTrigger.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/EventSystemManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/EventSystemManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/LevelController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/LevelController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/ScenePartLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/System/ScenePartLoader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/SceneTransition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/System/SceneTransition.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utilities/Input System/DeviceDisplayConfigurator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utilities/Input System/DeviceDisplayConfigurator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utilities/Input System/DeviceDisplaySettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utilities/Input System/DeviceDisplaySettings.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utilities/Singleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utilities/Singleton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +57,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Events/Listeners/UnityEvent.cs" />
       <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Events/Listeners/VoidListener.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory System/ItemContainer.cs" />
       <option value="$PROJECT_DIR$/Assets/Editor/CheatMenu.cs" />
@@ -135,7 +97,6 @@
       <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Types/Vector2Value.cs" />
       <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/PersistantItem.cs" />
       <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Menu.cs" />
-      <option value="$PROJECT_DIR$/Assets/ScriptableObjects/ScenesData.cs" />
       <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/ConsumableItem.cs" />
       <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Events/GameEvent.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/Input System/DeviceDisplaySettings.cs" />
@@ -143,8 +104,10 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/System/ScenePartLoader.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/System/SceneTransition.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueTrigger.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" />
+      <option value="$PROJECT_DIR$/Assets/ScriptableObjects/ScenesData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Breakable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SpaceGame/LevelController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1s7mNslhf74Iq31JhmXduBQcJs4" />
@@ -246,6 +209,10 @@
       <workItem from="1623346297039" duration="3659000" />
       <workItem from="1623437756913" duration="5391000" />
       <workItem from="1623696050092" duration="11332000" />
+      <workItem from="1623770022600" duration="288000" />
+      <workItem from="1623774997986" duration="303000" />
+      <workItem from="1623776389732" duration="23000" />
+      <workItem from="1623791224409" duration="964000" />
     </task>
     <servers />
   </component>
