@@ -83,7 +83,7 @@ public class LevelController : MonoBehaviour {
                 Debug.Log("game won and ticket given");
                ticketInventory.CurrentStack += 1;
                onTicketReceived?.Invoke();
-               scenesData.LoadLevelWithIndex(1);
+               scenesData.LoadLevelWithIndex(2);
             }
             onGameWon?.Invoke();
             gameEnded = true;

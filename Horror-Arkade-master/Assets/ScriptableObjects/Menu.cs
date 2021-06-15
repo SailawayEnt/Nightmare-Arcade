@@ -6,7 +6,7 @@ public enum Type
     Pause_Menu
 }
 
-[CreateAssetMenu(fileName = "NewMenu", menuName = "Scene Data/Menu")]
+[CreateAssetMenu(fileName = "NewMenu", menuName = "Scriptable Object/Scene Data/Menu")]
 public class Menu : GameScene
 {
     //Settings specific to menu only

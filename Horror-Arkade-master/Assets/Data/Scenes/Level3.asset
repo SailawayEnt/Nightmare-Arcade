@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db6adf967c4b3ea4297634d48f092748, type: 3}
-  m_Name: Level2
+  m_Name: Level3
   m_EditorClassIdentifier: 
-  sceneName: Level2
-  shortDescription: Inside Arkade
+  sceneName: Level3
+  shortDescription: Arcade Cabinet
   music: {fileID: 0}
   musicVolume: 0
   postprocess: {fileID: 0}

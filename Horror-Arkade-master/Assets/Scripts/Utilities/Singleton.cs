@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 /// <summary>
 /// Be aware this will not prevent a non singleton constructor
@@ -7,9 +8,10 @@
 /// </summary>
 public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
 {
-    private static T _instance;
+    static T _instance;
+    
+    static object _lock = new object();
 
-    private static object _lock = new object();
 
     public static T Instance
     {
@@ -57,6 +59,19 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
             }
         }
     }
+    
+    public static void DontDestroyChildOnLoad( GameObject child )
+    {
+        Transform parentTransform = child.transform;
+ 
+        // If this object doesn't have a parent then its the root transform.
+        while ( parentTransform.parent != null )
+        {
+            // Keep going up the chain.
+            parentTransform = parentTransform.parent;
+        }
+        DontDestroyOnLoad(parentTransform.gameObject);
+    }
 
     private static bool IsDontDestroyOnLoad()
     {
@@ -67,6 +82,7 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
         // Object exists independent of Scene lifecycle, assume that means it has DontDestroyOnLoad set
         if ((_instance.gameObject.hideFlags & HideFlags.DontSave) == HideFlags.DontSave)
         {
+            Debug.Log("DDOL", _instance);
             return true;
         }
         return false;

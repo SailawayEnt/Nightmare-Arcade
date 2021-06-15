@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Scriptable Objects/Game Event", fileName = "New Game Event")]
+[CreateAssetMenu(menuName = "Scriptable Object/Game Event", fileName = "New Game Event")]
 public class GameEvent : ScriptableObject
 {
     HashSet<GameEventListener> _listeners = new HashSet<GameEventListener>();

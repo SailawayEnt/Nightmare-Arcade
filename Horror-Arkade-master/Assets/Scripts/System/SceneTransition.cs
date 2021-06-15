@@ -11,15 +11,17 @@ public class SceneTransition : MonoBehaviour
     [SerializeField] CinemachineVirtualCamera destinationVirtualCamera;
     [SerializeField] Vector2 playerPosition;
     [SerializeField] Vector2Value playerPositionStorage;
+    [SerializeField] GameEvent onSceneChange;
 
     void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject == NewPlayer.Instance.gameObject && !col.isTrigger)
         {
             playerPositionStorage.initialValue = playerPosition;
-            col.transform.position = playerPositionStorage.initialValue;
-            currentVirtualCamera.Priority = 1; 
-            destinationVirtualCamera.Priority = 2;
+            scenesData.LoadLevelWithIndex(sceneToLoad);
+            // onSceneChange?.Invoke();
+            // currentVirtualCamera.Priority = 1; 
+            // destinationVirtualCamera.Priority = 2;
         }
     }
 }

@@ -12,8 +12,6 @@ public class GameCabinetMenu : MonoBehaviour
    [SerializeField] GameObject cabinetPlayer;
    [SerializeField] ScenesData scenesData;
    public GameObject menu;
-   // [SerializeField] GameEvent onRecievedTicket;
-   // public ConsumableItem ticketInventory;
 
    [Header("Main Game References")] 
    [SerializeField] GameObject player;
@@ -40,21 +38,12 @@ public class GameCabinetMenu : MonoBehaviour
       
       
    }
-   // public void CollectTicket()
-   // {
-   //    if (ticketInventory.CurrentStack < ticketInventory.MaxStack)
-   //    {
-   //       ticketInventory.CurrentStack += 1;
-   //       onRecievedTicket?.Invoke();
-   //    }
-   //    scenesData.LoadLevelWithIndex(1);
-   // }
    
    public void ExitCabinet()
    {
       cabinetPlayer.SetActive(false);
       player.SetActive(true);
-      scenesData.LoadLevelWithIndex(1);
+      scenesData.LoadLevelWithIndex(2);
    }
    
    void HideMenu()

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2741086172624816480}
   - component: {fileID: 7463738054072699420}
   m_Layer: 0
-  m_Name: level2Part2
+  m_Name: level3Part2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70,6 +70,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d85ff7d731666624bbb7071e938a8aa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  checkMethod: 1
-  loadRange: 60

@@ -402,7 +402,6 @@ GameObject:
   m_Component:
   - component: {fileID: 518705226035798192}
   - component: {fileID: 419374993857753896}
-  - component: {fileID: 4628112550251862794}
   m_Layer: 0
   m_Name: Layer1
   m_TagString: Untagged
@@ -435,19 +434,6 @@ SortingGroup:
   m_SortingLayerID: -982654969
   m_SortingLayer: -3
   m_SortingOrder: 0
---- !u!114 &4628112550251862794
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 520633998067594254}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8611c199253ab9944898dfde99808d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parallaxAmount: -0.05
 --- !u!1 &520688296385230506
 GameObject:
   m_ObjectHideFlags: 0

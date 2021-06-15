@@ -57,7 +57,7 @@ public class DialogueTrigger : MonoBehaviour
     [SerializeField] CinemachineVirtualCamera destinationVirtualCamera;
     [SerializeField] Vector2 playerPosition;
     [SerializeField] Vector2Value playerPositionStorage;
-    [SerializeField] GameObject PlayerGO;
+    [SerializeField] private GameEvent onSceneChange;
 
     void OnTriggerStay2D(Collider2D col)
     {
@@ -77,9 +77,7 @@ public class DialogueTrigger : MonoBehaviour
               if (characterName == "Enter Door")
               {
                   playerPositionStorage.initialValue = playerPosition;
-                  NewPlayer.Instance.transform.position = playerPositionStorage.initialValue;
-                  currentVirtualCamera.Priority = 1; 
-                  destinationVirtualCamera.Priority = 2;
+                  scenesData.LoadLevelWithIndex(2);
               }
               else if (requiredItem == "" && requiredCoins == 0 && requiredTickets == 0 || !GameManager.Instance.inventory.ContainsKey(requiredItem) && requiredCoins == 0 && requiredTickets == 0 || (requiredCoins != 0 && coinInventory.CurrentStack < requiredCoins) || (requiredTickets != 0 && ticketInventory.CurrentStack < requiredTickets ))
               {
@@ -138,7 +136,7 @@ public class DialogueTrigger : MonoBehaviour
                 if (characterName == "Mega Star")
                 {
                     playerPositionStorage.initialValue = NewPlayer.Instance.transform.position; 
-                    scenesData.LoadLevelWithIndex(2);
+                    scenesData.LoadLevelWithIndex(3);
                     if(requiredCoins > 0)
                     {
                         coinInventory.CurrentStack -= requiredCoins;

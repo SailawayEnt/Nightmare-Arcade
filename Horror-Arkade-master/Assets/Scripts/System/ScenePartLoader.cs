@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class ScenePartLoader : MonoBehaviour
 {
@@ -34,11 +35,20 @@ public class ScenePartLoader : MonoBehaviour
     {
         if (!_isLoaded)
         {
-            //Loading the scene, using the gameobject name as it's the same as the name of the scene to load
-            SceneManager.LoadSceneAsync(gameObject.name, LoadSceneMode.Additive);
-            //We set it to true to avoid loading the scene twice
-            _isLoaded = true;
+            StartCoroutine(LoadAsync());
         }
+    }
+
+    IEnumerator LoadAsync()
+    {
+        //Loading the scene, using the gameobject name as it's the same as the name of the scene to load
+        AsyncOperation aoLevel =SceneManager.LoadSceneAsync(gameObject.name, LoadSceneMode.Additive);
+        //We set it to true to avoid loading the scene twice
+        _isLoaded = true;
+            
+        while (!aoLevel.isDone)
+            yield return null;
+        
     }
 
     void UnLoadScene()

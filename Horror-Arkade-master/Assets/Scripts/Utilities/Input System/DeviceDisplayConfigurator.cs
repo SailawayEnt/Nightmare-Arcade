@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine.InputSystem;
 
-[CreateAssetMenu(fileName = "Device Display Configurator", menuName = "Scriptable Objects/Device Display Configurator", order = 1)]
+[CreateAssetMenu(fileName = "Device Display Configurator", menuName = "Scriptable Object/Device Display Configurator", order = 1)]
 public class DeviceDisplayConfigurator : ScriptableObject
 {
     
@@ -170,6 +170,4 @@ public class DeviceDisplayConfigurator : ScriptableObject
     {
         return disconnectedDeviceSettings.disconnectedDisplayColor;
     }
-    
-    
 }

@@ -1,8 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-[CreateAssetMenu(fileName = "sceneDB", menuName = "Scene Data/Database")]
+[CreateAssetMenu(fileName = "sceneDB", menuName = "Scriptable Object/Scene Data/Database")]
 public class ScenesData : ScriptableObject
 {
     public List<Levels> levels = new List<Levels>();
@@ -19,8 +18,9 @@ public class ScenesData : ScriptableObject
     {
         if (index <= levels.Count)
         {
+            SceneControlManager.LoadScene(index, 1, 2);
             //Load Gameplay scene for the level
-            SceneManager.LoadSceneAsync("Gameplay" + index.ToString());
+            // SceneManager.LoadSceneAsync("Gameplay" + index.ToString());
             //Load first part of the level in additive mode
             // SceneManager.LoadSceneAsync("Level" + index.ToString() + "Part1", LoadSceneMode.Additive);
         }
@@ -55,11 +55,11 @@ public class ScenesData : ScriptableObject
     //Load main Menu
     public void LoadMainMenu()
     {
-        SceneManager.LoadSceneAsync(menus[(int)Type.Main_Menu].sceneName);
+        // SceneManager.LoadSceneAsync(menus[(int)Type.Main_Menu].sceneName);
     }
     //Load Pause Menu
     public void LoadPauseMenu()
     {
-        SceneManager.LoadSceneAsync(menus[(int)Type.Pause_Menu].sceneName);
+        // SceneManager.LoadSceneAsync(menus[(int)Type.Pause_Menu].sceneName);
     }
 }
