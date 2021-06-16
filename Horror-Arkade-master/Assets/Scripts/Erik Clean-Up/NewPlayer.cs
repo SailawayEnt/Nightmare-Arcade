@@ -201,6 +201,7 @@ public class NewPlayer : PhysicsObject
     {
         if(playerInput.currentControlScheme != _currentControlScheme)
         {
+            Debug.Log("controller changed");
             _currentControlScheme = playerInput.currentControlScheme;
             onControllerChanged?.Invoke();
             RemoveAllBindingOverrides();

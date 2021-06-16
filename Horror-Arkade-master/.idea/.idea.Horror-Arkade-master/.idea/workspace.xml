@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8ee225da-5995-44de-bfa6-5a9a2a492a40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Scenes/ScenesData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Scenes/ScenesData.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay3.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/ScenesData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/ScenesData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,10 +77,8 @@
       <option value="$PROJECT_DIR$/Assets/Editor/Input System/DeviceDisplayConfigurator.cs" />
       <option value="$PROJECT_DIR$/Assets/Editor/Input System/DeviceDisplayConfiguratorEditor.cs" />
       <option value="$PROJECT_DIR$/Assets/Editor/Input System/DeviceDisplaySettingsEditor.cs" />
-      <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.0.2/InputSystem/Plugins/Users/InputUser.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Interactables/UpdateInteractableUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Collectable.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Other/CheatManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Editor/Cheat System/CheatMenu.cs" />
@@ -108,6 +103,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Breakable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SpaceGame/LevelController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" />
+      <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.0.2/InputSystem/Plugins/Users/InputUser.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1s7mNslhf74Iq31JhmXduBQcJs4" />
@@ -213,6 +210,7 @@
       <workItem from="1623774997986" duration="303000" />
       <workItem from="1623776389732" duration="23000" />
       <workItem from="1623791224409" duration="964000" />
+      <workItem from="1623869681704" duration="520000" />
     </task>
     <servers />
   </component>
