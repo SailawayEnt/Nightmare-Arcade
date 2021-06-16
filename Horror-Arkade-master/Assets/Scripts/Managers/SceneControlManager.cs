@@ -34,7 +34,9 @@ public class SceneControlManager : Singleton<SceneControlManager>
             yield return null;
         }
         
+        
         AsyncOperation aoGameplay = SceneManager.LoadSceneAsync("Gameplay" + index.ToString());
+        // SceneManager.LoadSceneAsync("Level" + index.ToString() + "Part1", LoadSceneMode.Additive);
 
         while (!aoGameplay.isDone)
             yield return null;

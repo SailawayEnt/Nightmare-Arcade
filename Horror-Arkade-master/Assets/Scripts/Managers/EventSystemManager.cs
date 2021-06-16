@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.UI;
@@ -15,7 +16,6 @@ public class EventSystemManager : Singleton<EventSystemManager>
         DontDestroyChildOnLoad(gameObject);
     }
 
-    
     public void SetCurrentSelectedGameObject(GameObject newSelectedGameObject)
     {
         eventSystem.SetSelectedGameObject(newSelectedGameObject);

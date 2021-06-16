@@ -33,9 +33,14 @@ public class ScenePartLoader : MonoBehaviour
 
     void LoadScene()
     {
+        
         if (!_isLoaded)
         {
-            StartCoroutine(LoadAsync());
+            // StartCoroutine(LoadAsync());
+            //Loading the scene, using the gameobject name as it's the same as the name of the scene to load
+            SceneManager.LoadSceneAsync(gameObject.name, LoadSceneMode.Additive);
+            //We set it to true to avoid loading the scene twice
+            _isLoaded = true;
         }
     }
 
@@ -45,6 +50,9 @@ public class ScenePartLoader : MonoBehaviour
         AsyncOperation aoLevel =SceneManager.LoadSceneAsync(gameObject.name, LoadSceneMode.Additive);
         //We set it to true to avoid loading the scene twice
         _isLoaded = true;
+        
+        
+        Debug.Log(aoLevel.isDone);
             
         while (!aoLevel.isDone)
             yield return null;

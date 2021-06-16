@@ -8,8 +8,7 @@ public class Flyer : MonoBehaviour
 {
 
     [Header ("References")]
-    // Gordon Added the new keyword might need to be deleted
-    private new Rigidbody2D rigidbody2D;
+    private Rigidbody2D rigidbody2D;
     [SerializeField] private GameObject bomb;
     [System.NonSerialized] public EnemyBase enemyBase;
     private Transform lookAtTarget; //If I'm a bomb, I will point to a transform, like the player

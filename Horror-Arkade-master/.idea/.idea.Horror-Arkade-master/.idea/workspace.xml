@@ -3,8 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="8ee225da-5995-44de-bfa6-5a9a2a492a40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/System/Player Position.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/System/Player Position.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/StartUp/Scene Transition.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/StartUp/Scene Transition.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/ScenesData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/ScenesData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Flyer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Flyer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/EventSystemManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/EventSystemManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/SceneControlManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/SceneControlManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Other/AnimatorFunctions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Other/AnimatorFunctions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/ScenePartLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/System/ScenePartLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,9 +67,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Events/Listeners/VoidListener.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory System/ItemContainer.cs" />
-      <option value="$PROJECT_DIR$/Assets/Editor/CheatMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Editor/Cheat System/RaiseCheatFlag.cs" />
       <option value="$PROJECT_DIR$/Assets/Editor/Cheat System/RaiseTicketCheatFlag.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SpaceGame/Boundary.cs" />
@@ -73,7 +83,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueBoxController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SpaceGame/Player.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SpaceGame/PlayerMoving.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraEffects.cs" />
       <option value="$PROJECT_DIR$/Assets/Editor/Input System/DeviceDisplayConfigurator.cs" />
       <option value="$PROJECT_DIR$/Assets/Editor/Input System/DeviceDisplayConfiguratorEditor.cs" />
       <option value="$PROJECT_DIR$/Assets/Editor/Input System/DeviceDisplaySettingsEditor.cs" />
@@ -85,8 +94,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory System/InventorySlot.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/HUD.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/Singleton.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Managers/EventSystemManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Managers/SceneControlManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/FadeUI.cs" />
       <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Levels.cs" />
       <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Types/Vector2Value.cs" />
@@ -96,15 +103,21 @@
       <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Events/GameEvent.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/Input System/DeviceDisplaySettings.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/Input System/DeviceDisplayConfigurator.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/System/ScenePartLoader.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/System/SceneTransition.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueTrigger.cs" />
-      <option value="$PROJECT_DIR$/Assets/ScriptableObjects/ScenesData.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Breakable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SpaceGame/LevelController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" />
       <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.0.2/InputSystem/Plugins/Users/InputUser.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Flyer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Other/AnimatorFunctions.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Managers/EventSystemManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Debugger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Managers/SceneControlManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/System/ScenePartLoader.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraEffects.cs" />
+      <option value="$PROJECT_DIR$/Assets/ScriptableObjects/ScenesData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1s7mNslhf74Iq31JhmXduBQcJs4" />
@@ -124,6 +137,14 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Builds\Zero Deaths.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="D:\Documents\Game Dev\Horror Arkade\Horror-Arkade-master\Builds" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -211,6 +232,8 @@
       <workItem from="1623776389732" duration="23000" />
       <workItem from="1623791224409" duration="964000" />
       <workItem from="1623869681704" duration="520000" />
+      <workItem from="1623870569901" duration="289000" />
+      <workItem from="1623871574390" duration="5513000" />
     </task>
     <servers />
   </component>

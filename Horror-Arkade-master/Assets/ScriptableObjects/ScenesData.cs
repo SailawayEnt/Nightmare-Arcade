@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [CreateAssetMenu(fileName = "sceneDB", menuName = "Scriptable Object/Scene Data/Database")]
 public class ScenesData : ScriptableObject
@@ -19,7 +20,11 @@ public class ScenesData : ScriptableObject
     {
         if (index <= levels.Count)
         {
+            // SceneManager.LoadSceneAsync("Gameplay" + index.ToString());
             SceneControlManager.LoadScene(index, 1, 2);
+            
+            
+            
             //Load Gameplay scene for the level
             // SceneManager.LoadSceneAsync("Gameplay" + index.ToString());
             //Load first part of the level in additive mode
@@ -46,7 +51,8 @@ public class ScenesData : ScriptableObject
     //New game, load level 1
     public void NewGame()
     {
-        startingPosition.initialValue = new Vector2(-44.42f, -5.822211f);
+        startingPosition.initialValue = new Vector2(-44.42f, 10.0f);
+        // startingPosition.initialValue = new Vector2(-44.42f, -5.822211f);
         LoadLevelWithIndex(1);
     }
    

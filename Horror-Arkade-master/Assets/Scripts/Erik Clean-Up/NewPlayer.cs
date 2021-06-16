@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Xml.Schema;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -110,9 +111,8 @@ public class NewPlayer : PhysicsObject
     public AudioClip outOfAmmoSound;
     public AudioClip stepSound;
     [System.NonSerialized] public int whichHurtSound;
-    
 
-    void Start()
+    private void Awake()
     {
         // GameManager.isMain
         EnableGameplayControls();
