@@ -11,10 +11,6 @@ public class EventSystemManager : Singleton<EventSystemManager>
     public EventSystem eventSystem;
     public InputSystemUIInputModule inputSystemUIInputModule;
 
-    void Awake()
-    {
-        DontDestroyChildOnLoad(gameObject);
-    }
 
     public void SetCurrentSelectedGameObject(GameObject newSelectedGameObject)
     {

@@ -1025,6 +1025,16 @@ PrefabInstance:
       propertyPath: m_FirstSelected
       value: 
       objectReference: {fileID: 104721782}
+    - target: {fileID: 2558400138298278088, guid: 052a6e74fc05db148987cdc72b84c10e,
+        type: 3}
+      propertyPath: m_sendNavigationEvents
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558400138298278091, guid: 052a6e74fc05db148987cdc72b84c10e,
+        type: 3}
+      propertyPath: m_DeselectOnBackgroundClick
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 052a6e74fc05db148987cdc72b84c10e, type: 3}
 --- !u!1001 &7113145125069167296

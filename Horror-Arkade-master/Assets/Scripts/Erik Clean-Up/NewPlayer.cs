@@ -20,6 +20,7 @@ public class NewPlayer : PhysicsObject
     [SerializeField] PlayerInput playerInput;
     float _rawInputX;
     Vector2 _rawInputMovement;
+
     int _horizontalDirection;
     public int HorizontalDirection { get; private set;  }
     
@@ -149,7 +150,9 @@ public class NewPlayer : PhysicsObject
         var newInputMovement = Vector2Int.RoundToInt(inputMovement);
         _rawInputMovement = new Vector2(inputMovement.x, inputMovement.y);
         _rawInputX = _rawInputMovement.x;
+        
         HorizontalDirection = newInputMovement.x;
+        
         VerticalDirection = newInputMovement.y;
     }
 
@@ -201,7 +204,6 @@ public class NewPlayer : PhysicsObject
     {
         if(playerInput.currentControlScheme != _currentControlScheme)
         {
-            Debug.Log("controller changed");
             _currentControlScheme = playerInput.currentControlScheme;
             onControllerChanged?.Invoke();
             RemoveAllBindingOverrides();

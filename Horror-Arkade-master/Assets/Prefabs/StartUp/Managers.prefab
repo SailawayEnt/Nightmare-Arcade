@@ -295,6 +295,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MoveRepeatDelay: 0.5
   m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
   m_ActionsAsset: {fileID: -944628639613478452, guid: fb527b9b3ee46d345a39cfc8b6513c52,
     type: 3}
   m_PointAction: {fileID: 305969128746232567, guid: fb527b9b3ee46d345a39cfc8b6513c52,

@@ -135,7 +135,7 @@ public class DialogueTrigger : MonoBehaviour
             {
                 if (characterName == "Mega Star")
                 {
-                    playerPositionStorage.initialValue = NewPlayer.Instance.transform.position; 
+                    playerPositionStorage.initialValue =new Vector2(NewPlayer.Instance.transform.position.x, 10);
                     scenesData.LoadLevelWithIndex(3);
                     if(requiredCoins > 0)
                     {

@@ -13,8 +13,6 @@ public class SceneControlManager : Singleton<SceneControlManager>
     [SerializeField] Vector2Value playerPositionStorage;
     void Awake()
     {
-        DontDestroyChildOnLoad(gameObject);
-
         fader.rectTransform.sizeDelta = new Vector2(Screen.width + 20, Screen.height + 20);
         fader.gameObject.SetActive(false);
     }
