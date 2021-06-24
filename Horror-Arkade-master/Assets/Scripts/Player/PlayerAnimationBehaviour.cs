@@ -45,7 +45,7 @@ public class PlayerAnimationBehaviour : MonoBehaviour
 
     public void UpdateAttackDirection(int attackDirection)
     {
-        playerAnimator.SetInteger(_playerAttackDirectionYAnimationID, attackDirection);
+        playerAnimator.SetFloat(_playerAttackDirectionYAnimationID, attackDirection);
     }
 
     public void PlayAttackAnimation()

@@ -426,11 +426,11 @@ public class NewPlayer : PhysicsObject
     {
         if (velocity.y != jumpPower)
         {
+            jumping = true;
             velocity.y = jumpPower * jumpMultiplier; //The jumpMultiplier allows us to use the Jump function to also launch the player from bounce platforms
             PlayJumpSound();
             PlayStepSound();
             JumpEffect();
-            jumping = true;
         }
     }
 
