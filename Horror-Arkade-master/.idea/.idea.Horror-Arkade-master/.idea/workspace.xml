@@ -4,11 +4,11 @@
     <list default="true" id="8ee225da-5995-44de-bfa6-5a9a2a492a40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animation/Character/Chacacter.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Character/Chacacter.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Character/Player_AttackMachete.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Character/Player_AttackMachete.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Character/Player_Jump.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Character/Player_Jump.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Character/Player_AttackUp.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Character/Player_AttackUp.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Character/Player_Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Character/Player_Idle.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Character.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Character.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimationBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimationBehaviour.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,8 +107,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/EyeMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Characters/PhysicsObject.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimationBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1s7mNslhf74Iq31JhmXduBQcJs4" />
@@ -233,6 +233,8 @@
       <workItem from="1624105736632" duration="446000" />
       <workItem from="1624465086703" duration="3657000" />
       <workItem from="1624478261738" duration="1086000" />
+      <workItem from="1624565605403" duration="604000" />
+      <workItem from="1624647654523" duration="1597000" />
     </task>
     <servers />
   </component>

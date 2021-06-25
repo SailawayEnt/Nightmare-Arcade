@@ -176,7 +176,7 @@ public class NewPlayer : PhysicsObject
     public void OnJump(InputAction.CallbackContext value)
     {
         JumpPressedValue = value.ReadValue<float>();
-        if (value.started && playerAnimationBehaviour.GetGroundedAnimationValue() == true && !jumping && !frozen)
+        if (value.started && playerAnimationBehaviour.GetGroundedAnimationValue() == true && !frozen)
         {
             playerAnimationBehaviour.SetPoundedAnimationValue(false);
             Jump(1f);
@@ -427,6 +427,7 @@ public class NewPlayer : PhysicsObject
         if (velocity.y != jumpPower)
         {
             jumping = true;
+            grounded = false;
             velocity.y = jumpPower * jumpMultiplier; //The jumpMultiplier allows us to use the Jump function to also launch the player from bounce platforms
             PlayJumpSound();
             PlayStepSound();
