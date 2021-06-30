@@ -109,7 +109,7 @@ MonoBehaviour:
   scenesData: {fileID: 11400000, guid: b533ad2b622cce24aa5f96e6dba0a567, type: 2}
   currentVirtualCamera: {fileID: 0}
   destinationVirtualCamera: {fileID: 0}
-  playerPosition: {x: -25, y: 0}
+  playerPosition: {x: -25, y: 10}
   playerPositionStorage: {fileID: 11400000, guid: 3e8dd63c235d9d2468027963c58ee072,
     type: 2}
   onSceneChange: {fileID: 11400000, guid: b52f6eb609863044ba34038b933974b2, type: 2}
@@ -230,6 +230,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58eeb6bb0a29d814da48a26d2e42ae87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  savedBindingInput: {fileID: 11400000, guid: 334c8ced947f13d438e62bd0dff7aa67, type: 2}
+  savedSpriteValue: {fileID: 11400000, guid: e90808356df406c43a048b988af68dc0, type: 2}
   actionName: Interact
   deviceDisplaySettings: {fileID: 11400000, guid: f00cccba36ccd934eacd6d268cc960d7,
     type: 2}

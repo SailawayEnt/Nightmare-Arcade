@@ -10128,6 +10128,9 @@ MonoBehaviour:
   playerAnimationBehaviour: {fileID: 4439017944772475138}
   playerMovementBehaviour: {fileID: 2999535824697921600}
   playerInput: {fileID: 1289833988263579849}
+  defaultControlScheme: {fileID: 11400000, guid: 2a2153f097a8fb145aa4dd97bae82316,
+    type: 2}
+  deviceValue: {fileID: 11400000, guid: 5facca932d38a5a4d8687e1932d615dd, type: 2}
   audioSource: {fileID: 4109124665113923721}
   cameraEffects: {fileID: 0}
   deathParticles: {fileID: 198378920903945115}

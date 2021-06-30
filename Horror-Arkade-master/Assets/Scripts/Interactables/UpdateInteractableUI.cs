@@ -1,8 +1,6 @@
-﻿using System;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Networking;
 using UnityEngine.UI;
 
 public class UpdateInteractableUI : MonoBehaviour
@@ -12,7 +10,9 @@ public class UpdateInteractableUI : MonoBehaviour
     PlayerInput _playerInput;
     InputAction _inputAction;
     NewPlayer _player;
-    
+    [SerializeField] StringValue savedBindingInput;
+    [SerializeField] SpriteValue savedSpriteValue;
+
     [Header("Rebind Settings")]
     public string actionName;
     
@@ -23,8 +23,33 @@ public class UpdateInteractableUI : MonoBehaviour
     public TextMeshProUGUI bindingNameDisplayText;
     public Image bindingIconDisplayImage;
 
+    void Start()
+    {
+        if (savedBindingInput.InitialValue == null || savedSpriteValue.InitialValue == null)
+        {
+            UpdateBehaviour();
+        }
+        else
+        {
+            Sprite currentDisplayIcon = savedSpriteValue.InitialValue;
+        
+            if(currentDisplayIcon)
+            {
+                ToggleGameObjectState(bindingNameDisplayText.gameObject, false);
+                ToggleGameObjectState(bindingIconDisplayImage.gameObject, true);
+                bindingIconDisplayImage.sprite = currentDisplayIcon;
+        
+            } else if(currentDisplayIcon == null)
+            {
+                ToggleGameObjectState(bindingNameDisplayText.gameObject, true);
+                ToggleGameObjectState(bindingIconDisplayImage.gameObject, false);
+                bindingNameDisplayText.SetText(savedBindingInput.InitialValue);
+            }
+        }
+    }
+
     public void UpdateBehaviour()
-    {   
+    {
         GetPlayerInput();
         SetupInputAction();
         // UpdateActionDisplayUI();
@@ -45,15 +70,19 @@ public class UpdateInteractableUI : MonoBehaviour
     public void UpdateDisplayUI()
     {
         int controlBindingIndex = _inputAction.GetBindingIndexForControl(_inputAction.controls[0]);
-        string currentBindingInput = InputControlPath.ToHumanReadableString(_inputAction.bindings[controlBindingIndex].effectivePath, InputControlPath.HumanReadableStringOptions.OmitDevice);
         
+        string currentBindingInput = InputControlPath.ToHumanReadableString(_inputAction.bindings[controlBindingIndex].effectivePath, InputControlPath.HumanReadableStringOptions.OmitDevice);
+        savedBindingInput.InitialValue = currentBindingInput;
+
         Sprite currentDisplayIcon = deviceDisplaySettings.GetDeviceBindingIcon(_playerInput, currentBindingInput);
+        savedSpriteValue.InitialValue = currentDisplayIcon;
 
         if(currentDisplayIcon)
         {
             ToggleGameObjectState(bindingNameDisplayText.gameObject, false);
             ToggleGameObjectState(bindingIconDisplayImage.gameObject, true);
             bindingIconDisplayImage.sprite = currentDisplayIcon;
+
         } else if(currentDisplayIcon == null)
         {
             ToggleGameObjectState(bindingNameDisplayText.gameObject, true);

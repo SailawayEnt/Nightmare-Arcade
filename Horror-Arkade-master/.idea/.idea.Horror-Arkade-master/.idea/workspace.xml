@@ -4,11 +4,13 @@
     <list default="true" id="8ee225da-5995-44de-bfa6-5a9a2a492a40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animation/Character/Chacacter.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Character/Chacacter.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Character/Player_AttackUp.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Character/Player_AttackUp.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Character/Player_Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Character/Player_Idle.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Character.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Character.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/StartUp/Outside Arkade To Part 2 Scene Transition.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/StartUp/Outside Arkade To Part 2 Scene Transition.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level2Part1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level2Part1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactables/UpdateInteractableUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactables/UpdateInteractableUI.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,17 +32,25 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utilities/Singleton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://J:/Unity Editors/2019.4.26f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://J:/Unity Editors/2019.4.26f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/TouchInputModule.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.1.0-pre.5/InputSystem/Actions/InputAction.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Menu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/ConsumableItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/SceneControlManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.1.0-pre.5/InputSystem/Utilities/ReadOnlyArray.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.1.0-pre.5/InputSystem/Actions/InputActionRebindingExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Events/GameEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.1.0-pre.5/InputSystem/Actions/InputBindingResolver.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Types/Vector2Value.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.1.0-pre.5/InputSystem/Actions/InputControlScheme.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A5949084-5872-4118-9A97-4C7DF1839E1C/70/af6644a8/UnityEvent`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.1.0-pre.5/InputSystem/InputManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Types/InputDeviceValue.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovementBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/ScenePartLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameEventListener.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utilities/Input System/DeviceDisplaySettings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.1.0-pre.5/InputSystem/Controls/InputControlList.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://J:/Unity Editors/2019.4.26f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UIPanelQuitBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.1.0-pre.5/InputSystem/Utilities/DelegateHelpers.cs" root0="SKIP_HIGHLIGHTING" />
@@ -49,22 +59,17 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactables/UpdateInteractableUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/EventSystemManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/InventoryItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.1.0-pre.5/InputSystem/Devices/InputDevice.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/FadeUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Levels.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A5949084-5872-4118-9A97-4C7DF1839E1C/27/c5fdcd99/Vector2Int.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.1.0-pre.5/InputSystem/Plugins/PlayerInput/PlayerInput.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Manager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimationBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.1.0-pre.5/InputSystem/Plugins/Users/InputUser.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Dialogue.cs" />
-      <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/InventoryItem.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Parallax/ParallaxController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/LocationPortal.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIPanelQuitBehaviour.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/MenuHandler.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/EnemyBase.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovementBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueBoxController.cs" />
@@ -73,7 +78,6 @@
       <option value="$PROJECT_DIR$/Assets/Editor/Input System/DeviceDisplayConfigurator.cs" />
       <option value="$PROJECT_DIR$/Assets/Editor/Input System/DeviceDisplayConfiguratorEditor.cs" />
       <option value="$PROJECT_DIR$/Assets/Editor/Input System/DeviceDisplaySettingsEditor.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Interactables/UpdateInteractableUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Collectable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Other/CheatManager.cs" />
@@ -108,7 +112,15 @@
       <option value="$PROJECT_DIR$/Assets/EyeMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Characters/PhysicsObject.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimationBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Input System/InputActionStorage.cs" />
+      <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Types/InputActionValue.cs" />
+      <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/InventoryItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Types/SpriteValue.cs" />
+      <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Types/StringValue.cs" />
+      <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.1.0-pre.5/InputSystem/Plugins/PlayerInput/PlayerInput.cs" />
+      <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Types/InputDeviceValue.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Interactables/UpdateInteractableUI.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1s7mNslhf74Iq31JhmXduBQcJs4" />
@@ -235,6 +247,9 @@
       <workItem from="1624478261738" duration="1086000" />
       <workItem from="1624565605403" duration="604000" />
       <workItem from="1624647654523" duration="1597000" />
+      <workItem from="1624905084567" duration="7369000" />
+      <workItem from="1624985311234" duration="19526000" />
+      <workItem from="1625076609169" duration="6385000" />
     </task>
     <servers />
   </component>

@@ -40,6 +40,8 @@ public class NewPlayer : PhysicsObject
 
     //Current Control Scheme
     string _currentControlScheme;
+    [SerializeField] StringValue defaultControlScheme;
+    [SerializeField] InputDeviceValue deviceValue; 
     
     [Header ("Reference")]
     public AudioSource audioSource;
@@ -113,17 +115,21 @@ public class NewPlayer : PhysicsObject
     public AudioClip stepSound;
     [System.NonSerialized] public int whichHurtSound;
 
-    private void Awake()
+    void Awake()
     {
         // GameManager.isMain
         EnableGameplayControls();
-        transform.position = startingPosition.initialValue;
+        
+        if (playerInput && !string.IsNullOrEmpty(defaultControlScheme.InitialValue) && defaultControlScheme.InitialValue != playerInput.currentControlScheme)
+        {
+            playerInput.SwitchCurrentControlScheme(defaultControlScheme.InitialValue, deviceValue.InitialValue);
+            onControllerChanged?.Invoke();
+        }
+
         if (macheteData.HasReceived)
         {
             machete.SetActive(true);
         }
-        
-        _currentControlScheme = playerInput.currentControlScheme;
         
         Cursor.visible = false;
         SetUpCheatItems();
@@ -136,6 +142,12 @@ public class NewPlayer : PhysicsObject
         graphicSprites = GetComponentsInChildren<SpriteRenderer>();
 
         SetGroundType();
+    }
+    
+    
+    void Start()
+    {
+        transform.position = startingPosition.initialValue;
     }
     
     //INPUT SYSTEM ACTION METHODS --------------
@@ -205,6 +217,9 @@ public class NewPlayer : PhysicsObject
         if(playerInput.currentControlScheme != _currentControlScheme)
         {
             _currentControlScheme = playerInput.currentControlScheme;
+            defaultControlScheme.InitialValue = _currentControlScheme;
+            playerInput.defaultControlScheme = defaultControlScheme.InitialValue;
+            deviceValue.InitialValue = playerInput.devices[0];  
             onControllerChanged?.Invoke();
             RemoveAllBindingOverrides();
         }
@@ -212,7 +227,6 @@ public class NewPlayer : PhysicsObject
 
     //This is automatically called from PlayerInput, when the input device has been disconnected and can not be identified
     //IE: Device unplugged or has run out of batteries
-
     public void OnDeviceLost()
     {
         // playerVisualsBehaviour.SetDisconnectedDeviceVisuals();
@@ -236,6 +250,7 @@ public class NewPlayer : PhysicsObject
 
     void Update()
     {
+        // Debug.Log("current update " + playerInput.currentControlScheme);
         ComputeVelocity();
     }
 
