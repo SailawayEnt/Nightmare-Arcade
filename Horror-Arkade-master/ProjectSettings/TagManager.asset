@@ -90,3 +90,6 @@ TagManager:
   - name: Layer-6
     uniqueID: 2569035313
     locked: 0
+  - name: DontLight
+    uniqueID: 1135217425
+    locked: 0

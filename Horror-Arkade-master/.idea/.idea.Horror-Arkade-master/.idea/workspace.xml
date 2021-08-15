@@ -3,14 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="8ee225da-5995-44de-bfa6-5a9a2a492a40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Character/Chacacter.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Character/Chacacter.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Character/Player_Run.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Character/Player_Run.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Character.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Character.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/StartUp/Outside Arkade To Part 2 Scene Transition.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/StartUp/Outside Arkade To Part 2 Scene Transition.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/World/BreakableGreenBarrel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/World/BreakableGreenBarrel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/World/FireCan.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/World/FireCan.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level2Part1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level2Part1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactables/UpdateInteractableUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactables/UpdateInteractableUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1Part1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1Part1.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,6 +248,8 @@
       <workItem from="1624905084567" duration="7369000" />
       <workItem from="1624985311234" duration="19526000" />
       <workItem from="1625076609169" duration="6385000" />
+      <workItem from="1628964190306" duration="745000" />
+      <workItem from="1628965084280" duration="1191000" />
     </task>
     <servers />
   </component>
