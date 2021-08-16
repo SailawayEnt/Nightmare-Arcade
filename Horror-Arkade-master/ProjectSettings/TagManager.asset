@@ -63,6 +63,9 @@ TagManager:
   - name: Background-No Paralax
     uniqueID: 2509501325
     locked: 0
+  - name: DontLight
+    uniqueID: 1135217425
+    locked: 0
   - name: Player
     uniqueID: 3769207007
     locked: 0
@@ -89,7 +92,4 @@ TagManager:
     locked: 0
   - name: Layer-6
     uniqueID: 2569035313
-    locked: 0
-  - name: DontLight
-    uniqueID: 1135217425
     locked: 0

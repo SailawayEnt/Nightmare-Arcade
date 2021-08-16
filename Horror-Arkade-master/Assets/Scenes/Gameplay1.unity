@@ -852,9 +852,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
   m_ShowDebugText: 0
-  m_ChildCameras:
-  - {fileID: 114803847268591408}
-  - {fileID: 508659654}
+  m_ChildCameras: []
   m_ActivateAfter: 0
   m_MinDuration: 2
   m_RandomizeChoice: 0
@@ -1224,8 +1222,13 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     - target: {fileID: 9024059255312299650, guid: 7a17dad1a2bb34c5595bf54ae9c0b4a1,
         type: 3}
+      propertyPath: m_PointLightInnerRadius
+      value: 1.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 9024059255312299650, guid: 7a17dad1a2bb34c5595bf54ae9c0b4a1,
+        type: 3}
       propertyPath: m_PointLightOuterRadius
-      value: 6
+      value: 3.73
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a17dad1a2bb34c5595bf54ae9c0b4a1, type: 3}
@@ -1598,7 +1601,7 @@ MonoBehaviour:
   m_NoiseProfile: {fileID: 11400000, guid: b241f91b9ccf8ff489abf204b30d3112, type: 2}
   m_PivotOffset: {x: 0, y: 0, z: 0}
   m_AmplitudeGain: 0.3
-  m_FrequencyGain: 3.12e-43
+  m_FrequencyGain: 2.7995e-41
   mNoiseOffsets: {x: 278.73395, y: 19.195435, z: -964.04175}
 --- !u!114 &138180397789427256
 MonoBehaviour:

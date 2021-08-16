@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,8 +10,10 @@ using UnityEngine;
 public class Breakable : MonoBehaviour
 {
     [SerializeField] private Animator animator;
+    [SerializeField] private Animator destroyedAnimator;
     [SerializeField] private Sprite brokenSprite; //If destroyAfterDeath is false, a broken sprite will appear instead
     [SerializeField] private GameObject deathParticles;
+    [SerializeField] private GameObject disableSecondary;
     [SerializeField] private bool destroyAfterDeath = true; //If false, a broken sprite will appear instead of complete destruction
     public int health;
     [SerializeField] private Instantiator instantiator;
@@ -32,6 +35,7 @@ public class Breakable : MonoBehaviour
         //If breakable object health is above zero, it's not recovering from a recent hit, get hit!
         if (health > 0 && !recoveryCounter.recovering)
         {
+            
             if (!requireDownAttack || (requireDownAttack && NewPlayer.Instance.pounding))
             {
                 if (NewPlayer.Instance.pounding)
@@ -50,7 +54,12 @@ public class Breakable : MonoBehaviour
                 StartCoroutine(NewPlayer.Instance.FreezeFrameEffect());
 
                 health -= 1;
-                animator.SetTrigger("hit");
+
+                if (animator != null)
+                {
+                    animator.SetTrigger("hit");
+                }
+                
 
                 if (health <= 0)
                 {
@@ -68,6 +77,16 @@ public class Breakable : MonoBehaviour
         //Activate deathParticles & unparent from this so they aren't destroyed!
         deathParticles.SetActive(true);
         deathParticles.transform.parent = null;
+
+        if (destroyedAnimator != null)
+        {
+            destroyedAnimator.enabled = false;
+        }
+
+        if (disableSecondary != null)
+        {
+            disableSecondary.SetActive(false);
+        }
 
         if (instantiator != null)
         {
