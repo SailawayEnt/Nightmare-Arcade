@@ -406,6 +406,7 @@ GameObject:
   - component: {fileID: 2307009423238898513}
   - component: {fileID: 8713686967899356897}
   - component: {fileID: 633189622542456949}
+  - component: {fileID: 6691762546691654749}
   m_Layer: 0
   m_Name: StreetLight
   m_TagString: Untagged
@@ -453,7 +454,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7946284066763686603}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: ebad54120ae8c504abcfed062c573a5c, type: 2}
   m_CullingMode: 0
@@ -464,6 +465,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6691762546691654749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7946284066763686603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fad556cc2b56344e9fa5a881c2e606b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _theLight: {fileID: 8515308247283919343}
+  minFlickerTime: 0.1
+  maxFlickerTime: 0.5
+  randomIntensity: 0
+  minIntensity: 0
+  maxIntensity: 0
 --- !u!1001 &5029945339384312098
 PrefabInstance:
   m_ObjectHideFlags: 0
