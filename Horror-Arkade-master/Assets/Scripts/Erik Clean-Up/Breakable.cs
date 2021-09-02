@@ -19,8 +19,8 @@ public class Breakable : MonoBehaviour
     [SerializeField] private Instantiator instantiator;
     [SerializeField] private AudioClip hitSound;
     private bool recovered;
-    [SerializeField] private RecoveryCounter recoveryCounter;
-    [SerializeField] private bool requireDownAttack;
+    [SerializeField]  RecoveryCounter recoveryCounter;
+    [SerializeField]  bool requireDownAttack;
     private SpriteRenderer spriteRenderer;
 
     // Use this for initialization

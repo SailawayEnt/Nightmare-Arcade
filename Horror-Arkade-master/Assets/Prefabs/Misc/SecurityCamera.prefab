@@ -551,6 +551,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LightParticles
       objectReference: {fileID: 0}
+    - target: {fileID: 5677178012097585969, guid: ee1df956f1f698743b6fa11e958b357b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5682557917199379127, guid: ee1df956f1f698743b6fa11e958b357b,
         type: 3}
       propertyPath: m_RootOrder
@@ -559,12 +564,12 @@ PrefabInstance:
     - target: {fileID: 5682557917199379127, guid: ee1df956f1f698743b6fa11e958b357b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.49
       objectReference: {fileID: 0}
     - target: {fileID: 5682557917199379127, guid: ee1df956f1f698743b6fa11e958b357b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.26
+      value: 0.32
       objectReference: {fileID: 0}
     - target: {fileID: 5682557917199379127, guid: ee1df956f1f698743b6fa11e958b357b,
         type: 3}

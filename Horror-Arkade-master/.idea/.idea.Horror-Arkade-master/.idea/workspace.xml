@@ -3,13 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="8ee225da-5995-44de-bfa6-5a9a2a492a40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Lights/StreetLightFlicker.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Lights/StreetLightFlicker.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/World/tall_building1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/World/tall_building1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/World/tall_building2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/World/tall_building2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Flicker.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Flicker.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Interactables/Doors/InteractableDoor.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Interactables/Doors/InteractableDoor.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Lights/StreetLight.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Lights/StreetLight.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/World/Buildings/TallBuilding.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/World/Buildings/TallBuilding.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/World/Buildings/TallBuilding2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/World/Buildings/TallBuilding2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Misc/SecurityCamera.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Misc/SecurityCamera.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/StartUp/Outside Arkade To Part 2 Scene Transition.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/StartUp/Outside Arkade To Part 2 Scene Transition.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1Part1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1Part1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Breakable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Breakable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/DialogueTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Materials/Crate - Surface Shader Scene.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Materials/Crate - Surface Shader Scene.mat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +62,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.1.0-pre.5/InputSystem/Actions/InputControlScheme.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.1.0-pre.5/InputSystem/Controls/InputControlList.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/ConsumableItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/radio.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.1.0-pre.5/InputSystem/Plugins/Users/InputUser.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.1.0-pre.5/InputSystem/InputManager.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -256,6 +260,9 @@
       <workItem from="1629765394219" duration="1997000" />
       <workItem from="1629832415153" duration="1000" />
       <workItem from="1629927453928" duration="1469000" />
+      <workItem from="1629940929359" duration="610000" />
+      <workItem from="1630432111931" duration="9079000" />
+      <workItem from="1630450659190" duration="4190000" />
     </task>
     <servers />
   </component>

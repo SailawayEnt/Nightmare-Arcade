@@ -361,7 +361,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5866086012802304423}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
   m_Name: 
@@ -477,8 +477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fad556cc2b56344e9fa5a881c2e606b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _theLight: {fileID: 8515308247283919343}
-  minFlickerTime: 0.1
+  minFlickerTime: 0.01
   maxFlickerTime: 0.5
   randomIntensity: 0
   minIntensity: 0

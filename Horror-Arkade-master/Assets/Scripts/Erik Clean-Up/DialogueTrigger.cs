@@ -69,7 +69,7 @@ public class DialogueTrigger : MonoBehaviour
             iconAnimator.SetBool(Active, true);
             if (autoHit || NewPlayer.Instance.InteractPressedValue > 0)
             {
-              iconAnimator.SetBool("active", false);
+              iconAnimator.SetBool(Active, false);
               
               if (givesInitialItem)
                   ReceiveItem();
@@ -114,7 +114,7 @@ public class DialogueTrigger : MonoBehaviour
         }
         else
         {
-            iconAnimator.SetBool("active", false);
+            iconAnimator.SetBool(Active, false);
         }
     }
 
@@ -122,7 +122,7 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (col.gameObject == NewPlayer.Instance.gameObject)
         {
-            iconAnimator.SetBool("active", false);
+            iconAnimator.SetBool(Active, false);
             sleeping = completed;
         }
     }
