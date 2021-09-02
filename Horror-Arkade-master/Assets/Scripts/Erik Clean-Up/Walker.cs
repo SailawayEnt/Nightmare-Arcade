@@ -15,7 +15,7 @@ public class Walker : PhysicsObject
    
     public float attentionRange;
     public float changeDirectionEase = 1; //How slowly should we change directions? A higher number is slower!
-    [System.NonSerialized] public float direction = 1;
+    [System.NonSerialized] public float direction = -1;
     private Vector2 distanceFromPlayer; //How far is this enemy from the player?
     [System.NonSerialized] public float directionSmooth = 1; //The float value that lerps to the direction integer.
     [SerializeField] private bool followPlayer;
@@ -96,16 +96,16 @@ public class Walker : PhysicsObject
                 //Flip the graphic depending on the speed
                 if (move.x > 0.01f)
                 {
-                    if (graphic.transform.localScale.x == -1)
+                    if (graphic.transform.localScale.x == 1)
                     {
-                        graphic.transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
+                        graphic.transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
                     }
                 }
                 else if (move.x < -0.01f)
                 {
-                    if (graphic.transform.localScale.x == 1)
+                    if (graphic.transform.localScale.x == -1)
                     {
-                        graphic.transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
+                        graphic.transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
                     }
                 }
 
