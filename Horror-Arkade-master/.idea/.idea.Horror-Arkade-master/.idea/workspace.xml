@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8ee225da-5995-44de-bfa6-5a9a2a492a40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Characters/Walker.psd" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Characters/Walker.psd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Lights/StreetLight.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Lights/StreetLight.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1Part1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1Part1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Walker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Walker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,7 +253,8 @@
       <workItem from="1629940929359" duration="610000" />
       <workItem from="1630432111931" duration="9079000" />
       <workItem from="1630450659190" duration="4190000" />
-      <workItem from="1630613243097" duration="2507000" />
+      <workItem from="1630613243097" duration="2603000" />
+      <workItem from="1630618932476" duration="62000" />
     </task>
     <servers />
   </component>
