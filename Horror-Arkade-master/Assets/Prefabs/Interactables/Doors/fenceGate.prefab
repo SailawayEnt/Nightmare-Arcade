@@ -216,6 +216,7 @@ MonoBehaviour:
   isOpen: 0
   openedDoor: {fileID: 1595998048892200830}
   closedDoor: {fileID: 9169003351114260271}
+  disabledLock: {fileID: 2649765005990447226}
 --- !u!1 &9169003351114260271
 GameObject:
   m_ObjectHideFlags: 0
