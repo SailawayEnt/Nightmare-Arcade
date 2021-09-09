@@ -3,8 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="8ee225da-5995-44de-bfa6-5a9a2a492a40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/World/Buildings/ArkadeExteriorBuilding.psb.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/World/Buildings/ArkadeExteriorBuilding.psb.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Objects/LockedDoors/LockedDoor.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Objects/LockedDoors/LockedDoor.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/World/Doors/Door-gate-locked.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/World/Doors/Door-gate-locked.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Interactables/Doors/LockedGate.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Interactables/Doors/LockedGate.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1Part1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1Part1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/moveOnTrigger.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/moveOnTrigger.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/radio.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/radio.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,8 +61,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/InventoryItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.1.0-pre.5/InputSystem/Actions/InputControlScheme.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.1.0-pre.5/InputSystem/Controls/InputControlList.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a5949084587241189a974c7df1839e1c116e00/f9/f182dc4f/SpriteRenderer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/ConsumableItem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/radio.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.1.0-pre.5/InputSystem/Plugins/Users/InputUser.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.1.0-pre.5/InputSystem/InputManager.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -259,6 +267,7 @@
       <workItem from="1630618932476" duration="62000" />
       <workItem from="1631145601864" duration="258000" />
       <workItem from="1631146235303" duration="159000" />
+      <workItem from="1631217076532" duration="1941000" />
     </task>
     <servers />
   </component>
