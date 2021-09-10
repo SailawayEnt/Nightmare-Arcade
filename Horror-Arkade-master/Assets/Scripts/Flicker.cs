@@ -10,7 +10,7 @@ public class Flicker : MonoBehaviour
 {
     Light2D _theLight;
     
-    [SerializeField] bool disableScript;
+    [SerializeField] bool disableFlicker;
     
     [SerializeField]
     float minFlickerTime;
@@ -36,7 +36,7 @@ public class Flicker : MonoBehaviour
 
     IEnumerator Flickering()
     {
-        while (!disableScript)
+        while (!disableFlicker)
         {
             float randomIntensityValue = Random.Range(minIntensity, maxIntensity);
             float randomTime = Random.Range(minFlickerTime, maxFlickerTime);

@@ -153,6 +153,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!210 &7246128942154152900
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4852291690222486787}
+  m_Enabled: 1
+  m_SortingLayerID: 542794239
+  m_SortingLayer: -1
+  m_SortingOrder: 0
 --- !u!114 &5347041620922480705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -281,17 +292,6 @@ MonoBehaviour:
   volume: 1
   distanceBetweenPlayer: {x: 0, y: 0, z: 0}
   magnitude: 0
---- !u!210 &7246128942154152900
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4852291690222486787}
-  m_Enabled: 1
-  m_SortingLayerID: 542794239
-  m_SortingLayer: -1
-  m_SortingOrder: 0
 --- !u!1 &5347041620316177704
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,11 +444,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.03616996, y: 0.33114576}
-      - {x: -0.13796182, y: 0.0036260288}
+    - - {x: 0, y: 0.19}
+      - {x: 0.04, y: 0.0036260288}
+      - {x: 0.05083465, y: 0.0029005285}
       - {x: 0.13469917, y: 0.0025780953}
-      - {x: 0.14569265, y: 0.28194392}
-      - {x: 0.05770468, y: 0.3512934}
+      - {x: 0.14569265, y: 0.19}
+      - {x: 0.05770468, y: 0.22}
 --- !u!114 &5347041621581843490
 MonoBehaviour:
   m_ObjectHideFlags: 0

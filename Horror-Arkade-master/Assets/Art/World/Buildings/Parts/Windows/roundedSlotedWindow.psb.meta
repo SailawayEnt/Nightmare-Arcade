@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3df97bbe1a09b8b46acdc1b3994d05bb
+guid: 62e5cd3c5c861a34d962cc3bbdb23100
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -87,18 +87,18 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: litDots
+  - name: light
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 411
-      y: 176
-      width: 70
-      height: 38
-    spriteID: ce9ee26f55078c14494b1646dc2f9f00
+      x: 227
+      y: 210
+      width: 11
+      height: 8
+    spriteID: 1ff24082618b39e459efbc12d24189be
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -108,19 +108,19 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 339, y: 33}
-  - name: platform
+    uvTransform: {x: 148, y: -38}
+  - name: openShades
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 195
-      y: 176
-      width: 208
-      height: 135
-    spriteID: 834dde0e0a4ffb34dace404cc06a1ae9
+      x: 347
+      y: 4
+      width: 152
+      height: 193
+    spriteID: 9239796129252d4448516afd7987aa13
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -130,7 +130,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 195, y: 176}
+    uvTransform: {x: 336, y: -14}
   - name: yellowBackground
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -139,10 +139,10 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 585
-      width: 174
-      height: 273
-    spriteID: 302aee0e739a17c45b6abbf05ac2270f
+      y: 285
+      width: 147
+      height: 192
+    spriteID: 16545d6316e84794bb42e608b3f555a1
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -152,7 +152,51 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -17, y: 434}
+    uvTransform: {x: -10, y: 270}
+  - name: closedShades
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 187
+      y: 4
+      width: 152
+      height: 198
+    spriteID: 7c2a628103099324c9f995bc60bc4a7a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 176, y: -9}
+  - name: lightFrame
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 187
+      y: 210
+      width: 32
+      height: 24
+    spriteID: d6b9e7c5a13f11546801e474f11ee2cc
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 116, y: -30}
   - name: windowFrame
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -162,9 +206,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 183
-      height: 288
-    spriteID: 842e6c8c9f9fc514091d7c5aeae32076
+      width: 175
+      height: 273
+    spriteID: c02d965d559ecd94690857d52cac39ae
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -174,87 +218,21 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -10, y: -140}
-  - name: openShades
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 195
-      y: 4
-      width: 172
-      height: 164
-    spriteID: 3a9cfc9b5c204874a9f88269876b40ae
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 176, y: -259}
-  - name: cloasedShades
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 300
-      width: 172
-      height: 277
-    spriteID: 5f91d1632d240ff4594547c6bfbb266a
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -15, y: 150}
-  - name: light
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 195
-      y: 319
-      width: 208
-      height: 57
-    spriteID: 19af76c5a8aa9e944ac7c40c7845653f
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 195, y: -57}
+    uvTransform: {x: 4, y: 4}
   platformSettings: []
   mosaicLayers: 1
   documentPivot: {x: 0, y: 0}
   documentAlignment: 7
   importHiddenLayers: 0
   importedTextureWidth: 512
-  importedTextureHeight: 1024
-  documentSize: {x: 208, y: 432}
+  importedTextureHeight: 512
+  documentSize: {x: 175, y: 273}
   paperDollMode: 0
   keepDupilcateSpriteName: 0
   spriteCategoryList:
     categories: []
   textureActualWidth: 512
-  textureActualHeight: 1024
+  textureActualHeight: 512
   spritePackingTag: 
   resliceFromLayer: 0
   characterMode: 1
@@ -264,50 +242,43 @@ ScriptedImporter:
     spriteName: light
     isGroup: 0
     parentIndex: -1
-    spriteID: 19af76c5a8aa9e944ac7c40c7845653f
-    layerID: 11
-    mosaicPosition: {x: 195, y: 319}
+    spriteID: 1ff24082618b39e459efbc12d24189be
+    layerID: 19
+    mosaicPosition: {x: 227, y: 210}
   - name: openShades
     spriteName: openShades
     isGroup: 0
     parentIndex: -1
-    spriteID: 3a9cfc9b5c204874a9f88269876b40ae
-    layerID: 18
-    mosaicPosition: {x: 195, y: 4}
-  - name: litDots
-    spriteName: litDots
-    isGroup: 0
-    parentIndex: -1
-    spriteID: ce9ee26f55078c14494b1646dc2f9f00
-    layerID: 23
-    mosaicPosition: {x: 411, y: 176}
-  - name: platform
-    spriteName: platform
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 834dde0e0a4ffb34dace404cc06a1ae9
-    layerID: 26
-    mosaicPosition: {x: 195, y: 176}
-  - name: cloasedShades
-    spriteName: cloasedShades
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 5f91d1632d240ff4594547c6bfbb266a
-    layerID: 5
-    mosaicPosition: {x: 4, y: 300}
+    spriteID: 9239796129252d4448516afd7987aa13
+    layerID: 22
+    mosaicPosition: {x: 347, y: 4}
   - name: yellowBackground
     spriteName: yellowBackground
     isGroup: 0
     parentIndex: -1
-    spriteID: 302aee0e739a17c45b6abbf05ac2270f
+    spriteID: 16545d6316e84794bb42e608b3f555a1
+    layerID: 21
+    mosaicPosition: {x: 4, y: 285}
+  - name: closedShades
+    spriteName: closedShades
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7c2a628103099324c9f995bc60bc4a7a
+    layerID: 14
+    mosaicPosition: {x: 187, y: 4}
+  - name: lightFrame
+    spriteName: lightFrame
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d6b9e7c5a13f11546801e474f11ee2cc
     layerID: 4
-    mosaicPosition: {x: 4, y: 585}
+    mosaicPosition: {x: 187, y: 210}
   - name: windowFrame
     spriteName: windowFrame
     isGroup: 0
     parentIndex: -1
-    spriteID: 842e6c8c9f9fc514091d7c5aeae32076
-    layerID: 22
+    spriteID: c02d965d559ecd94690857d52cac39ae
+    layerID: 3
     mosaicPosition: {x: 4, y: 4}
   characterData:
     bones: []
@@ -315,7 +286,7 @@ ScriptedImporter:
     dimension: {x: 0, y: 0}
     characterGroups: []
   generateGOHierarchy: 0
-  textureAssetName: squareSlotedWindow Texture
-  prefabAssetName: squareSlotedWindow Prefab
-  spriteLibAssetName: squareSlotedWindow Sprite Lib
+  textureAssetName: roundedSlotedWindow Texture
+  prefabAssetName: roundedSlotedWindow Prefab
+  spriteLibAssetName: roundedSlotedWindow Sprite Lib
   secondarySpriteTextures: []
