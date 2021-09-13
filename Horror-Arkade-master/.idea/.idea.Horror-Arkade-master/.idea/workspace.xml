@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8ee225da-5995-44de-bfa6-5a9a2a492a40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/World/Buildings/Parts/Windows/squareSlotedWindow.psb" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/World/Buildings/Parts/Windows/squareSlotedWindow.psb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/World/Buildings/Parts/Windows/squareSlotedWindow.psb.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/World/Buildings/Parts/Windows/squareSlotedWindow.psb.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Red_Shame.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Red_Shame.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/World/Buildings/Parts/Windows/squareSlotedWindow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/World/Buildings/Parts/Windows/squareSlotedWindow.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1Part1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1Part1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Flicker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Flicker.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -270,6 +265,8 @@
       <workItem from="1631229128857" duration="1006000" />
       <workItem from="1631297124947" duration="816000" />
       <workItem from="1631299702951" duration="5523000" />
+      <workItem from="1631561453757" duration="96000" />
+      <workItem from="1631564275205" duration="613000" />
     </task>
     <servers />
   </component>
