@@ -5,14 +5,14 @@ using UnityEngine;
 
 public class moveOnTrigger : MonoBehaviour
 {
-   [SerializeField] Animator animator;
-   [SerializeField] ParticleSystem particleSystem;
+   Animator _animator;
+   ParticleSystem _particleSystem;
    private static readonly int move = Animator.StringToHash("trashMove");
 
     void Start()
     {
-        animator = GetComponentInChildren<Animator>();
-        particleSystem = GetComponentInChildren<ParticleSystem>();
+        _animator = GetComponentInChildren<Animator>();
+        _particleSystem = GetComponentInChildren<ParticleSystem>();
         
 
     }
@@ -21,8 +21,8 @@ public class moveOnTrigger : MonoBehaviour
    {
        if (col.gameObject == NewPlayer.Instance.gameObject)
        {
-           animator.SetTrigger(move);
-           particleSystem.Play();
+           _animator.SetTrigger(move);
+           _particleSystem.Play();
        }
    }
 }

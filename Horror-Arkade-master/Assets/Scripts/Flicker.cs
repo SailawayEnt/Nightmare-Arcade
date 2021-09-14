@@ -3,9 +3,8 @@ using System.Collections;
 using UnityEngine.Experimental.Rendering.Universal;
 using Random = UnityEngine.Random;
 
-[ExecuteAlways]
+
 [DisallowMultipleComponent]
-[AddComponentMenu("Rendering/2D/Light 2D (Experimental)")]
 public class Flicker : MonoBehaviour
 {
     Light2D _theLight;

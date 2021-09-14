@@ -404,7 +404,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2307009423238898513}
-  - component: {fileID: 8713686967899356897}
   - component: {fileID: 633189622542456949}
   - component: {fileID: 6691762546691654749}
   m_Layer: 0
@@ -433,19 +432,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8713686967899356897
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7946284066763686603}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 420e96ddfe1ad484ebaaf99004b00fa8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  recoveryTime: 1
 --- !u!95 &633189622542456949
 Animator:
   serializedVersion: 3
@@ -477,7 +463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fad556cc2b56344e9fa5a881c2e606b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  disableScript: 0
+  disableFlicker: 0
   minFlickerTime: 0.01
   maxFlickerTime: 0.5
   randomIntensity: 0
