@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &2538978734200754195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6491423646773742990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4faa2930eac626247a3c0370e665acdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grunge: {fileID: 5787359790297504798}
+  enableGrunge: 1
+--- !u!1001 &3896732758985503168
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 763736344157534300, guid: 7abc67209f56a584cbbd6249a0541ba7,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 763736344157534300, guid: 7abc67209f56a584cbbd6249a0541ba7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 763736344157534300, guid: 7abc67209f56a584cbbd6249a0541ba7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 763736344157534300, guid: 7abc67209f56a584cbbd6249a0541ba7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 763736344157534300, guid: 7abc67209f56a584cbbd6249a0541ba7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 763736344157534300, guid: 7abc67209f56a584cbbd6249a0541ba7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 763736344157534300, guid: 7abc67209f56a584cbbd6249a0541ba7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 763736344157534300, guid: 7abc67209f56a584cbbd6249a0541ba7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 763736344157534300, guid: 7abc67209f56a584cbbd6249a0541ba7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 763736344157534300, guid: 7abc67209f56a584cbbd6249a0541ba7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 763736344157534300, guid: 7abc67209f56a584cbbd6249a0541ba7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7368782744685030878, guid: 7abc67209f56a584cbbd6249a0541ba7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7783859139296394318, guid: 7abc67209f56a584cbbd6249a0541ba7,
+        type: 3}
+      propertyPath: m_Name
+      value: tapedOffDoor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 2312291501677139880, guid: 7abc67209f56a584cbbd6249a0541ba7,
+    type: 3}
+--- !u!1 &6491423646773742990 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7783859139296394318, guid: 7abc67209f56a584cbbd6249a0541ba7,
+    type: 3}
+  m_PrefabInstance: {fileID: 3896732758985503168}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5787359790297504798 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7368782744685030878, guid: 7abc67209f56a584cbbd6249a0541ba7,
+    type: 3}
+  m_PrefabInstance: {fileID: 3896732758985503168}
+  m_PrefabAsset: {fileID: 0}

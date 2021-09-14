@@ -3,16 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8ee225da-5995-44de-bfa6-5a9a2a492a40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Grunge.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Grunge.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Lights/StreetLight.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Lights/StreetLight.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1Part1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1Part1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Flicker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Flicker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/moveOnTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/moveOnTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WindowPicker.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WindowPicker.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Windows.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Windows.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,7 +264,7 @@
       <workItem from="1631299702951" duration="5523000" />
       <workItem from="1631561453757" duration="96000" />
       <workItem from="1631564275205" duration="712000" />
-      <workItem from="1631642787291" duration="2928000" />
+      <workItem from="1631642787291" duration="3948000" />
     </task>
     <servers />
   </component>

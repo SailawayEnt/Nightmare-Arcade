@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fad556cc2b56344e9fa5a881c2e606b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  disableScript: 0
+  disableFlicker: 0
   minFlickerTime: 0.015
   maxFlickerTime: 0.5
   randomIntensity: 0
@@ -350,7 +350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fad556cc2b56344e9fa5a881c2e606b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  disableScript: 0
+  disableFlicker: 0
   minFlickerTime: 0.015
   maxFlickerTime: 0.5
   randomIntensity: 0
@@ -366,7 +366,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8058114454807870524}
   m_Layer: 0
-  m_Name: neonSign_animating
+  m_Name: neonSignLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -427,7 +427,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8395105514155970370}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
   m_Name: 
@@ -587,7 +587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fad556cc2b56344e9fa5a881c2e606b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  disableScript: 0
+  disableFlicker: 0
   minFlickerTime: 0.015
   maxFlickerTime: 0.5
   randomIntensity: 0
