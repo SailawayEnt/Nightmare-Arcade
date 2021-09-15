@@ -9598,6 +9598,95 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44b06e3b0e62f88409e66297d7b7f1f2, type: 3}
+--- !u!1001 &7164158153228370143
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 959163568}
+    m_Modifications:
+    - target: {fileID: 1635584041131651908, guid: c49a24a191643fb4aa800b2087da03cd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750545814062190764, guid: c49a24a191643fb4aa800b2087da03cd,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750545814062190764, guid: c49a24a191643fb4aa800b2087da03cd,
+        type: 3}
+      propertyPath: isLightsOn
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750545814062190764, guid: c49a24a191643fb4aa800b2087da03cd,
+        type: 3}
+      propertyPath: isLightsOff
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5545529135890659068, guid: c49a24a191643fb4aa800b2087da03cd,
+        type: 3}
+      propertyPath: m_Name
+      value: cafeInterior
+      objectReference: {fileID: 0}
+    - target: {fileID: 6055803264684531519, guid: c49a24a191643fb4aa800b2087da03cd,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6055803264684531519, guid: c49a24a191643fb4aa800b2087da03cd,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6055803264684531519, guid: c49a24a191643fb4aa800b2087da03cd,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6055803264684531519, guid: c49a24a191643fb4aa800b2087da03cd,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6055803264684531519, guid: c49a24a191643fb4aa800b2087da03cd,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6055803264684531519, guid: c49a24a191643fb4aa800b2087da03cd,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6055803264684531519, guid: c49a24a191643fb4aa800b2087da03cd,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6055803264684531519, guid: c49a24a191643fb4aa800b2087da03cd,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6055803264684531519, guid: c49a24a191643fb4aa800b2087da03cd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6055803264684531519, guid: c49a24a191643fb4aa800b2087da03cd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6055803264684531519, guid: c49a24a191643fb4aa800b2087da03cd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c49a24a191643fb4aa800b2087da03cd, type: 3}
 --- !u!1001 &7262220278870922810
 PrefabInstance:
   m_ObjectHideFlags: 0

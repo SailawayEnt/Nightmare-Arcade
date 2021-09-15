@@ -9,7 +9,7 @@ public class WindowPicker : MonoBehaviour
         Style1,
         Style2,
         Style3
-    }; //Bugs will simply patrol. Zombie's will immediately start chasing you forever until you defeat them.
+    }; 
 
     [SerializeField] WindowStyle windowStyle;
 
