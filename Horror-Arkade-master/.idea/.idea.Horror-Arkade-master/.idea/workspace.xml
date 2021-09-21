@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8ee225da-5995-44de-bfa6-5a9a2a492a40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/World/Buildings/Store 4/cafeInterior.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/World/Buildings/Store 4/cafeInterior.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1Part1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1Part1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WindowPicker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WindowPicker.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -269,6 +269,7 @@
       <workItem from="1631564275205" duration="712000" />
       <workItem from="1631642787291" duration="3948000" />
       <workItem from="1631735019848" duration="1379000" />
+      <workItem from="1632249508634" duration="1397000" />
     </task>
     <servers />
   </component>
