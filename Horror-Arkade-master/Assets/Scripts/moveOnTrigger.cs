@@ -7,7 +7,7 @@ public class moveOnTrigger : MonoBehaviour
 {
    Animator _animator;
    ParticleSystem _particleSystem;
-   private static readonly int move = Animator.StringToHash("trashMove");
+   private static readonly int Move = Animator.StringToHash("move");
 
     void Start()
     {
@@ -21,8 +21,11 @@ public class moveOnTrigger : MonoBehaviour
    {
        if (col.gameObject == NewPlayer.Instance.gameObject)
        {
-           _animator.SetTrigger(move);
-           _particleSystem.Play();
+           _animator.SetTrigger(Move);
+           if (_particleSystem)
+           {
+               _particleSystem.Play();   
+           }
        }
    }
 }
