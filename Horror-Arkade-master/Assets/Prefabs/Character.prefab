@@ -10058,7 +10058,6 @@ GameObject:
   - component: {fileID: 2046054197}
   - component: {fileID: 1009467359}
   - component: {fileID: 1009467360}
-  - component: {fileID: 2999535824697921600}
   - component: {fileID: 4439017944772475138}
   m_Layer: 10
   m_Name: Character
@@ -10127,7 +10126,7 @@ MonoBehaviour:
     minNormalAngle: 0
     maxNormalAngle: 0
   playerAnimationBehaviour: {fileID: 4439017944772475138}
-  playerMovementBehaviour: {fileID: 2999535824697921600}
+  playerMovementBehaviour: {fileID: 0}
   playerInput: {fileID: 1289833988263579849}
   defaultControlScheme: {fileID: 11400000, guid: 2a2153f097a8fb145aa4dd97bae82316,
     type: 2}
@@ -10589,36 +10588,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &2999535824697921600
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 598654000571740062}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 378779c905c7f8c4498828036c49fd7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minGroundNormalY: 0.65
-  gravityModifier: 1
-  contactFilter:
-    useTriggers: 0
-    useLayerMask: 0
-    useDepth: 0
-    useOutsideDepth: 0
-    useNormalAngle: 0
-    useOutsideNormalAngle: 0
-    layerMask:
-      serializedVersion: 2
-      m_Bits: 0
-    minDepth: 0
-    maxDepth: 0
-    minNormalAngle: 0
-    maxNormalAngle: 0
-  playerTransform: {fileID: 4065167126261687791}
-  movementSpeed: 3
 --- !u!114 &4439017944772475138
 MonoBehaviour:
   m_ObjectHideFlags: 0

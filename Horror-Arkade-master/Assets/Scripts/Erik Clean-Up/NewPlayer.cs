@@ -250,7 +250,6 @@ public class NewPlayer : PhysicsObject
 
     void Update()
     {
-        // Debug.Log("current update " + playerInput.currentControlScheme);
         ComputeVelocity();
     }
 
