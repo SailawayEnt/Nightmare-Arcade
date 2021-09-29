@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[ExecuteAlways]
 public class Windows : MonoBehaviour
 {
     readonly Vector3 _closedAccentPosition = new Vector3(0.04000009f, 1.635f, 1);
@@ -19,13 +20,18 @@ public class Windows : MonoBehaviour
     [SerializeField] GameObject movableAccent;
     [SerializeField] GameObject windowLight;
     
-    //[SerializeField] GameObject disabledLock;
-
-    
 
     void Awake()
     {
         WindowCheck();
+    }
+
+    private void Update()
+    {
+        if (Application.isEditor)
+        {
+            WindowCheck();
+        }
     }
 
     void WindowCheck()

@@ -227,7 +227,7 @@ GameObject:
   - component: {fileID: 1713563323274475575}
   - component: {fileID: 1713563323274475574}
   m_Layer: 0
-  m_Name: TallBuilding2
+  m_Name: tallBuilding2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
