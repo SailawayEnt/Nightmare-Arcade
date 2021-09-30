@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ee225da-5995-44de-bfa6-5a9a2a492a40" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Character.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Character.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1Part1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1Part1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/NewPlayer.cs" afterDir="false" />
-    </list>
+    <list default="true" id="8ee225da-5995-44de-bfa6-5a9a2a492a40" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -279,7 +274,7 @@
       <workItem from="1632857589249" duration="598000" />
       <workItem from="1632878406462" duration="644000" />
       <workItem from="1632930332331" duration="2341000" />
-      <workItem from="1632944887399" duration="1323000" />
+      <workItem from="1632944887399" duration="1918000" />
     </task>
     <servers />
   </component>
