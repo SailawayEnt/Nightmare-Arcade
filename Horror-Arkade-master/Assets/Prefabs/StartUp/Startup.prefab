@@ -478,7 +478,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 45
+  m_text: 9999999
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -611,7 +611,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7990701648165052418, guid: 6601089fcdc67504eb56b99aa1179c23,
+  m_Sprite: {fileID: 7412158409161412960, guid: 6601089fcdc67504eb56b99aa1179c23,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -631,6 +631,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 224566877663695724}
+  - component: {fileID: 7113145125069167302}
+  - component: {fileID: 7113145125069167303}
   m_Layer: 0
   m_Name: Coins
   m_TagString: Untagged
@@ -659,6 +661,48 @@ RectTransform:
   m_AnchoredPosition: {x: -0.00018310547, y: 5.7129965}
   m_SizeDelta: {x: 481.45355, y: 53.32672}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &7113145125069167302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571500532489486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8734dc5d2e1c5e14e837ce07ef96c3a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  consumableItem: {fileID: 11400000, guid: 829a929706776ba448bf86ad6e224f77, type: 2}
+  itemQuantity: {fileID: 114194960781150434}
+  animator: {fileID: 7113145124468738136}
+--- !u!114 &7113145125069167303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571500532489486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4961029f65a0ba140a87b25004538b8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 788769ffa171e074da55c7bdd4a27017, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7113145125069167302}
+        m_MethodName: UpdateSlotUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1607133546322344
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,7 +806,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0.32941177, a: 1}
+  m_Color: {r: 0.96470594, g: 0.2627451, b: 0.2627451, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -853,8 +897,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4283695359
-  m_fontColor: {r: 1, g: 0, b: 0.32941177, a: 1}
+    rgba: 4281450097
+  m_fontColor: {r: 0.44202414, g: 0.745283, b: 0.19335175, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1052,7 +1096,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: LEVEL NAME
+  m_text: Home
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 75f26c64aa17ae644a8615622ba52e75, type: 2}
   m_sharedMaterial: {fileID: -8401719199691062078, guid: 75f26c64aa17ae644a8615622ba52e75,
@@ -1349,8 +1393,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -100, y: -100}
-  m_SizeDelta: {x: 75, y: 75}
+  m_AnchoredPosition: {x: -103.3, y: -103.8}
+  m_SizeDelta: {x: 81.66333, y: 82.63449}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1979631837854256
 GameObject:
@@ -1445,7 +1489,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3311805712474558552
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1856,7 +1900,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 45
+  m_text: 9999999
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1934,7 +1978,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7698944878982331565}
-  m_Layer: 0
+  - component: {fileID: 7113145125069167299}
+  - component: {fileID: 7113145125069167300}
+  m_Layer: 5
   m_Name: Tickets
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1962,6 +2008,48 @@ RectTransform:
   m_AnchoredPosition: {x: -0.00018310547, y: -59}
   m_SizeDelta: {x: 481.45355, y: 53.32672}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &7113145125069167299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5094922807020016623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4961029f65a0ba140a87b25004538b8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 7a57bb289c9598149ba5bf41baeb9b1b, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7113145125069167300}
+        m_MethodName: UpdateSlotUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7113145125069167300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5094922807020016623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8734dc5d2e1c5e14e837ce07ef96c3a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  consumableItem: {fileID: 11400000, guid: 21901ac8abf55dc47b6a80538c8501c8, type: 2}
+  itemQuantity: {fileID: 1770148624374900291}
+  animator: {fileID: 7113145124468738136}
 --- !u!114 &7639457209781811722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2436,7 +2524,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 7113145124468738136}
   ammoBar: {fileID: 0}
-  coinsMesh: {fileID: 114194960781150434}
   healthBar: {fileID: 1613980230684210}
   inventoryItemGraphic: {fileID: 7113145125565779669}
   startUp: {fileID: 1263890939840604}
@@ -2595,7 +2682,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0.32941177, a: 1}
+  m_Color: {r: 0.7626402, g: 0.8018868, b: 0.73001957, a: 1}
   m_RaycastTarget: 0
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2670,7 +2757,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0.32941177, a: 1}
+  m_Color: {r: 0.7626402, g: 0.8018868, b: 0.73001957, a: 1}
   m_RaycastTarget: 0
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2972,7 +3059,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7113145125565779671
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2987,9 +3074,9 @@ RectTransform:
   m_Father: {fileID: 224642495879580274}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -37.5, y: -37.5}
   m_SizeDelta: {x: 75, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7113145125565779670
@@ -3019,7 +3106,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6361076117710028423, guid: 6601089fcdc67504eb56b99aa1179c23,
+  m_Sprite: {fileID: -1151895081562786922, guid: 6601089fcdc67504eb56b99aa1179c23,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -3094,8 +3181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7990701648165052418, guid: 6601089fcdc67504eb56b99aa1179c23,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2b7371a99f7ef0544ae1ebcb56a10640, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

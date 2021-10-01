@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ee225da-5995-44de-bfa6-5a9a2a492a40" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/World/Interior Hallway/InteriorSlidingWindow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/World/Interior Hallway/InteriorSlidingWindow.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Windows.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Windows.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Global/Coin.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Global/Coin.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/UI/life_heart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/UI/life_heart.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/life_heart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/life_heart.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Interactables/Coin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Interactables/Coin.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/StartUp/Startup.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/StartUp/Startup.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay1.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -278,7 +286,7 @@
       <workItem from="1632878406462" duration="644000" />
       <workItem from="1632930332331" duration="2341000" />
       <workItem from="1632944887399" duration="1918000" />
-      <workItem from="1633050671469" duration="576000" />
+      <workItem from="1633050671469" duration="1172000" />
     </task>
     <servers />
   </component>
