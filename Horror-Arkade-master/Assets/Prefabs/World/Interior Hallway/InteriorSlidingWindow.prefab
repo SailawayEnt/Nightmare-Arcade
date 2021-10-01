@@ -1,5 +1,24 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &3157332839399572582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017953884320201756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa538cef6f9d2a242b959c159f83bf1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  windowAccentLight: {fileID: 0}
+  isLocked: 0
+  isOpen: 0
+  openedWindow: {fileID: 5303400197044513259}
+  closedWindow: {fileID: 3048985610823510088}
+  movableAccent: {fileID: 0}
+  windowLight: {fileID: 0}
 --- !u!1001 &1659606975348612281
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7,10 +26,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -394525366761349275, guid: 77e7896e872c09648bfc5b77510fdb53,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.004999995
+      objectReference: {fileID: 0}
     - target: {fileID: 1812809257801244837, guid: 77e7896e872c09648bfc5b77510fdb53,
         type: 3}
       propertyPath: m_Name
-      value: interior-sliding-window
+      value: InteriorSlidingWindow
       objectReference: {fileID: 0}
     - target: {fileID: 1950444120444146218, guid: 77e7896e872c09648bfc5b77510fdb53,
         type: 3}
@@ -67,6 +91,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4420344065917433073, guid: 77e7896e872c09648bfc5b77510fdb53,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6814348250099299666, guid: 77e7896e872c09648bfc5b77510fdb53,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 7758139580354337789, guid: 77e7896e872c09648bfc5b77510fdb53,
     type: 3}
+--- !u!1 &1017953884320201756 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1812809257801244837, guid: 77e7896e872c09648bfc5b77510fdb53,
+    type: 3}
+  m_PrefabInstance: {fileID: 1659606975348612281}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3048985610823510088 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4420344065917433073, guid: 77e7896e872c09648bfc5b77510fdb53,
+    type: 3}
+  m_PrefabInstance: {fileID: 1659606975348612281}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5303400197044513259 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6814348250099299666, guid: 77e7896e872c09648bfc5b77510fdb53,
+    type: 3}
+  m_PrefabInstance: {fileID: 1659606975348612281}
+  m_PrefabAsset: {fileID: 0}

@@ -45,7 +45,11 @@ public class Windows : MonoBehaviour
             
             closedWindow.SetActive(true);
             openedWindow.SetActive(false);
-            windowLight.SetActive(false);
+            
+            if (windowLight)
+            {
+                windowLight.SetActive(false);   
+            }
 
             if (movableAccent)
                 movableAccent.transform.localPosition = _closedAccentPosition;
@@ -58,7 +62,10 @@ public class Windows : MonoBehaviour
             
             openedWindow.SetActive(true);
             closedWindow.SetActive(false);
-            windowLight.SetActive(true);
+            if (windowLight)
+            {
+                windowLight.SetActive(true);   
+            }
             if (movableAccent)
                 movableAccent.transform.localPosition = _openAccentPosition;
         }else if (!isOpen && !isLocked)
@@ -70,7 +77,11 @@ public class Windows : MonoBehaviour
             
             closedWindow.SetActive(true);
             openedWindow.SetActive(false);
-            windowLight.SetActive(false);
+            
+            if (windowLight)
+            {
+                windowLight.SetActive(false);
+            }
             if (movableAccent)
                 movableAccent.transform.localPosition = _closedAccentPosition;
         }
