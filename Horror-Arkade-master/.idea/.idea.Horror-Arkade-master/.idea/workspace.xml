@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Art/Arkade/MegaStar/Weapons/machine-gun.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Arkade/MegaStar/Weapons/machine-gun.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Art/SpaceGame/VFX/Engines/Engine_01_Effect_Sphere.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/SpaceGame/VFX/Engines/Engine_01_Effect_Sphere.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Interactables/GameCabinet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Interactables/GameCabinet.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/Enemies/Enemy_straight_projectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/Enemies/Enemy_straight_projectile.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/Planets/Purple-Planet-wih-Moon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/Planets/Purple-Planet-wih-Moon.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/Planets/Red-Lines-PLanet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/Planets/Red-Lines-PLanet.prefab" afterDir="false" />
@@ -16,9 +17,11 @@
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/VFX/Left_Gun.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/VFX/Left_Gun.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/VFX/Muzzle FX.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/VFX/Muzzle FX.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/VFX/PLayer Engine Effect.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/VFX/PLayer Engine Effect.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/VFX/Player Explosion.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/VFX/Player Explosion.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/VFX/Right_Gun.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/VFX/Right_Gun.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/VFX/Speed Effect PC.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/VFX/Speed Effect PC.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/VFX/Speed Effect.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/VFX/Speed Effect.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level3Part2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level3Part2.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -298,6 +301,7 @@
       <workItem from="1633637020796" duration="1563000" />
       <workItem from="1633716886011" duration="2237000" />
       <workItem from="1634666031359" duration="1823000" />
+      <workItem from="1634674595724" duration="603000" />
     </task>
     <servers />
   </component>
