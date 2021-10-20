@@ -51,12 +51,14 @@ public class PlayerMoving : MonoBehaviour {
 
             Debug.Log("mobile version?")
 #endif
-            transform.position = new Vector3    //if 'Player' crossed the movement borders, returning him back 
+            var position = transform.position;
+            position = new Vector3    //if 'Player' crossed the movement borders, returning him back 
                 (
-                Mathf.Clamp(transform.position.x, borders.minX, borders.maxX),
-                Mathf.Clamp(transform.position.y, borders.minY, borders.maxY),
+                Mathf.Clamp(position.x, borders.minX, borders.maxX),
+                Mathf.Clamp(position.y, borders.minY, borders.maxY),
                 0
                 );
+            transform.position = position;
         }
     }
 

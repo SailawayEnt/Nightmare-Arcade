@@ -85,7 +85,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4868786349923552
 Transform:
   m_ObjectHideFlags: 0
@@ -269,7 +269,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.05, y: 0}
+  m_Offset: {x: 0.015536308, y: -0.7854028}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -280,7 +280,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 15.689064, y: 25}
+  m_Size: {x: 6.079382, y: 5.0914507}
   m_EdgeRadius: 0
 --- !u!1 &1712698101264634
 GameObject:
@@ -404,8 +404,8 @@ MonoBehaviour:
   - {fileID: 1868464169396128, guid: 284631a95d42dc047b90d8af25ac4457, type: 3}
   timeBetweenPlanets: 15
   planetsSpeed: -1
-  onTicketReceived: {fileID: 0}
-  onGameWon: {fileID: 0}
-  ticketInventory: {fileID: 0}
-  scenesData: {fileID: 0}
+  onTicketReceived: {fileID: 11400000, guid: 7a57bb289c9598149ba5bf41baeb9b1b, type: 2}
+  onGameWon: {fileID: 11400000, guid: c67423ce65867be4ebec4e4b3463359b, type: 2}
+  ticketInventory: {fileID: 11400000, guid: 21901ac8abf55dc47b6a80538c8501c8, type: 2}
+  scenesData: {fileID: 11400000, guid: b533ad2b622cce24aa5f96e6dba0a567, type: 2}
   playerGO: {fileID: 0}

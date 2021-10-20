@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using UnityEngine;
 
 /*Manages inventory, keeps several component references, and any other future control of the game itself you may need*/
@@ -14,6 +15,7 @@ public class GameManager : MonoBehaviour
     private static GameManager instance;
     [SerializeField] public AudioTrigger gameMusic;
     [SerializeField] public AudioTrigger gameAmbience;
+    
 
     // Player
     [SerializeField] NewPlayer player;

@@ -14455,7 +14455,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4923957858404230
 Transform:
   m_ObjectHideFlags: 0
@@ -14627,8 +14627,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   borders:
-    minXOffset: 9
-    maxXOffset: 3.2
+    minXOffset: 5.99
+    maxXOffset: 6.26
     minYOffset: 2.25
     maxYOffset: 7.75
     minX: 0

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using Cinemachine;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,6 +8,8 @@ public class GameCabinetMenu : MonoBehaviour
 {
    [Header("Target")] 
    [SerializeField] Transform targetDestination;
+   //[SerializeField] GameObject menuCamera;
+   [SerializeField] GameObject playingCamera;
    
    // Player cabinetPlayer;
    [SerializeField] GameObject cabinetPlayer;
@@ -29,6 +32,7 @@ public class GameCabinetMenu : MonoBehaviour
    public void StartGame()
    {
       HideMenu();
+      playingCamera.SetActive(true);
       var position = targetDestination.position;
       cabinetPlayer.transform.position = new Vector2(position.x, position.y);
       StartCoroutine(WaitForLoad());
@@ -56,6 +60,7 @@ public class GameCabinetMenu : MonoBehaviour
 
    public void ResetCabinetGame()
    {
+      playingCamera.SetActive(false);
       cabinetPlayer.transform.position = new Vector2(0, 0);
 
       ShowMenu();
