@@ -16,11 +16,17 @@ public class Player : MonoBehaviour
     //Current Control Scheme
     string _currentControlScheme;
     
+    //Animations
+    
+    
     [Header("Input Settings")]
     [SerializeField] PlayerInput playerInput;
 
     Vector2 _inputMovement;
     public Vector2 InputMovement { get; private set; }
+    
+    int _horizontalDirection;
+    public int HorizontalDirection { get; private set;  }
     
     
     //INPUT SYSTEM ACTION METHODS --------------
@@ -31,7 +37,11 @@ public class Player : MonoBehaviour
 
     public void OnMovement(InputAction.CallbackContext value)
     {
+        Vector2 inputMovement = value.ReadValue<Vector2>();
+        var newInputMovement = Vector2Int.RoundToInt(inputMovement);
         InputMovement = value.ReadValue<Vector2>();
+        
+        HorizontalDirection = newInputMovement.x;
     }
     
     //INPUT SYSTEM AUTOMATIC CALLBACKS --------------

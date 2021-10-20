@@ -14636,6 +14636,7 @@ MonoBehaviour:
     minY: 0
     maxY: 0
   speedMultiplier: 8
+  handsAnim: {fileID: 0}
 --- !u!114 &114642073701102404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14652,6 +14653,7 @@ MonoBehaviour:
   projectileObject: {fileID: 1413877261856170, guid: 7120694aa5e8a9d4a88b1e61228dabb0,
     type: 3}
   nextFire: 0
+  handsAnim: {fileID: 0}
   weaponPower: 1
   guns:
     rightGun: {fileID: 1781751546136816}

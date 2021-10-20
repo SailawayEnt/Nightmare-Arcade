@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 /// <summary>
 /// This script defines the borders of ‘Player’s’ movement. Depending on the chosen handling type, it moves the ‘Player’ together with the pointer.
@@ -19,6 +20,8 @@ public class PlayerMoving : MonoBehaviour {
     Camera mainCamera;
     bool controlIsActive = true;
     [SerializeField][Min(1)]float speedMultiplier = 5.0f;
+
+    [SerializeField] Animator handsAnim;
 
     public static PlayerMoving instance; //unique instance of the script for easy access to the script
 
@@ -42,6 +45,7 @@ public class PlayerMoving : MonoBehaviour {
 
             if (Player.instance.InputMovement.x != 0) //if mouse button was pressed       
             {
+                handsAnim.SetInteger("moveDirection", Player.instance.HorizontalDirection);
                 Vector3 movement = Player.instance.InputMovement * speedMultiplier;
                 transform.position += movement * Time.deltaTime;
             }

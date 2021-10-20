@@ -3,14 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="8ee225da-5995-44de-bfa6-5a9a2a492a40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/SpaceGame/Bonuses/Power Up.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/SpaceGame/Bonuses/Power Up.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/Game_Controller.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/Game_Controller.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/SpaceGame/Button Press.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/SpaceGame/Button Press.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/SpaceGame/GameCabinet.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/SpaceGame/GameCabinet.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/SpaceGame/Joystick Left.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/SpaceGame/Joystick Left.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/SpaceGame/Joystick Right.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/SpaceGame/Joystick Right.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay3.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level3Part2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level3Part2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/PlayerMoving.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/PlayerMoving.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/PlayerShooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/PlayerShooting.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -291,7 +292,7 @@
       <workItem from="1633716886011" duration="2237000" />
       <workItem from="1634666031359" duration="1823000" />
       <workItem from="1634674595724" duration="603000" />
-      <workItem from="1634754712653" duration="3359000" />
+      <workItem from="1634754712653" duration="7181000" />
     </task>
     <servers />
   </component>

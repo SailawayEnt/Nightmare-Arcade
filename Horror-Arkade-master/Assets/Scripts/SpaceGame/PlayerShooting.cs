@@ -21,6 +21,8 @@ public class PlayerShooting : MonoBehaviour {
 
     //time for a new shot
     [HideInInspector] public float nextFire;
+    
+    [SerializeField] Animator handsAnim;
 
 
     [Tooltip("current weapon power")]
@@ -51,8 +53,11 @@ public class PlayerShooting : MonoBehaviour {
         {
             if (Time.time > nextFire)
             {
+                handsAnim.SetBool("buttonPress", true);
+                Debug.Log("shot");
                 MakeAShot();                                                         
                 nextFire = Time.time + 1 / fireRate;
+                //handsAnim.SetBool("buttonPress", false);
             }
         }
     }
