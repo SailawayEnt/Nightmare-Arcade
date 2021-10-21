@@ -39,6 +39,7 @@ public class PlayerMoving : MonoBehaviour {
 
     private void Update()
     {
+        handsAnim.SetInteger("moveDirection", 0);
         if (controlIsActive)
         {
 #if UNITY_STANDALONE || UNITY_EDITOR    //if the current platform is not mobile, setting mouse handling 

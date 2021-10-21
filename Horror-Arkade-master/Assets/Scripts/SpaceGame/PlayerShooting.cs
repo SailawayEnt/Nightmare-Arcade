@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -51,15 +52,15 @@ public class PlayerShooting : MonoBehaviour {
     {
         if (shootingIsActive)
         {
+            
             if (Time.time > nextFire)
             {
-                handsAnim.SetBool("buttonPress", true);
-                Debug.Log("shot");
+                handsAnim.SetTrigger("fire");
                 MakeAShot();                                                         
                 nextFire = Time.time + 1 / fireRate;
-                //handsAnim.SetBool("buttonPress", false);
             }
         }
+        
     }
 
     //method for a shot
@@ -99,5 +100,6 @@ public class PlayerShooting : MonoBehaviour {
     void CreateLazerShot(GameObject lazer, Vector3 pos, Vector3 rot) //translating 'pooled' lazer shot to the defined position in the defined rotation
     {
         Instantiate(lazer, pos, Quaternion.Euler(rot));
+        
     }
 }

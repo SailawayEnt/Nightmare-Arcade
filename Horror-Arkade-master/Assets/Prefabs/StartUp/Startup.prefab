@@ -1502,8 +1502,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 450007533504022751}
-  - {fileID: 4544015851054773876}
   - {fileID: 7728637069675811474}
+  - {fileID: 4544015851054773876}
   m_Father: {fileID: 4056615123376922}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1604,7 +1604,7 @@ RectTransform:
   m_Children:
   - {fileID: 6171901185599273188}
   m_Father: {fileID: 3311805712474558552}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2063,6 +2063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetDestination: {fileID: 0}
+  playingCamera: {fileID: 0}
   cabinetPlayer: {fileID: 0}
   scenesData: {fileID: 11400000, guid: b533ad2b622cce24aa5f96e6dba0a567, type: 2}
   menu: {fileID: 0}
@@ -2101,7 +2102,7 @@ RectTransform:
   m_Children:
   - {fileID: 2784586888217547599}
   m_Father: {fileID: 3311805712474558552}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

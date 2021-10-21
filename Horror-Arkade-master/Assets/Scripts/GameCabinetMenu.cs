@@ -23,12 +23,6 @@ public class GameCabinetMenu : MonoBehaviour
 
    GameObject _levelControllerGO;
 
-   void Awake()
-   {
-      
-   }
-
-
    public void StartGame()
    {
       HideMenu();

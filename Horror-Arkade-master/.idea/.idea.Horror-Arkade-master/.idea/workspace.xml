@@ -4,12 +4,17 @@
     <list default="true" id="8ee225da-5995-44de-bfa6-5a9a2a492a40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animation/SpaceGame/Button Press.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/SpaceGame/Button Press.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/SpaceGame/GameCabinet.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/SpaceGame/GameCabinet.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/SpaceGame/Joystick Left.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/SpaceGame/Joystick Left.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/SpaceGame/Joystick Right.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/SpaceGame/Joystick Right.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/SpaceGame/GameCabinet.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/SpaceGame/GameCabinet.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/SpaceGame/Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/SpaceGame/Idle.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/SpaceGame/Joystick Down.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/SpaceGame/Joystick Down.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/SpaceGame/Joystick Up.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/SpaceGame/Joystick Up.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Interactables/GameCabinet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Interactables/GameCabinet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/StartUp/Startup.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/StartUp/Startup.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay3.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level3Part1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level3Part1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level3Part2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level3Part2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/PlayerMoving.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/PlayerMoving.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/PlayerShooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/PlayerShooting.cs" afterDir="false" />
     </list>
@@ -293,6 +298,8 @@
       <workItem from="1634666031359" duration="1823000" />
       <workItem from="1634674595724" duration="603000" />
       <workItem from="1634754712653" duration="7181000" />
+      <workItem from="1634830350663" duration="390000" />
+      <workItem from="1634839889653" duration="7686000" />
     </task>
     <servers />
   </component>
