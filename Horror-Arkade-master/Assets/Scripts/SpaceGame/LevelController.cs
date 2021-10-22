@@ -64,7 +64,8 @@ public class LevelController : MonoBehaviour {
         
 
         StartCoroutine(PowerupBonusCreation());
-        StartCoroutine(PlanetsCreation());
+        if (planetsList.Count > 0)
+            StartCoroutine(PlanetsCreation());
         
     }
 

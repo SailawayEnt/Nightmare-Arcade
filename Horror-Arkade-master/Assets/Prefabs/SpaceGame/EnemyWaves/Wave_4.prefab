@@ -46,9 +46,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bce8ed9b64f39c44bdd9d3b9f6debe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 1373690366928948, guid: fdaaab53a8b4c0143b19d2a2e4007e44, type: 3}
+  enemy: {fileID: 3862869491217171422, guid: c581f623faea977409c931f9c797d804, type: 3}
   count: 14
-  speed: 35
+  speed: 25
   timeBetween: 0.5
   pathPoints:
   - {fileID: 4262781303093930}
