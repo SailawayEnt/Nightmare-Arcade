@@ -248,6 +248,11 @@ PrefabInstance:
       propertyPath: playerGO
       value: 
       objectReference: {fileID: 2127475601}
+    - target: {fileID: 114004447756405556, guid: 01cf4a33fc66cde4abc060ccfeadeb5a,
+        type: 3}
+      propertyPath: planets.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01cf4a33fc66cde4abc060ccfeadeb5a, type: 3}
 --- !u!1001 &1260136712
@@ -257,6 +262,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1494550789913480, guid: 5a213a4dde83c404f8856922c5fc08ff, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795409344085888, guid: 5a213a4dde83c404f8856922c5fc08ff, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1906950169585904, guid: 5a213a4dde83c404f8856922c5fc08ff, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -350,6 +363,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 212059163943241072, guid: 5a213a4dde83c404f8856922c5fc08ff,
         type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0474bba562c22ba488f5c98ee2002d5c,
+        type: 3}
+    - target: {fileID: 212059163943241072, guid: 5a213a4dde83c404f8856922c5fc08ff,
+        type: 3}
       propertyPath: m_SortingLayer
       value: -4
       objectReference: {fileID: 0}
@@ -363,6 +382,12 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -1785465971
       objectReference: {fileID: 0}
+    - target: {fileID: 212162588336878546, guid: 5a213a4dde83c404f8856922c5fc08ff,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 17e2c61d528ab6b4da7aeb043fe9f828,
+        type: 3}
     - target: {fileID: 212162588336878546, guid: 5a213a4dde83c404f8856922c5fc08ff,
         type: 3}
       propertyPath: m_SortingLayer
@@ -380,6 +405,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 212249596855121180, guid: 5a213a4dde83c404f8856922c5fc08ff,
         type: 3}
+      propertyPath: m_Size.x
+      value: 20.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 212249596855121180, guid: 5a213a4dde83c404f8856922c5fc08ff,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 20.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 212249596855121180, guid: 5a213a4dde83c404f8856922c5fc08ff,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 212249596855121180, guid: 5a213a4dde83c404f8856922c5fc08ff,
+        type: 3}
       propertyPath: m_SortingLayer
       value: -4
       objectReference: {fileID: 0}
@@ -393,6 +433,17 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -1785465971
       objectReference: {fileID: 0}
+    - target: {fileID: 212249596855121180, guid: 5a213a4dde83c404f8856922c5fc08ff,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212269677814144430, guid: 5a213a4dde83c404f8856922c5fc08ff,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5a2782a37a4e3cb4c8ac740f0ef1523b,
+        type: 3}
     - target: {fileID: 212269677814144430, guid: 5a213a4dde83c404f8856922c5fc08ff,
         type: 3}
       propertyPath: m_SortingLayer
@@ -410,6 +461,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 212299247178748452, guid: 5a213a4dde83c404f8856922c5fc08ff,
         type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0474bba562c22ba488f5c98ee2002d5c,
+        type: 3}
+    - target: {fileID: 212299247178748452, guid: 5a213a4dde83c404f8856922c5fc08ff,
+        type: 3}
       propertyPath: m_SortingLayer
       value: -4
       objectReference: {fileID: 0}
@@ -423,6 +480,12 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -1785465971
       objectReference: {fileID: 0}
+    - target: {fileID: 212835588731536264, guid: 5a213a4dde83c404f8856922c5fc08ff,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 06d378227955a5d42bad09ee7359726e,
+        type: 3}
     - target: {fileID: 212835588731536264, guid: 5a213a4dde83c404f8856922c5fc08ff,
         type: 3}
       propertyPath: m_SortingLayer
@@ -553,6 +616,11 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5101863956427684779, guid: 2a937e64e3db0394cb6be729a5225076,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5101863956926749783, guid: 2a937e64e3db0394cb6be729a5225076,
         type: 3}
       propertyPath: m_IsActive
       value: 0
