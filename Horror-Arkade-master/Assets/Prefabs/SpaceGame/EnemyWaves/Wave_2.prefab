@@ -86,12 +86,12 @@ MonoBehaviour:
   - {fileID: 4415410120431504}
   rotationByPath: 0
   Loop: 0
-  pathColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  pathColor: {r: 0.7017774, g: 0.015686274, b: 1, a: 1}
   shooting:
     shotChance: 40
     amountOfShots: 1
-    shotTimeMin: 0.6
-    shotTimeMax: 2.6
+    shotTimeMin: 0.05
+    shotTimeMax: 5
   testMode: 0
 --- !u!1 &1798819812210940
 GameObject:
@@ -117,7 +117,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1798819812210940}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.4, y: 13.97, z: 0}
+  m_LocalPosition: {x: 7.2, y: 6.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4028030549383590}
