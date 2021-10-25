@@ -248,11 +248,6 @@ PrefabInstance:
       propertyPath: playerGO
       value: 
       objectReference: {fileID: 2127475601}
-    - target: {fileID: 114004447756405556, guid: 01cf4a33fc66cde4abc060ccfeadeb5a,
-        type: 3}
-      propertyPath: planets.Array.size
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01cf4a33fc66cde4abc060ccfeadeb5a, type: 3}
 --- !u!1001 &1260136712

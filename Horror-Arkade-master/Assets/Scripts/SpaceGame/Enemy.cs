@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 /// <summary>
 /// This script defines 'Enemy's' health and behavior. 
@@ -19,12 +21,25 @@ public class Enemy : MonoBehaviour {
     public GameObject hitEffect;
     
     [HideInInspector] public int shotChance; //probability of 'Enemy's' shooting during tha path
-    [HideInInspector] public float shotTimeMin, shotTimeMax; //max and min time for shooting from the beginning of the path
+    [HideInInspector] public int amountOfShots;
+    [HideInInspector] public float shotTimeMin, shotTimeMax, timeBetween; //max and min time for shooting from the beginning of the path
+    
     #endregion
 
-    private void Start()
+    void Start()
     {
-        Invoke("ActivateShooting", Random.Range(shotTimeMin, shotTimeMax));
+    //    Invoke("ActivateShooting", Random.Range(shotTimeMin, shotTimeMax));
+    StartCoroutine(Fire());
+    }
+
+    IEnumerator Fire()
+    {
+        while (amountOfShots > 0)
+        {
+            Invoke("ActivateShooting", Random.Range(shotTimeMin, shotTimeMax));
+            amountOfShots--;
+            yield return new WaitForSeconds(timeBetween/8);
+        }
     }
 
     //coroutine making a shot

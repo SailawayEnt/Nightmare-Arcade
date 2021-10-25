@@ -14,6 +14,10 @@ public class Shooting
     [Tooltip("probability with which the ship of this wave will make a shot")]
     public int shotChance;
 
+    [Range(1,50)]
+    [Tooltip("probability with which the ship of this wave will make a shot")]
+    public int amountOfShots;
+    
     [Tooltip("min and max time from the beginning of the path when the enemy can make a shot")]
     public float shotTimeMin, shotTimeMax;
 }
@@ -67,7 +71,9 @@ public class Wave : MonoBehaviour {
             followComponent.rotationByPath = rotationByPath;
             followComponent.loop = Loop;
             followComponent.SetPath(); 
-            Enemy enemyComponent = newEnemy.GetComponent<Enemy>();  
+            Enemy enemyComponent = newEnemy.GetComponent<Enemy>();
+            enemyComponent.amountOfShots = shooting.amountOfShots;
+            enemyComponent.timeBetween = speed;
             enemyComponent.shotChance = shooting.shotChance; 
             enemyComponent.shotTimeMin = shooting.shotTimeMin; 
             enemyComponent.shotTimeMax = shooting.shotTimeMax;
