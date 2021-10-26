@@ -44,10 +44,10 @@ public class PlayerMoving : MonoBehaviour {
         {
 #if UNITY_STANDALONE || UNITY_EDITOR    //if the current platform is not mobile, setting mouse handling 
 
-            if (Player.instance.InputMovement.x != 0) //if mouse button was pressed       
+            if (Player.Instance.InputMovement.x != 0) //if mouse button was pressed       
             {
-                handsAnim.SetInteger("moveDirection", Player.instance.HorizontalDirection);
-                Vector3 movement = Player.instance.InputMovement * speedMultiplier;
+                handsAnim.SetInteger("moveDirection", Player.Instance.HorizontalDirection);
+                Vector3 movement = Player.Instance.InputMovement * speedMultiplier;
                 transform.position += movement * Time.deltaTime;
             }
 #endif

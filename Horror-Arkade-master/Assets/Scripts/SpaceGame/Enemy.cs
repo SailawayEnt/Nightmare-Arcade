@@ -67,9 +67,9 @@ public class Enemy : MonoBehaviour {
         if (collision.tag == "Player")
         {
             if (Projectile.GetComponent<Projectile>() != null)
-                Player.instance.GetDamage(Projectile.GetComponent<Projectile>().damage);
+                Player.Instance.GetDamage(Projectile.GetComponent<Projectile>().damage);
             else
-                Player.instance.GetDamage(1);
+                Player.Instance.GetDamage(1);
         }
     }
 

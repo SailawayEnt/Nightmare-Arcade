@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     [SerializeField] GameEvent onPlayerDeath;
     public GameObject destructionFX;
 
-    public static Player instance; 
+    public static Player Instance; 
     
     //Current Control Scheme
     string _currentControlScheme;
@@ -86,8 +86,8 @@ public class Player : MonoBehaviour
 
     void Awake()
     {
-        if (instance == null) 
-            instance = this;
+        if (Instance == null) 
+            Instance = this;
     }
 
     void Start()
@@ -95,7 +95,7 @@ public class Player : MonoBehaviour
         _currentControlScheme = playerInput.currentControlScheme;
     }
 
-    //method for damage proceccing by 'Player'
+    //method for damage processing by 'Player'
     public void GetDamage(int damage)   
     {
         Destruction();
@@ -107,5 +107,6 @@ public class Player : MonoBehaviour
         Instantiate(destructionFX, transform.position, Quaternion.identity); //generating destruction visual effect and destroying the 'Player' object
         Destroy(gameObject);
         onPlayerDeath?.Invoke();
+        gameObject.SetActive(false);
     }
 }

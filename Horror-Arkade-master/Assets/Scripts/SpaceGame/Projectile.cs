@@ -19,7 +19,7 @@ public class Projectile : MonoBehaviour {
     {
         if (enemyBullet && collision.tag == "Player") //if anoter object is 'player' or 'enemy sending the command of receiving the damage
         {
-            Player.instance.GetDamage(damage); 
+            Player.Instance.GetDamage(damage); 
             if (destroyedByCollision)
                 Destruction();
         }

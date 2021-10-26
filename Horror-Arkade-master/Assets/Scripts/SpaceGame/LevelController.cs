@@ -27,9 +27,9 @@ public class LevelController : MonoBehaviour {
     public GameObject[] planets;
     public float timeBetweenPlanets;
     public float planetsSpeed;
-    List<GameObject> planetsList = new List<GameObject>();
-    bool allEnemiesDied = false;
-    bool gameEnded = false;
+    readonly List<GameObject> _planetsList = new List<GameObject>();
+    bool _allEnemiesDied = false;
+    bool _gameEnded = false;
 
     [SerializeField] GameEvent onTicketReceived;
     [SerializeField] GameEvent onGameWon;
@@ -37,18 +37,18 @@ public class LevelController : MonoBehaviour {
     [SerializeField] ScenesData scenesData;
     
 
-    Camera mainCamera;
+    Camera _mainCamera;
 
     [SerializeField] GameObject playerGO;
     void Awake()
     {
-        mainCamera = Camera.main;
+        _mainCamera = Camera.main;
     }
 
     private void Update()
     {
-        if(!allEnemiesDied)
-            StartCoroutine(nameof(FindEnemies));
+        if(!_allEnemiesDied)
+            StartCoroutine(FindEnemies());
         
     }
 
@@ -64,7 +64,7 @@ public class LevelController : MonoBehaviour {
         
 
         StartCoroutine(PowerupBonusCreation());
-        if (planetsList.Count > 0)
+        if (_planetsList.Count > 0)
             StartCoroutine(PlanetsCreation());
         
     }
@@ -75,9 +75,9 @@ public class LevelController : MonoBehaviour {
         var enemyGOs = GameObject.FindGameObjectsWithTag("Enemy");
 
 
-        if (enemyGOs.Length != 0 || gameEnded) yield break;
+        if (enemyGOs.Length != 0 || _gameEnded) yield break;
         
-        allEnemiesDied = true;
+        _allEnemiesDied = true;
         
         if (ticketInventory.CurrentStack < ticketInventory.MaxStack)
         {
@@ -87,7 +87,7 @@ public class LevelController : MonoBehaviour {
         }
         scenesData.LoadLevelWithIndex(2);
         onGameWon?.Invoke();
-        gameEnded = true;
+        _gameEnded = true;
     }
     
     //Create a new wave after a delay
@@ -95,7 +95,7 @@ public class LevelController : MonoBehaviour {
     {
         if (delay != 0)
             yield return new WaitForSeconds(delay);
-        if (Player.instance != null)
+        if (Player.Instance != null)
         {
             Instantiate(wave);
         }
@@ -112,7 +112,7 @@ public class LevelController : MonoBehaviour {
                 //Set the position for the new bonus: for X-axis - random position between the borders of 'Player's' movement; for Y-axis - right above the upper screen border 
                 new Vector2(
                     Random.Range(PlayerMoving.instance.borders.minX, PlayerMoving.instance.borders.maxX), 
-                    mainCamera.ViewportToWorldPoint(Vector2.up).y + powerUp.GetComponent<Renderer>().bounds.size.y / 2), 
+                    _mainCamera.ViewportToWorldPoint(Vector2.up).y + powerUp.GetComponent<Renderer>().bounds.size.y / 2), 
                 Quaternion.identity
                 );
         }
@@ -123,21 +123,21 @@ public class LevelController : MonoBehaviour {
         //Create a new list copying the array
         foreach (var planet in planets)
         {
-            planetsList.Add(planet);
+            _planetsList.Add(planet);
         }
         yield return new WaitForSeconds(10);
         while (true)
         {
             ////choose random object from the list, generate and delete it
-            var randomIndex = Random.Range(0, planetsList.Count);
-            var newPlanet = Instantiate(planetsList[randomIndex]);
-            planetsList.RemoveAt(randomIndex);
+            var randomIndex = Random.Range(0, _planetsList.Count);
+            var newPlanet = Instantiate(_planetsList[randomIndex]);
+            _planetsList.RemoveAt(randomIndex);
             //if the list decreased to zero, reinstall it
-            if (planetsList.Count == 0)
+            if (_planetsList.Count == 0)
             {
                 foreach (var planet in planets)
                 {
-                    planetsList.Add(planet);
+                    _planetsList.Add(planet);
                 }
             }
             newPlanet.GetComponent<DirectMoving>().speed = planetsSpeed;
