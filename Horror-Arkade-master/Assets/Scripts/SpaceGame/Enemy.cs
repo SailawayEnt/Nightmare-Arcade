@@ -38,7 +38,7 @@ public class Enemy : MonoBehaviour {
         {
             Invoke("ActivateShooting", Random.Range(shotTimeMin, shotTimeMax));
             amountOfShots--;
-            yield return new WaitForSeconds(timeBetween/8);
+            yield return new WaitForSeconds(timeBetween/3);
         }
     }
 
