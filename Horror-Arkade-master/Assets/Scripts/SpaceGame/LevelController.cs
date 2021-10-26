@@ -48,7 +48,7 @@ public class LevelController : MonoBehaviour {
     private void Update()
     {
         if(!allEnemiesDied)
-        StartCoroutine("FindEnemies");
+            StartCoroutine(nameof(FindEnemies));
         
     }
 
@@ -57,9 +57,9 @@ public class LevelController : MonoBehaviour {
         yield return new WaitForSeconds(0.25f);
         playerGO.gameObject.SetActive(true);
         //for each element in 'enemyWaves' array creating coroutine which generates the wave
-        for (int i = 0; i < enemyWaves.Length; i++) 
+        foreach (var wave in enemyWaves)
         {
-            StartCoroutine(CreateEnemyWave(enemyWaves[i].timeToStart, enemyWaves[i].wave));
+            StartCoroutine(CreateEnemyWave(wave.timeToStart, wave.wave));
         }
         
 
@@ -72,33 +72,32 @@ public class LevelController : MonoBehaviour {
     public IEnumerator FindEnemies()
     {
         yield return new WaitForSeconds(.5f);
-        GameObject[] enemyGOs;
-        enemyGOs = GameObject.FindGameObjectsWithTag("Enemy");
-        
+        var enemyGOs = GameObject.FindGameObjectsWithTag("Enemy");
 
-        if (enemyGOs.Length == 0 && !gameEnded)
+
+        if (enemyGOs.Length != 0 || gameEnded) yield break;
+        
+        allEnemiesDied = true;
+        
+        if (ticketInventory.CurrentStack < ticketInventory.MaxStack)
         {
-            allEnemiesDied = true;
-            if (ticketInventory.CurrentStack < ticketInventory.MaxStack)
-            {
-                Debug.Log("game won and ticket given");
-               ticketInventory.CurrentStack += 1;
-               onTicketReceived?.Invoke();
-            }
-            scenesData.LoadLevelWithIndex(2);
-            onGameWon?.Invoke();
-            gameEnded = true;
+            Debug.Log("game won and ticket given");
+            ticketInventory.CurrentStack += 1;
+            onTicketReceived?.Invoke();
         }
+        scenesData.LoadLevelWithIndex(2);
+        onGameWon?.Invoke();
+        gameEnded = true;
     }
     
     //Create a new wave after a delay
-    IEnumerator CreateEnemyWave(float delay, GameObject Wave) 
+    IEnumerator CreateEnemyWave(float delay, GameObject wave) 
     {
         if (delay != 0)
             yield return new WaitForSeconds(delay);
         if (Player.instance != null)
         {
-            Instantiate(Wave);
+            Instantiate(wave);
         }
     }
 
@@ -121,24 +120,24 @@ public class LevelController : MonoBehaviour {
 
     IEnumerator PlanetsCreation()
     {
-        //Create a new list copying the arrey
-        for (int i = 0; i < planets.Length; i++)
+        //Create a new list copying the array
+        foreach (var planet in planets)
         {
-            planetsList.Add(planets[i]);
+            planetsList.Add(planet);
         }
         yield return new WaitForSeconds(10);
         while (true)
         {
             ////choose random object from the list, generate and delete it
-            int randomIndex = Random.Range(0, planetsList.Count);
-            GameObject newPlanet = Instantiate(planetsList[randomIndex]);
+            var randomIndex = Random.Range(0, planetsList.Count);
+            var newPlanet = Instantiate(planetsList[randomIndex]);
             planetsList.RemoveAt(randomIndex);
             //if the list decreased to zero, reinstall it
             if (planetsList.Count == 0)
             {
-                for (int i = 0; i < planets.Length; i++)
+                foreach (var planet in planets)
                 {
-                    planetsList.Add(planets[i]);
+                    planetsList.Add(planet);
                 }
             }
             newPlanet.GetComponent<DirectMoving>().speed = planetsSpeed;
