@@ -19333,6 +19333,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4935310184550582}
   - component: {fileID: 114812019831976894}
+  - component: {fileID: -4358271625397804768}
   m_Layer: 0
   m_Name: Enemy Explosion_02_PC
   m_TagString: Untagged
@@ -19368,3 +19369,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destructionTime: 2
+--- !u!114 &-4358271625397804768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981774452263784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: deb3b9e7d67932049848d7d5eebdf08d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -145,4 +145,9 @@ public class LevelController : MonoBehaviour {
             yield return new WaitForSeconds(timeBetweenPlanets);
         }
     }
+
+    public void GameEnded()
+    {
+        _gameEnded = true;
+    }
 }

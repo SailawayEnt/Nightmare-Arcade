@@ -1680,6 +1680,12 @@ PrefabInstance:
       objectReference: {fileID: 727874130}
     - target: {fileID: 7639457209781811722, guid: b022250573709434c9737ce47e1017e3,
         type: 3}
+      propertyPath: onGameReset
+      value: 
+      objectReference: {fileID: 11400000, guid: d2fa2471aa5acb54ab088b968cf682ea,
+        type: 2}
+    - target: {fileID: 7639457209781811722, guid: b022250573709434c9737ce47e1017e3,
+        type: 3}
       propertyPath: cabinetPlayer
       value: 
       objectReference: {fileID: 979056878}

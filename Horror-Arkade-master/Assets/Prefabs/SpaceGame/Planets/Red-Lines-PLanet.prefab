@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4239776445773694}
   - component: {fileID: 212246648251564820}
   - component: {fileID: 114285142464707356}
+  - component: {fileID: 2195339481746304642}
   m_Layer: 0
   m_Name: Red-Lines-PLanet
   m_TagString: Untagged
@@ -95,3 +96,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: -2
+--- !u!114 &2195339481746304642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868464169396128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: deb3b9e7d67932049848d7d5eebdf08d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

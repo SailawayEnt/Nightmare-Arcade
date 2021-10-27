@@ -8,6 +8,10 @@ TagManager:
   - PreventStuckOnWall
   - Startup
   - Boundry
+  - Projectile
+  - Bonus
+  - Enemy
+  - Reset
   layers:
   - Default
   - TransparentFX

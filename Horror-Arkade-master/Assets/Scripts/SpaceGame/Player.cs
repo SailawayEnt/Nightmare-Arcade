@@ -8,6 +8,7 @@ using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
+
     [SerializeField] GameEvent onPlayerDeath;
     public GameObject destructionFX;
 
@@ -105,7 +106,6 @@ public class Player : MonoBehaviour
     void Destruction()
     {
         Instantiate(destructionFX, transform.position, Quaternion.identity); //generating destruction visual effect and destroying the 'Player' object
-        Destroy(gameObject);
         onPlayerDeath?.Invoke();
         gameObject.SetActive(false);
     }

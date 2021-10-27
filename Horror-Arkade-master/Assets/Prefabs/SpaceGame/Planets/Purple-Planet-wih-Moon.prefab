@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4300159700785244}
   - component: {fileID: 212974000680483246}
   - component: {fileID: 114400611071591286}
+  - component: {fileID: 5787877611522913417}
   m_Layer: 0
   m_Name: Purple-Planet-wih-Moon
   m_TagString: Untagged
@@ -95,3 +96,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: -2
+--- !u!114 &5787877611522913417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017342213867866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: deb3b9e7d67932049848d7d5eebdf08d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

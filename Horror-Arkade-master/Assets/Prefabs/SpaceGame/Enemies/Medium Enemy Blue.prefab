@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1373690366928948, guid: fdaaab53a8b4c0143b19d2a2e4007e44, type: 3}
       propertyPath: m_Name
-      value: Enemy_straight_projectile Green
+      value: Medium Enemy Blue
       objectReference: {fileID: 0}
     - target: {fileID: 4073124609858142, guid: fdaaab53a8b4c0143b19d2a2e4007e44, type: 3}
       propertyPath: m_RootOrder
@@ -61,5 +61,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 445a97ab418f45c45b10696688967d84,
         type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: fdaaab53a8b4c0143b19d2a2e4007e44, type: 3}

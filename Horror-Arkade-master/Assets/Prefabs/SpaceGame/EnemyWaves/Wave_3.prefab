@@ -100,9 +100,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4648198683084180}
   - component: {fileID: 114102409395373750}
+  - component: {fileID: 8885253928463473635}
   m_Layer: 0
   m_Name: Wave_3
-  m_TagString: Untagged
+  m_TagString: Reset
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -153,3 +154,15 @@ MonoBehaviour:
     shotTimeMin: 0.05
     shotTimeMax: 5
   testMode: 0
+--- !u!114 &8885253928463473635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945754960637166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: deb3b9e7d67932049848d7d5eebdf08d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

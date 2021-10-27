@@ -114,6 +114,7 @@ GameObject:
   - component: {fileID: 114142757641235362}
   - component: {fileID: 114941486006831568}
   - component: {fileID: 58029969836120678}
+  - component: {fileID: -3723987236912372698}
   m_Layer: 0
   m_Name: Power Up
   m_TagString: Bonus
@@ -227,3 +228,15 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.39
+--- !u!114 &-3723987236912372698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180221311273546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: deb3b9e7d67932049848d7d5eebdf08d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

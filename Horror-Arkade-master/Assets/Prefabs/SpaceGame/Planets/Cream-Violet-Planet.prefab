@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4765810637922468}
   - component: {fileID: 212304408242036730}
   - component: {fileID: 114068145341105034}
+  - component: {fileID: -2640432060702939831}
   m_Layer: 0
   m_Name: Cream-Violet-Planet
   m_TagString: Untagged
@@ -96,6 +97,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: -1
+--- !u!114 &-2640432060702939831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420951587850870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: deb3b9e7d67932049848d7d5eebdf08d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1644345155992766
 GameObject:
   m_ObjectHideFlags: 0

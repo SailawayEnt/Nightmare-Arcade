@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 552015613870811346}
   - component: {fileID: 500461560970109658}
   - component: {fileID: 564115267844339668}
+  - component: {fileID: 3892059433835170489}
   m_Layer: 0
   m_Name: Boss Ship
   m_TagString: Enemy
@@ -165,3 +166,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &3892059433835170489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532083911864468620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: deb3b9e7d67932049848d7d5eebdf08d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

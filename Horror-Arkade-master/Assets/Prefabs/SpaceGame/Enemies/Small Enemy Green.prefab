@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8428742884581452228}
   - component: {fileID: 8475827940736984012}
   - component: {fileID: 8396376982825563842}
+  - component: {fileID: 3243906727883306566}
   m_Layer: 0
   m_Name: Small Enemy Green
   m_TagString: Enemy
@@ -104,8 +105,10 @@ MonoBehaviour:
     type: 3}
   hitEffect: {fileID: 1256001557233130, guid: 2dd0bdb7830e6644da169b32252dca96, type: 3}
   shotChance: 10
+  amountOfShots: 0
   shotTimeMin: 1
   shotTimeMax: 3
+  timeBetween: 0
 --- !u!58 &8428742884581452228
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -163,3 +166,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &3243906727883306566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8373204108395988378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: deb3b9e7d67932049848d7d5eebdf08d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
