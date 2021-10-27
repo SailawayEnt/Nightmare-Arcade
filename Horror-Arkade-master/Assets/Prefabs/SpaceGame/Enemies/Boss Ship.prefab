@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 552015613870811346}
   - component: {fileID: 500461560970109658}
   - component: {fileID: 564115267844339668}
-  - component: {fileID: 3892059433835170489}
+  - component: {fileID: 260353581547861729}
+  - component: {fileID: 5125990101902674358}
   m_Layer: 0
   m_Name: Boss Ship
   m_TagString: Enemy
@@ -166,7 +167,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &3892059433835170489
+--- !u!114 &260353581547861729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532083911864468620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c90f910a54541b469ed7c7a43246360, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onTicketReceived: {fileID: 11400000, guid: 7a57bb289c9598149ba5bf41baeb9b1b, type: 2}
+  onGameWon: {fileID: 11400000, guid: c67423ce65867be4ebec4e4b3463359b, type: 2}
+  ticketInventory: {fileID: 11400000, guid: 21901ac8abf55dc47b6a80538c8501c8, type: 2}
+  scenesData: {fileID: 11400000, guid: b533ad2b622cce24aa5f96e6dba0a567, type: 2}
+--- !u!114 &5125990101902674358
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

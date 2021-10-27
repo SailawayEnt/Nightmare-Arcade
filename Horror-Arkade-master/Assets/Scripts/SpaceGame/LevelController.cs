@@ -47,8 +47,8 @@ public class LevelController : MonoBehaviour {
 
     private void Update()
     {
-        if(!_allEnemiesDied)
-            StartCoroutine(FindEnemies());
+        // if(!_allEnemiesDied)
+        //     StartCoroutine(FindEnemies());
         
     }
 
@@ -76,7 +76,7 @@ public class LevelController : MonoBehaviour {
 
 
         if (enemyGOs.Length != 0 || _gameEnded) yield break;
-        
+
         _allEnemiesDied = true;
         
         if (ticketInventory.CurrentStack < ticketInventory.MaxStack)

@@ -3,36 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="8ee225da-5995-44de-bfa6-5a9a2a492a40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/SpaceGame/Bonuses/Power Up.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/SpaceGame/Bonuses/Power Up.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/Enemies/Boss Ship.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/Enemies/Boss Ship.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/Enemies/Medium Enemy Blue.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/Enemies/Medium Enemy Blue.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/Enemies/Medium Enemy Purple.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/Enemies/Medium Enemy Purple.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/Enemies/Small Enemy Green.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/Enemies/Small Enemy Green.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/Enemies/Small Enemy Purple.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/Enemies/Small Enemy Purple.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/EnemyWaves/Wave_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/EnemyWaves/Wave_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/EnemyWaves/Wave_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/EnemyWaves/Wave_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/EnemyWaves/Wave_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/EnemyWaves/Wave_3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/EnemyWaves/Wave_4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/EnemyWaves/Wave_4.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/EnemyWaves/Wave_5.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/EnemyWaves/Wave_5.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/EnemyWaves/Wave_6.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/EnemyWaves/Wave_6.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/Planets/Cream-Violet-Planet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/Planets/Cream-Violet-Planet.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/Planets/Purple-Planet-wih-Moon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/Planets/Purple-Planet-wih-Moon.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/Planets/Red-Lines-PLanet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/Planets/Red-Lines-PLanet.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/Projectiles/Boss Projectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/Projectiles/Boss Projectile.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/Projectiles/Medium Straight Projetile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/Projectiles/Medium Straight Projetile.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/Projectiles/Player_Short_Lazer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/Projectiles/Player_Short_Lazer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/Projectiles/Small Straight Projetile Green.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/Projectiles/Small Straight Projetile Green.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/VFX/Enemy Explosion PC.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/VFX/Enemy Explosion PC.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/VFX/Enemy Explosion.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/VFX/Enemy Explosion.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/VFX/Enemy Explosion_02.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/VFX/Enemy Explosion_02.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/VFX/Enemy Explosion_02_PC.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/VFX/Enemy Explosion_02_PC.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/VFX/Player Explosion.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpaceGame/VFX/Player Explosion.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay3.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level3Part2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level3Part2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Other/DestroyMyself.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Other/DestroyMyself.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/LevelController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/LevelController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +66,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.1.0-pre.5/InputSystem/Controls/InputControlList.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a5949084587241189a974c7df1839e1c116e00/f9/f182dc4f/SpriteRenderer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/ConsumableItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Other/WhenDestroyed.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.1.0-pre.5/InputSystem/Plugins/Users/InputUser.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.1.0-pre.5/InputSystem/InputManager.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -329,6 +304,8 @@
       <workItem from="1635273194597" duration="6976000" />
       <workItem from="1635350151231" duration="597000" />
       <workItem from="1635359618339" duration="7509000" />
+      <workItem from="1635368759370" duration="549000" />
+      <workItem from="1635376105652" duration="2858000" />
     </task>
     <servers />
   </component>
