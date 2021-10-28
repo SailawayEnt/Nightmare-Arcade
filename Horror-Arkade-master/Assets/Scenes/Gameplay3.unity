@@ -1320,6 +1320,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 796264223043023603, guid: b022250573709434c9737ce47e1017e3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1239153762748740306, guid: b022250573709434c9737ce47e1017e3,
         type: 3}
       propertyPath: m_textInfo.lineCount
@@ -1678,6 +1683,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 727874130}
+    - target: {fileID: 7639457209781811722, guid: b022250573709434c9737ce47e1017e3,
+        type: 3}
+      propertyPath: startMenu
+      value: 
+      objectReference: {fileID: 1230635597}
     - target: {fileID: 7639457209781811722, guid: b022250573709434c9737ce47e1017e3,
         type: 3}
       propertyPath: onGameReset

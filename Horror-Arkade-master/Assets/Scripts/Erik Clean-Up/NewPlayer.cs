@@ -571,15 +571,15 @@ public class NewPlayer : PhysicsObject
     {
         energyDrinkData.HasReceived = true;
         Debug.Log("Received Energy Drink ToDO: Slam Machete Into Ground and Long Jump");
-        // ToDO: Slam Machete Into Ground and Long Jump
+        // todo: Slam Machete Into Ground and Long Jump
     }
 
     public void SetUpCheatItems()
     {
         //Allows us to get various items immediately after hitting play, allowing for testing. 
-        for (int i = 0; i < cheatItems.Length; i++)
+        foreach (var item in cheatItems)
         {
-            GameManager.Instance.GetInventoryItem(cheatItems[i], null);
+            GameManager.Instance.GetInventoryItem(item, null);
         }
     }
     

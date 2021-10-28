@@ -283,7 +283,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea681916256a05644af1fed76f5d292a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInput: {fileID: 508932251}
   leftHandAnim: {fileID: 2044739994}
   rightHandAnim: {fileID: 376396570}
 --- !u!1 &1125278072
@@ -412,7 +411,7 @@ PrefabInstance:
     - target: {fileID: 5101863956118895081, guid: 2a937e64e3db0394cb6be729a5225076,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5101863956427684779, guid: 2a937e64e3db0394cb6be729a5225076,
         type: 3}

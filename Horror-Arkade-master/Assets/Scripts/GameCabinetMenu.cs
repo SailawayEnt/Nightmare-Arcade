@@ -16,7 +16,8 @@ public class GameCabinetMenu : MonoBehaviour
    // Player cabinetPlayer;
    [SerializeField] GameObject cabinetPlayer;
    [SerializeField] ScenesData scenesData;
-   public GameObject menu;
+   [SerializeField] GameObject startMenu;
+   [SerializeField] GameObject continueMenu;
 
    [Header("Main Game References")] [SerializeField]
    GameObject player;
@@ -53,7 +54,7 @@ public class GameCabinetMenu : MonoBehaviour
 
    void HideMenu()
    {
-      menu.SetActive(false);
+      startMenu.SetActive(false);
    }
 
    public void ResetCabinetGame()
@@ -84,7 +85,7 @@ public class GameCabinetMenu : MonoBehaviour
 
    void ShowMenu()
    {
-      menu.SetActive(true);
+      continueMenu.SetActive(true);
    }
 
 }
