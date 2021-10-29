@@ -72,10 +72,10 @@ public class EnemyBase : MonoBehaviour
                 if (GetComponent<Flyer>() != null)
                 {
                     Flyer flyer = GetComponent<Flyer>();
-                    flyer.speedEased.x = launchDirection * 5;
-                    flyer.speedEased.y = 4;
-                    flyer.speed.x = flyer.speedEased.x;
-                    flyer.speed.y = flyer.speedEased.y;
+                    flyer.SpeedEased.x = launchDirection * 5;
+                    flyer.SpeedEased.y = 4;
+                    flyer.Speed.x = flyer.SpeedEased.x;
+                    flyer.Speed.y = flyer.SpeedEased.y;
                 }
 
                 NewPlayer.Instance.FreezeFrameEffect();

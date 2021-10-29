@@ -1419,6 +1419,11 @@ PrefabInstance:
       propertyPath: m_textInfo.characterCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1302910458734705320, guid: b022250573709434c9737ce47e1017e3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2708010853478348533, guid: b022250573709434c9737ce47e1017e3,
         type: 3}
       propertyPath: m_text

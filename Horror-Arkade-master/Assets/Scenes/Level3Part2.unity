@@ -393,6 +393,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 932167080599203018, guid: 2a937e64e3db0394cb6be729a5225076,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2930016098837171825, guid: 2a937e64e3db0394cb6be729a5225076,
         type: 3}
       propertyPath: m_SortingOrder
@@ -402,6 +407,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingOrder
       value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5026799161250570890, guid: 2a937e64e3db0394cb6be729a5225076,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5101863955193940844, guid: 2a937e64e3db0394cb6be729a5225076,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5101863955912016252, guid: 2a937e64e3db0394cb6be729a5225076,
         type: 3}
@@ -463,6 +478,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameCabinet (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5101863955912016255, guid: 2a937e64e3db0394cb6be729a5225076,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5101863956259300213, guid: 2a937e64e3db0394cb6be729a5225076,
         type: 3}
       propertyPath: m_IsActive
@@ -473,12 +493,27 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5101863956648462809, guid: 2a937e64e3db0394cb6be729a5225076,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5101863956926749783, guid: 2a937e64e3db0394cb6be729a5225076,
         type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5524453344973711865, guid: 2a937e64e3db0394cb6be729a5225076,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790494910182725455, guid: 2a937e64e3db0394cb6be729a5225076,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8096053811207121797, guid: 2a937e64e3db0394cb6be729a5225076,
         type: 3}
       propertyPath: m_IsActive
       value: 1

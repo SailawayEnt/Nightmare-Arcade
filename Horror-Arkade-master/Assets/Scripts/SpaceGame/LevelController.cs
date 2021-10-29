@@ -28,7 +28,7 @@ public class LevelController : MonoBehaviour {
     public float timeBetweenPlanets;
     public float planetsSpeed;
     readonly List<GameObject> _planetsList = new List<GameObject>();
-    bool _allEnemiesDied = false;
+    //bool _allEnemiesDied = false;
     bool _gameEnded = false;
 
     [SerializeField] GameEvent onTicketReceived;
@@ -77,7 +77,7 @@ public class LevelController : MonoBehaviour {
 
         if (enemyGOs.Length != 0 || _gameEnded) yield break;
 
-        _allEnemiesDied = true;
+        //_allEnemiesDied = true;
         
         if (ticketInventory.CurrentStack < ticketInventory.MaxStack)
         {

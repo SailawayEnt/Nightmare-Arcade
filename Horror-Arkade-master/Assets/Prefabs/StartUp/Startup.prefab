@@ -4068,7 +4068,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinInventory: {fileID: 11400000, guid: 829a929706776ba448bf86ad6e224f77, type: 2}
-  scenesData: {fileID: 11400000, guid: b533ad2b622cce24aa5f96e6dba0a567, type: 2}
   gameManager: {fileID: 7639457209781811722}
 --- !u!1 &8111338624101453265
 GameObject:

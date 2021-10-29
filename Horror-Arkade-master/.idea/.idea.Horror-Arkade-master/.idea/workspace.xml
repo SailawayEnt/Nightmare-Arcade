@@ -3,10 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="8ee225da-5995-44de-bfa6-5a9a2a492a40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/System/Player Position.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/System/Player Position.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Interactables/GameCabinet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Interactables/GameCabinet.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/StartUp/Startup.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/StartUp/Startup.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay3.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/Countdown.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/Countdown.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level2Part1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level2Part1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level3Part1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level3Part1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level3Part2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level3Part2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/ConsumableItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/ConsumableItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/EnemyBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/EnemyBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Flyer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Erik Clean-Up/Flyer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Other/AnimatorFunctions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Other/AnimatorFunctions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/CheckingForTicket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/CheckingForTicket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/LevelController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/LevelController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -313,6 +323,7 @@
       <workItem from="1635473225198" duration="263000" />
       <workItem from="1635473556322" duration="404000" />
       <workItem from="1635521485496" duration="2914000" />
+      <workItem from="1635533891817" duration="2325000" />
     </task>
     <servers />
   </component>
