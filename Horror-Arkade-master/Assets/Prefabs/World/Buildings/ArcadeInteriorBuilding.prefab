@@ -124,8 +124,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -982654969
+  m_SortingLayer: -5
   m_SortingOrder: -5
   m_Sprite: {fileID: 21300000, guid: 2b64777dd0a7d1d498f26795f47bb8d0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -448,8 +448,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1785465971
+  m_SortingLayer: -4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 54daf41a863b5ec4388592d57b0233d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -772,8 +772,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1785465971
+  m_SortingLayer: -4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6f2761357db15f84d943f3a62c4e8230, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1228,7 +1228,7 @@ SpriteRenderer:
   m_Size: {x: 0.87, y: 0.96}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &7727101688475463581
@@ -1399,8 +1399,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -982654969
-  m_SortingLayer: -3
-  m_SortingOrder: 0
+  m_SortingLayer: -5
+  m_SortingOrder: -4
   m_Sprite: {fileID: 21300000, guid: 9b370046452336d479f2017060811d51, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2047,8 +2047,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1785465971
+  m_SortingLayer: -4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 00b31166c7ad54047b68033934531106, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2128,8 +2128,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1785465971
+  m_SortingLayer: -4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6f2761357db15f84d943f3a62c4e8230, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2372,8 +2372,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1785465971
+  m_SortingLayer: -4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 54daf41a863b5ec4388592d57b0233d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2627,6 +2627,60 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -1.151192
       objectReference: {fileID: 0}
+    - target: {fileID: 114803962774154224, guid: 0d2ce79f41aef454d804e654a4a633f6,
+        type: 3}
+      propertyPath: characterName
+      value: Frank
+      objectReference: {fileID: 0}
+    - target: {fileID: 114803962774154224, guid: 0d2ce79f41aef454d804e654a4a633f6,
+        type: 3}
+      propertyPath: giveWhichItem
+      value: 
+      objectReference: {fileID: 11400000, guid: d520c7a48060e8442bf617791bcaa55d,
+        type: 2}
+    - target: {fileID: 114803962774154224, guid: 0d2ce79f41aef454d804e654a4a633f6,
+        type: 3}
+      propertyPath: onTicketChange
+      value: 
+      objectReference: {fileID: 11400000, guid: 7a57bb289c9598149ba5bf41baeb9b1b,
+        type: 2}
+    - target: {fileID: 114803962774154224, guid: 0d2ce79f41aef454d804e654a4a633f6,
+        type: 3}
+      propertyPath: dialogueStringA
+      value: CharacterA
+      objectReference: {fileID: 0}
+    - target: {fileID: 114803962774154224, guid: 0d2ce79f41aef454d804e654a4a633f6,
+        type: 3}
+      propertyPath: dialogueStringB
+      value: CharacterB
+      objectReference: {fileID: 0}
+    - target: {fileID: 114803962774154224, guid: 0d2ce79f41aef454d804e654a4a633f6,
+        type: 3}
+      propertyPath: dialogueStringC
+      value: CharacterC
+      objectReference: {fileID: 0}
+    - target: {fileID: 114803962774154224, guid: 0d2ce79f41aef454d804e654a4a633f6,
+        type: 3}
+      propertyPath: requiredTickets
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114803962774154224, guid: 0d2ce79f41aef454d804e654a4a633f6,
+        type: 3}
+      propertyPath: ticketInventory
+      value: 
+      objectReference: {fileID: 11400000, guid: 21901ac8abf55dc47b6a80538c8501c8,
+        type: 2}
+    - target: {fileID: 114803962774154224, guid: 0d2ce79f41aef454d804e654a4a633f6,
+        type: 3}
+      propertyPath: givesInitialItem
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114803962774154224, guid: 0d2ce79f41aef454d804e654a4a633f6,
+        type: 3}
+      propertyPath: onInitialItemReceived
+      value: 
+      objectReference: {fileID: 11400000, guid: 7f2650219bea94c4a9a7c359f29e109d,
+        type: 2}
     - target: {fileID: 159209880815984948, guid: 0d2ce79f41aef454d804e654a4a633f6,
         type: 3}
       propertyPath: m_IsActive
@@ -2707,6 +2761,18 @@ PrefabInstance:
       propertyPath: m_Bounds.m_Extent.y
       value: 0.37881088
       objectReference: {fileID: 0}
+    - target: {fileID: 1444133146035400964, guid: 0d2ce79f41aef454d804e654a4a633f6,
+        type: 3}
+      propertyPath: savedSpriteValue
+      value: 
+      objectReference: {fileID: 11400000, guid: e90808356df406c43a048b988af68dc0,
+        type: 2}
+    - target: {fileID: 1444133146035400964, guid: 0d2ce79f41aef454d804e654a4a633f6,
+        type: 3}
+      propertyPath: savedBindingInput
+      value: 
+      objectReference: {fileID: 11400000, guid: 334c8ced947f13d438e62bd0dff7aa67,
+        type: 2}
     - target: {fileID: 1998806344586157486, guid: 0d2ce79f41aef454d804e654a4a633f6,
         type: 3}
       propertyPath: m_IsActive
