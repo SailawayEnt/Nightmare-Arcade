@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Android;
 
 public class Countdown : MonoBehaviour
 {
@@ -18,7 +16,17 @@ public class Countdown : MonoBehaviour
     {
         while (_countdown > 0)
         {
-            countdownNumbers.text = _countdown == 10 ? _countdown.ToString() : $"0{_countdown.ToString()}";
+            if (_countdown == 10)
+            {
+                countdownNumbers.alignment = TextAlignmentOptions.Center;
+                countdownNumbers.text = $"{_countdown.ToString()}";
+            }
+            else
+            {
+                countdownNumbers.alignment = TextAlignmentOptions.Left;
+                countdownNumbers.text = $"0{_countdown.ToString()}";
+            }
+
 
             yield return new WaitForSeconds(1f);
 
