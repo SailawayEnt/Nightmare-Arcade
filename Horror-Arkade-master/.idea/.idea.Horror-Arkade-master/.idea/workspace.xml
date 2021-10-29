@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8ee225da-5995-44de-bfa6-5a9a2a492a40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Horror-Arkade-master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/SpaceGame/Bonuses/Power Up.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/SpaceGame/Bonuses/Power Up.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/StartUp/Startup.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/StartUp/Startup.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay3.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameCabinetMenu.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/Countdown.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpaceGame/Countdown.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,6 +61,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Manager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/ScenePartLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.animation@3.2.9/Editor/SpritePostProcess.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SpaceGame/CheckingForTicket.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Inventory System/InventoryItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.1.0-pre.5/InputSystem/Actions/InputControlScheme.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.1.0-pre.5/InputSystem/Controls/InputControlList.cs" root0="SKIP_HIGHLIGHTING" />
@@ -311,6 +312,7 @@
       <workItem from="1635450028224" duration="4600000" />
       <workItem from="1635473225198" duration="263000" />
       <workItem from="1635473556322" duration="404000" />
+      <workItem from="1635521485496" duration="2914000" />
     </task>
     <servers />
   </component>

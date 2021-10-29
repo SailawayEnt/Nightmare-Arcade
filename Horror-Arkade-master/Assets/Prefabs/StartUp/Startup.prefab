@@ -1690,6 +1690,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countdownNumbers: {fileID: 2708010853478348533}
+  gameManager: {fileID: 7639457209781811722}
 --- !u!1 &1737463972066971873
 GameObject:
   m_ObjectHideFlags: 0
@@ -1943,7 +1944,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 7639457209781811722}
         m_MethodName: ExitCabinet
         m_Mode: 1
         m_Arguments:
@@ -2578,7 +2579,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 7639457209781811722}
         m_MethodName: ExitCabinet
         m_Mode: 1
         m_Arguments:
@@ -2708,9 +2709,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: b533ad2b622cce24aa5f96e6dba0a567, type: 2}
-        m_MethodName: LoadLevelWithIndex
-        m_Mode: 3
+      - m_Target: {fileID: 7639457209781811722}
+        m_MethodName: StartGame
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3935,6 +3936,7 @@ GameObject:
   - component: {fileID: 7822153502794625188}
   - component: {fileID: 3391649192394447153}
   - component: {fileID: 117008901682561534}
+  - component: {fileID: 9140252315964285993}
   m_Layer: 5
   m_Name: YesContinue
   m_TagString: Untagged
@@ -4042,9 +4044,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: b533ad2b622cce24aa5f96e6dba0a567, type: 2}
-        m_MethodName: LoadLevelWithIndex
-        m_Mode: 3
+      - m_Target: {fileID: 9140252315964285993}
+        m_MethodName: StartGame
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4053,6 +4055,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &9140252315964285993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8075915181705442682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 604cdf89870f6b646a458e1ec8fcbb5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinInventory: {fileID: 11400000, guid: 829a929706776ba448bf86ad6e224f77, type: 2}
+  scenesData: {fileID: 11400000, guid: b533ad2b622cce24aa5f96e6dba0a567, type: 2}
+  gameManager: {fileID: 7639457209781811722}
 --- !u!1 &8111338624101453265
 GameObject:
   m_ObjectHideFlags: 0

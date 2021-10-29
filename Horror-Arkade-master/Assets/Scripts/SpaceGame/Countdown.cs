@@ -7,6 +7,8 @@ public class Countdown : MonoBehaviour
     [SerializeField] TextMeshProUGUI countdownNumbers;
     int _countdown = 10;
 
+    [SerializeField] GameCabinetMenu gameManager;
+
     void OnEnable()
     {
         StartCoroutine(CountdownToExit());
@@ -34,7 +36,8 @@ public class Countdown : MonoBehaviour
         }
 
         countdownNumbers.text = "00";
-        
-         //todo: exit game
+        yield return new WaitForSeconds(.5f);
+        gameManager.HideContinueMenu();
+        gameManager.ExitCabinet();
     }
 }

@@ -29,7 +29,7 @@ public class GameCabinetMenu : MonoBehaviour
 
    public void StartGame()
    {
-      HideMenu();
+      HideStartMenu();
       playingCamera.SetActive(true);
       var position = targetDestination.position;
       cabinetPlayer.transform.position = new Vector2(position.x, position.y);
@@ -52,9 +52,14 @@ public class GameCabinetMenu : MonoBehaviour
       scenesData.LoadLevelWithIndex(2);
    }
 
-   void HideMenu()
+   void HideStartMenu()
    {
       startMenu.SetActive(false);
+   }
+   
+   public void HideContinueMenu()
+   {
+      continueMenu.SetActive(false);
    }
 
    public void ResetCabinetGame()
@@ -64,7 +69,7 @@ public class GameCabinetMenu : MonoBehaviour
 
       RemoveLeftOverGameObjects();
 
-      ShowMenu();
+      ShowContinueMenu();
 
    }
 
@@ -83,7 +88,7 @@ public class GameCabinetMenu : MonoBehaviour
       
    }
 
-   void ShowMenu()
+   void ShowContinueMenu()
    {
       continueMenu.SetActive(true);
    }
