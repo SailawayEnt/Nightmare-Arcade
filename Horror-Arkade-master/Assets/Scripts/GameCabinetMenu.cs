@@ -24,8 +24,8 @@ public class GameCabinetMenu : MonoBehaviour
 
    [SerializeField] Vector2Value playerPositionStorage;
 
-
    GameObject _levelControllerGO;
+
 
    public void StartGame()
    {
