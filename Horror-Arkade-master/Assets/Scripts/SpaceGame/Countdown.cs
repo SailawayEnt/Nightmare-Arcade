@@ -5,12 +5,13 @@ using UnityEngine;
 public class Countdown : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI countdownNumbers;
-    int _countdown = 10;
+    int _countdown;
 
     [SerializeField] GameCabinetMenu gameManager;
 
     void OnEnable()
     {
+        _countdown = 10;
         StartCoroutine(CountdownToExit());
     }
 

@@ -54,9 +54,12 @@ public class Wave : MonoBehaviour {
     public bool testMode;
     #endregion
 
+    IEnumerator _createEnemy;
+
     private void Start()
     {
-        StartCoroutine(CreateEnemyWave()); 
+        _createEnemy = CreateEnemyWave();
+        StartCoroutine(_createEnemy); 
     }
 
     IEnumerator CreateEnemyWave() //depending on chosed parameters generating enemies and defining their parameters

@@ -1,19 +1,11 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
-using Cinemachine;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using Object = UnityEngine.Object;
 
 public class GameCabinetMenu : MonoBehaviour
 {
    [Header("Target")] [SerializeField] Transform targetDestination;
 
-   //[SerializeField] GameObject menuCamera;
-   [SerializeField] GameObject playingCamera;
-
-   // Player cabinetPlayer;
    [SerializeField] GameObject cabinetPlayer;
    [SerializeField] ScenesData scenesData;
    [SerializeField] GameObject startMenu;
@@ -24,25 +16,24 @@ public class GameCabinetMenu : MonoBehaviour
 
    [SerializeField] Vector2Value playerPositionStorage;
 
-   GameObject _levelControllerGO;
+   GameObject _gameControllerGO;
+   Transform _levelControllerTransform;
 
 
    public void StartGame()
    {
+      _gameControllerGO = GameObject.Find("Game_Controller");
+      _levelControllerTransform = _gameControllerGO.transform.Find("Level_Controller");
       HideStartMenu();
-      playingCamera.SetActive(true);
-      var position = targetDestination.position;
-      cabinetPlayer.transform.position = new Vector2(position.x, position.y);
       StartCoroutine(WaitForLoad());
    }
 
 
    IEnumerator WaitForLoad()
    {
+      _levelControllerTransform.gameObject.SetActive(true);
       yield return new WaitForSeconds(.25f);
-      _levelControllerGO = GameObject.Find("Level_Controller");
-      _levelControllerGO.SetActive(true);
-      StartCoroutine(_levelControllerGO.GetComponent<LevelController>().LoadFirstWave());
+      StartCoroutine(_levelControllerTransform.GetComponent<LevelController>().LoadFirstWave());
    }
 
    public void ExitCabinet()
@@ -64,9 +55,6 @@ public class GameCabinetMenu : MonoBehaviour
 
    public void ResetCabinetGame()
    {
-      playingCamera.SetActive(false);
-      cabinetPlayer.transform.position = new Vector2(0, 0);
-
       RemoveLeftOverGameObjects();
 
       ShowContinueMenu();

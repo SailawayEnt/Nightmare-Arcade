@@ -346,6 +346,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4767037189160900}
   - component: {fileID: 114004447756405556}
+  - component: {fileID: 575852129}
   m_Layer: 0
   m_Name: Level_Controller
   m_TagString: Untagged
@@ -421,8 +422,39 @@ MonoBehaviour:
   planets: []
   timeBetweenPlanets: 15
   planetsSpeed: -1
+  backgroundVideo: {fileID: 0}
+  grid: {fileID: 0}
+  backgrounds: {fileID: 0}
+  tutorial: {fileID: 0}
   onTicketReceived: {fileID: 11400000, guid: 7a57bb289c9598149ba5bf41baeb9b1b, type: 2}
   onGameWon: {fileID: 11400000, guid: c67423ce65867be4ebec4e4b3463359b, type: 2}
   ticketInventory: {fileID: 11400000, guid: 21901ac8abf55dc47b6a80538c8501c8, type: 2}
   scenesData: {fileID: 11400000, guid: b533ad2b622cce24aa5f96e6dba0a567, type: 2}
   playerGO: {fileID: 0}
+--- !u!114 &575852129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761238424061232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4961029f65a0ba140a87b25004538b8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 0731a5c1c0cafd8438c152887a58d37b, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114004447756405556}
+        m_MethodName: GameEnded
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

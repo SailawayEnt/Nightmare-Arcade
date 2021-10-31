@@ -8,7 +8,6 @@ public class ToggleTut : MonoBehaviour
     
     public void ShouldToggle(bool tutorialOn)
     {
-        Debug.Log($"tut on? {tutorialOn}");
         tutorialGO.SetActive(tutorialOn);
     } 
 }

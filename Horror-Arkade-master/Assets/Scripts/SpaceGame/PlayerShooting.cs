@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 
@@ -28,7 +26,7 @@ public class PlayerShooting : MonoBehaviour {
 
     [Tooltip("current weapon power")]
     [Range(1, 4)]       //change it if you wish
-    public int weaponPower = 1; 
+    public int weaponPower; 
 
     public Guns guns;
     bool shootingIsActive = true; 
@@ -46,6 +44,11 @@ public class PlayerShooting : MonoBehaviour {
         guns.leftGunVFX = guns.leftGun.GetComponent<ParticleSystem>();
         guns.rightGunVFX = guns.rightGun.GetComponent<ParticleSystem>();
         guns.centralGunVFX = guns.centralGun.GetComponent<ParticleSystem>();
+    }
+
+    void OnEnable()
+    {
+        weaponPower = 1;
     }
 
     private void Update()

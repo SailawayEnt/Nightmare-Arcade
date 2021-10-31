@@ -21,8 +21,6 @@ public class PlayerMoving : MonoBehaviour {
     bool controlIsActive = true;
     [SerializeField][Min(1)]float speedMultiplier = 5.0f;
 
-    [SerializeField] Animator handsAnim;
-
     public static PlayerMoving instance; //unique instance of the script for easy access to the script
 
     private void Awake()
@@ -39,14 +37,12 @@ public class PlayerMoving : MonoBehaviour {
 
     private void Update()
     {
-        handsAnim.SetInteger("moveDirection", 0);
         if (controlIsActive)
         {
 #if UNITY_STANDALONE || UNITY_EDITOR    //if the current platform is not mobile, setting mouse handling 
 
             if (Player.Instance.InputMovement.x != 0) //if mouse button was pressed       
             {
-                handsAnim.SetInteger("moveDirection", Player.Instance.HorizontalDirection);
                 Vector3 movement = Player.Instance.InputMovement * speedMultiplier;
                 transform.position += movement * Time.deltaTime;
             }

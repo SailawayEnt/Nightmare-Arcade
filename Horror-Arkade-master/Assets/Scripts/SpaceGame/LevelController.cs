@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -29,8 +28,14 @@ public class LevelController : MonoBehaviour {
     public float planetsSpeed;
     readonly List<GameObject> _planetsList = new List<GameObject>();
     //bool _allEnemiesDied = false;
-    bool _gameEnded = false;
+    bool _gameHasEnded;
 
+    [SerializeField] GameObject backgroundVideo;
+    [SerializeField] GameObject grid;
+    [SerializeField] GameObject backgrounds;
+    [SerializeField] GameObject tutorial;
+    
+    
     [SerializeField] GameEvent onTicketReceived;
     [SerializeField] GameEvent onGameWon;
     [SerializeField] ConsumableItem ticketInventory;
@@ -38,6 +43,9 @@ public class LevelController : MonoBehaviour {
     
 
     Camera _mainCamera;
+
+    IEnumerator _createEnemy;
+    IEnumerator _createPowerUp;
 
     [SerializeField] GameObject playerGO;
     void Awake()
@@ -48,24 +56,38 @@ public class LevelController : MonoBehaviour {
     private void Update()
     {
         // if(!_allEnemiesDied)
-        //     StartCoroutine(FindEnemies());
-        
+         //     StartCoroutine(FindEnemies());
+
     }
 
     public IEnumerator LoadFirstWave()
     {
-        yield return new WaitForSeconds(0.25f);
+        _gameHasEnded = false;
+        backgroundVideo.SetActive(false);
+        grid.SetActive(true);
+        backgrounds.SetActive(true);
+        tutorial.SetActive(false);
         playerGO.gameObject.SetActive(true);
+        
+        yield return new WaitForSeconds(0.25f);
+
+
+        //if (_gameEnded) yield break;
+        
         //for each element in 'enemyWaves' array creating coroutine which generates the wave
         foreach (var wave in enemyWaves)
         {
-            StartCoroutine(CreateEnemyWave(wave.timeToStart, wave.wave));
+            _createEnemy = CreateEnemyWave(wave.timeToStart, wave.wave);
+
+            StartCoroutine(_createEnemy);
+
         }
         
-
-        StartCoroutine(PowerupBonusCreation());
-        if (_planetsList.Count > 0)
-            StartCoroutine(PlanetsCreation());
+ 
+        _createPowerUp = PowerupBonusCreation();
+            StartCoroutine(_createPowerUp);
+            if (_planetsList.Count > 0)
+                StartCoroutine(PlanetsCreation());
         
     }
 
@@ -75,7 +97,7 @@ public class LevelController : MonoBehaviour {
         var enemyGOs = GameObject.FindGameObjectsWithTag("Enemy");
 
 
-        if (enemyGOs.Length != 0 || _gameEnded) yield break;
+        if (enemyGOs.Length != 0 || _gameHasEnded) yield break;
 
         //_allEnemiesDied = true;
         
@@ -87,12 +109,14 @@ public class LevelController : MonoBehaviour {
         }
         scenesData.LoadLevelWithIndex(2);
         onGameWon?.Invoke();
-        _gameEnded = true;
+        _gameHasEnded = true;
     }
     
     //Create a new wave after a delay
-    IEnumerator CreateEnemyWave(float delay, GameObject wave) 
+    IEnumerator CreateEnemyWave(float delay, GameObject wave)
     {
+        if (_gameHasEnded) yield break;
+        
         if (delay != 0)
             yield return new WaitForSeconds(delay);
         if (Player.Instance != null)
@@ -102,8 +126,10 @@ public class LevelController : MonoBehaviour {
     }
 
     //endless coroutine generating 'levelUp' bonuses. 
-    IEnumerator PowerupBonusCreation() 
+    IEnumerator PowerupBonusCreation()
     {
+        if (_gameHasEnded) yield break;
+        
         while (true) 
         {
             yield return new WaitForSeconds(timeForNewPowerup);
@@ -114,12 +140,15 @@ public class LevelController : MonoBehaviour {
                     Random.Range(PlayerMoving.instance.borders.minX, PlayerMoving.instance.borders.maxX), 
                     _mainCamera.ViewportToWorldPoint(Vector2.up).y + powerUp.GetComponent<Renderer>().bounds.size.y / 2), 
                 Quaternion.identity
-                );
+            );
         }
+        
     }
 
     IEnumerator PlanetsCreation()
     {
+        
+        if (_gameHasEnded) yield break;
         //Create a new list copying the array
         foreach (var planet in planets)
         {
@@ -143,11 +172,13 @@ public class LevelController : MonoBehaviour {
             newPlanet.GetComponent<DirectMoving>().speed = planetsSpeed;
 
             yield return new WaitForSeconds(timeBetweenPlanets);
+        
         }
     }
 
     public void GameEnded()
     {
-        _gameEnded = true;
+        _gameHasEnded = true;
+        gameObject.SetActive(false);
     }
 }
